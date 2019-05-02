@@ -1,0 +1,878 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head id="ctl00_Head1"><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta http-equiv="Cache-Control" content="no-cache" /><meta http-equiv="Pragma" content="no-cache" /><meta http-equiv="X-UA-Compatible" content="requiresActiveX=true" /><link REL="SHORTCUT ICON" href="/favicon.ico" /><title>
+	압축파일 풀 때는 알집! - 전국민 압축프로그램
+</title>    
+    <script language="javascript">
+    
+    function ALToolsDownload(name, version, url, type, isBlank) {
+        if ((url.indexOf("www.altools.jp") > -1) || (url.indexOf("www.altools.com") > -1) || (url.indexOf("www.almap.co.kr") > -1) || (url.indexOf("alyac.altools.co.kr") > -1)) {
+            window.open(url, "_blank");
+        }
+        else {
+            CheckALDown(name, version);
+            if (isBlank) {
+                window.open(url, "_blank");
+            } else {
+                fileDownV(url, type);
+            }
+        }
+    }
+
+    function showSubDescription(descName) {
+
+        $(".tab_content").hide();
+        $(".main_content > h3").removeClass("on");
+        $(".main_content > div").hide();
+
+        $(descName).parent().find('img').hide();
+        $(descName).find('img').show();
+        $(descName).siblings('div').find('img').hide();
+
+        $(descName).find('img').each(function () {
+            $(this).css('visibility', 'visible');
+            $(this).show();
+        });
+
+        $(descName).siblings('div').find('img').each(function () {
+            $(this).css('visibility', 'hidden');
+            $(this).hide();
+        });
+
+        $(descName).siblings('div').css('visibility', 'hidden');
+        $(descName).siblings('div').hide();
+        $(descName).css('visibility', 'visible');
+        $(descName).show();
+
+        $(descName).parent().prev().addClass("on");
+        $(descName).parent().show();
+        $(descName).parent().children('ul.tab_snb').children('li').children('a').removeClass('on');
+        $(descName).parent().children('ul.tab_snb').children('li').children('a[href=' + descName + ']').addClass('on');
+
+        scrollTo(0, $(descName).parent().prev().offset().top);
+    }    
+    </script>	  
+    
+<link rel="canonical" href="http://www.altools.co.kr/download/alzip.aspx" /><meta property="description" content="다양한 압축파일 포맷 지원으로 파일 압축하기와 압축풀기에 뛰어난 무료 압축프로그램입니다. 편리하고 강력한 알집의 기능들을 마음껏 활용해 보시기 바랍니다." /><meta property="og:title" content="압축파일 풀 때는 알집! - 전국민 압축프로그램" /><meta property="og:description" content="다양한 압축파일 포맷 지원으로 파일 압축하기와 압축풀기에 뛰어난 무료 압축프로그램입니다. 편리하고 강력한 알집의 기능들을 마음껏 활용해 보시기 바랍니다." /><meta property="og:image" content="https://images.altools.co.kr/altoolsRenewal/alzip.jpg" />
+<script language="javascript" type="text/javascript" src="/js/common_080618.js?2014021701"></script>
+<script language="javascript" type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="/js/jquery.cycle.all.js"></script>
+<script language="javascript" type="text/javascript" src="/js/jquery-migrate-1.2.1.js"></script>
+<script language="javascript" type="text/javascript" src="/js/script.js"></script>
+
+<script language="javascript" type="text/javascript" src="/js/wingBanner.js"></script>
+
+
+
+<script language="javascript" type="text/javascript" src="/js/bannerRollingSub.js"></script>
+
+
+<script language="javascript" type="text/javascript" src="/js/js-2.1.4.cookie.min.js"></script>
+
+
+<LINK href="/Style/altools.css?2019031501" type="text/css" rel="StyleSheet" />
+</head>
+<body class="page_download">
+    <form name="Form1" method="post" action="alzip.aspx" id="Form1">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div>
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKV4/vrBgL38LmMCwKOv7DnBIgXBP6GCPr3ZkvPyPJv1HKeT+uf" />
+</div>
+        
+<script type="text/javascript" src="/Member/Js/Member.js"></script>
+<script type="text/javascript">
+function Logout() {
+	var formObj = document.getElementById("Form1");
+	if (formObj == null) {
+	    formObj = document.getElementById("aspnetForm");
+	}
+	SSOLogoutForm(formObj);
+}
+function goLogOut() {
+    var Frm = document.getElementById("Form1");
+	try {
+		if(GetCookie('ssl') == "1") {
+			document.getElementById('tSecureConnect').value = "1";
+		}else {
+			document.getElementById('tSecureConnect').value = "0";
+		}
+	} catch(e) {	
+		Frm.action = 'http://secure.altools.co.kr/AltoolsSSO/Ticket/SSOTicket.aspx';
+	}
+
+	ALToolsSSO_SiteDomain		= document.getElementById('tSiteDomain').value;
+	ALToolsSSO_ReturnUrl		= document.getElementById('tSurl').value;
+	ALToolsSSO_SecureConnect	= document.getElementById('tSecureConnect').value;
+	
+	document.getElementById('tAuthMode').value = 'logout';
+	if(document.getElementById('tSecureConnect').value == "1") {
+		Frm.action= 'https://secure.altools.co.kr/AltoolsSSO/Ticket/SSOTicket.aspx';
+	} else {
+		Frm.action= 'http://secure.altools.co.kr/AltoolsSSO/Ticket/SSOTicket.aspx';
+	}
+	Frm.__VIEWSTATE.name="NOVIEWSTATE";
+	Frm.submit();	
+}
+</script>
+<!--[if IE 6]>
+<script src="/js/DD_belatedPNG.js"></script>
+<script type="text/javascript">DD_belatedPNG.fix(".logout,.move, .btn_png,.btn_myp, .sns a,img, .cus_quick_menu a, .right_banner_area" );</script>
+<![endif]-->
+<input type="hidden" name="tUserID" id="tUserID" />
+<input type="hidden" name="tPassword" id="tPassword" />
+<input type="hidden" name="tSiteDomain" id="tSiteDomain" value="altools.co.kr" /> 
+<input type="hidden" name="tAuthMode" id="tAuthMode" value="login" /> 
+<input type="hidden" name="tSiteID" id="tSiteID" value="1" />
+<input type="hidden" name="tSecureConnect" id="tSecureConnect" value="0" />
+<input type="hidden" name="tSurl" id="tSurl" value="/main/Default.aspx" /> 
+<input type="hidden" name="tFurl" id="tFurl" value="/main/Default.aspx" />
+<input type="hidden" name="return_url" id="return_url" value="https://www.altools.co.kr/download/alzip.aspx" />
+
+<!-- header start-->
+<a href="#content" class="skip">본문 바로가기</a>
+
+<a href="../Download/Company.aspx" target="_blank" class="go_company_big" style="display:none"><span class="blind">기업/공공기관용 사이트 바로가기</span></a>
+<a href="../Download/Company.aspx" target="_blank" class="go_company_small" style="display:none"><span class="blind">기업/공공기관용 사이트 바로가기</span></a>
+
+<div id="header" class="">
+    
+    <h1><a id="ctl00_GlobalMenu1_hp_mainlink" href="../Main/Default.aspx"><img id="ctl00_GlobalMenu1_Image_AltoolsLogo" class="altools_logo" src="https://images.altools.co.kr/altoolsRenewal/h1.png" alt="Altools" style="border-width:0px;" /></a>
+    
+    </h1>
+    <div class="logn_menu">
+        <h2 class="blind">바로가기메뉴</h2>        
+        <ul>
+            
+            
+                <li class="login"><a href="/Member/Login/Default.aspx"><img src="https://images.altools.co.kr/altoolsRenewal/btn_login.png" alt="로그인"/></a></li>
+                <li class="join"><a href="/Member/Join/Default.aspx">회원가입</a></li>
+            
+            
+            <li class="sns blog"><a href="http://blog.estsoft.co.kr/" title="새창" target="_blank">블로그</a></li>
+            <li class="sns facebook last"><a href="https://www.facebook.com/estsoftfb" title="새창" target="_blank">페이스북</a></li>
+        </ul>
+    </div>
+    <h2 class="blind">주요메뉴</h2> 
+    
+        <ul class="gnb">
+            <li>
+                <a id="ctl00_GlobalMenu1_hl_download" class="on" href="../Download">다운로드<img id="ctl00_GlobalMenu1_img_new" class="gnb_new" src="https://images.altools.co.kr/altoolsRenewal/icon_new_gnb.png" style="border-width:0px;" /></a>
+                <ul style="display:block" class="dc_sub down_s">
+            	    <li class="first"><a id="ctl00_GlobalMenu1_hl_downloadDefault" href="/Download/Default.aspx">알툴즈 통합팩</a></li>
+                    <li><a id="ctl00_GlobalMenu1_hl_downloadALZip" class="on" href="/Download/ALZip.aspx">알집</a></li>
+                    <li><a id="ctl00_GlobalMenu1_hl_downloadALSee" href="/Download/ALSee.aspx">알씨</a></li>
+                    <li><a id="ctl00_GlobalMenu1_hl_downloadALSong" href="/Download/ALSong.aspx">알송</a></li>
+                    <li><a id="ctl00_GlobalMenu1_hl_downloadALToolbar" href="/Download/ALToolbar.aspx">알툴바</a></li>
+                    <li><a id="ctl00_GlobalMenu1_hl_downloadALPDF" href="/Download/ALPDF.aspx">알PDF</a></li>
+                    <li><a id="ctl00_GlobalMenu1_hl_downloadRansomshield" href="/Download/RansomShield.aspx">랜섬쉴드 PC</a></li>
+                    <li><a id="ctl00_GlobalMenu1_hl_downloadALYac" href="/Download/ALYac.aspx">알약</a></li>
+                    <!-- <li><a id="ctl00_GlobalMenu1_hl_downloadALYacExploit" href="/Download/ALYacExploitShield.aspx">알약 익스플로잇 쉴드</a></li> -->
+                    <li><a id="ctl00_GlobalMenu1_hl_downloadALCapture" href="/Download/ALCapture.aspx">알캡처</a></li>
+                    <li><a id="ctl00_GlobalMenu1_hl_downloadALDrive" href="/Download/ALDrive.aspx">알드라이브</a></li>
+                    <li><a id="ctl00_GlobalMenu1_hl_downloadALKeeper" href="/Download/ALKeeper.aspx">알키퍼</a></li>
+                </ul>
+                
+            </li>
+            <li>
+                <a id="ctl00_GlobalMenu1_hl_mobile" href="../Mobile">모바일</a>
+            </li>
+            <li>
+                <a href="http://blog.altools.co.kr" target="_blank">알툴즈 <span class="ls0">BLOG</span></a>
+            </li>
+            <li>
+                <a id="ctl00_GlobalMenu1_hl_support" href="../Support">고객센터</a>
+            </li>
+            <li><a id="ctl00_GlobalMenu1_hl_buy" href="../buy/default.aspx" target="_blank">
+                <img src="https://images.altools.co.kr/altoolsRenewal/icon_header_buy.png" alt="구매" class="ico" />구매</a></li>
+        </ul>
+    
+    
+    
+        <h2 class="blind">현재위치</h2>
+        <span id="ctl00_GlobalMenu1_sitemappath" class="loca"><a href="#ctl00_GlobalMenu1_sitemappath_SkipLink"><img alt="탐색 건너뛰기 링크" height="0" width="0" src="/WebResource.axd?d=PhneG3cHh0J2e5HAx6WJ5PLInta3sRnYYSawgJsQqdp2eJJ9lOMlN-uuYP-Ty2BMnC5RcZN6C9wkBE663vx-_iz4GKk1&amp;t=635676767678198750" style="border-width:0px;" /></a><span><a title="메인페이지" href="/Main/Default.aspx">홈</a></span><span class="arrow"> &gt; </span><span><a href="/Download/">다운로드</a></span><span class="arrow"> &gt; </span><span>알집</span><a id="ctl00_GlobalMenu1_sitemappath_SkipLink"></a></span>
+</div>
+<!-- header end-->
+
+        <div id="content" class="content_wrap">
+            
+<div class="top_content">
+    <div class="al_img"><img src="https://images.altools.co.kr/altoolsRenewal/icon_1.gif" alt ="알집 10.88"/></div>
+    <div class="al_info">
+    <h2 class="title">
+        <img src="https://images.altools.co.kr/altoolsRenewal/h2_1.gif" alt="알집 10.88"/><span>10.88</span>
+        <span class="subtitle">전국민 압축프로그램</span>
+        <img id="ctl00_ContentPlaceHolder1_img_new" class="new2" src="https://images.altools.co.kr/altoolsRenewal/icon_new_2.png" alt="new" style="border-width:0px;" />
+    </h2>
+        <div class="info_txt">
+            <dl>
+                <dt>등록일</dt>
+                <dd class="ls0">2019.03.28</dd>
+                <dt class="ls0">Uninstall</dt>
+                <dd>지원</dd>
+                <dt>파일크기</dt>
+                <dd class="ls0">14.5MB</dd>
+            </dl>
+            <dl>
+                <dt>운영체제</dt>
+                <dd class="ls0">XP, Vista(32/64bit), 7(32/64bit), 8(32/64bit),10(32/64bit)</dd>
+            </dl>
+            <dl>
+                <dt>사용환경</dt>
+                <dd><span class="ls0">Intel Pentium 4 1.3GHz 이상</span></dd>
+            </dl>
+        </div>
+        <a href="#n" class="btn_more zip" style="display:none"><img src="https://images.altools.co.kr/altoolsRenewal/btn_more.gif" alt="더보기"/></a>
+        <!-- PC사용환경 레이어 팝업 start -->
+        <div class="ly_pc_envir" style="display:none">
+            <div class="ly_head pc">
+                <h2>알집 <span class="ls0">PC</span> 사용환경</h2>
+                <a href="#n" class="close"><img src="https://images.altools.co.kr/altoolsRenewal/btn_ly_more_close.gif" alt="레이어 팝업 닫기" /></a>
+            </div>
+            <div class="ly_content_pc">
+                <table>
+                    <caption>알집 PC 사용환경</caption>
+                    <colgroup>
+                        <col class="list" />
+                        <col class="spec" />
+                        <col class="spec" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col" class="list">항목</th>
+                            <th scope="col">최소사양</th>
+                            <th scope="col">권장사양</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><span class="ls0">CPU</span></th>
+                            <td><span class="ls0">Intel Pentium 150MHz</span> 이상</td>
+                            <td><span class="ls0">Intel PentiumⅡ 400MHz</span> 이상</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><span class="ls0">RAM</span></th>
+                            <td><span class="ls0">32MB</span></td>
+                            <td><span class="ls0">128MB</span> 이상</td>
+                        </tr>   
+                        <tr>
+                            <th scope="row"><span class="ls0">HDD</span></th>
+                            <td><span class="ls0">10MB</span></td>
+                            <td><span class="ls0">20MB</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><span class="ls0">VGA</span></th>
+                            <td><span class="ls0">800x600 256Color</span> 이상</td>
+                            <td><span class="ls0">1024x768 16bit</span> 이상</td>
+                        </tr>   
+                        <tr>
+                            <th scope="row"><span class="ls0">OS</span></th>
+                            <td colspan ="2"><span class="ls0">Microsoft Windows 2000, XP, Vista(32/64bit), 7(32/64bit), 8(32/64bit)</span></td>                       
+                        </tr>                                                                     
+                    </tbody>
+                </table>
+                <ul>
+                    <li>- 단, <span class="ls0">Internet Explorer</span>는 <span class="orange">5.01 이상</span>이 설치되어야 합니다.</li>
+                    <li>- <span class="ls0">windows</span>의 관리자 계정이 아닌경우 일부기능에 제한이 있을 수 있습니다.</li>
+                    <li class="txt_indent">- 알툴즈 제품은 최소 요구 사양의 <span class="ls0">PC</span>에서도 충분히 작동할 수 있도록 설계되었습니다.<br />  그러나 더 많은 작업을 더욱 빠르게 진행하길 원하신다면 권장 요구 사양 이상의 <span class="ls0">PC</span>를 사용하시기 바랍니다. </li>
+                </ul>
+            </div>
+        </div> 
+        <!-- PC사용환경 레이어 팝업 end -->           
+            
+        <ul class="quick_link">
+            
+
+<script language="javascript" type="text/javascript">	
+    function snsBtnClick(snsType) {                
+        switch(snsType)
+        {
+            case 'Twitter':
+                window.open('http://twitter.com/intent/tweet?text=%5B%EC%95%8C%ED%88%B4%EC%A6%88%5D%20%EC%95%8C%EC%A7%91%31%30%2E%38%38&url=http%3a%2f%2fgoo.gl%2ft3U4Pw&hashtags=ALTOOLS');                
+                break;
+            case 'FaceBook':
+                window.open('http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.altools.co.kr%2fdownload%2falzip.aspx');
+                break;
+        }                          
+        return false;
+    }
+    
+</script>
+
+    <li class="link1"><a onclick="return snsBtnClick('FaceBook');" id="ctl00_ContentPlaceHolder1_snsLink_lbtn_FacebookBtn" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$snsLink$lbtn_FacebookBtn','')">
+        <span class="blind">facebook 바로가기</span></a></li>
+    <li class="link2"><a onclick="return snsBtnClick('Twitter');" id="ctl00_ContentPlaceHolder1_snsLink_lbtn_TwitterBtn" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$snsLink$lbtn_TwitterBtn','')">
+        <span class="blind">twitter 바로가기</span></a></li>
+
+ 
+        </ul>          
+    </div>
+    <div class="btn_area">
+        <a href="javascript:sendEventToGA('01_Download','0102_Product_Click','010202_Alzip',function(){ALToolsDownload('ALZip','10.88','http://advert.estsoft.com/?event=200803276378987','1');})" class="install_1" id="A1"><span class="blind">설치하기</span></a>
+        <a href="http://advert.estsoft.com/?event=200811052105965" target="_blank""><img src="https://images.altools.co.kr/altoolsRenewal/btn_onhelp.gif" alt="온라인 도움말"  /></a>
+        <a href="../Support/Faq.aspx?menu=altools&cate=1&product=alzip" class="faq"><img src="https://images.altools.co.kr/altoolsRenewal/btn_faq.gif" alt="FAQ" /></a>
+        <a href="../Support/License.aspx" class="btn_license"><img src="https://images.altools.co.kr/altoolsRenewal/btn_license.gif" alt="라이선스 안내" /></a>
+    </div>        
+</div>
+<!-- top content end -->
+<!-- main content start -->
+<div class="main_content">
+    <!--소개 start-->
+    <h3 class="tab_3_1"><a href="#n" onclick="sendOneEventToGA('05_Product_SNB_Section','0501_Introduction_Click','050101_Alzip')">소개</a></h3>
+    <div class="ctnt tab1_cont" style="display:none">
+        <h4>알집은?</h4>
+        <p>다양한 압축파일 포맷 지원으로 파일 압축하기와 압축풀기에 뛰어난 무료 압축프로그램입니다.<br/>편리하고 강력한 알집의 기능들을 마음껏 활용해 보시기 바랍니다.</p>
+        <div class="info_banner_area">
+            <ul class="bann_nav">
+                <li class="on"><a href="#n" class="btn_png"><span class="blind">배너1</span></a></li>
+                <li><a href="#n" class="btn_png"><span class="blind">배너2</span></a></li>
+            </ul>
+			<ul class="info_bann_img">
+                <li><a href="../Brand/Alzip" target="_blank"><img src="https://images.altools.co.kr/altoolsRenewal/img_1_1_2.jpg" alt="모바일에서도 역시 알집! 압축은 기본! 이제 내 폰의 모든 파일은 알집으로 쉽게 관리하세요. - 안드로이드/아이폰 지원"></a></li>
+                <li style="display:none"><a href="javascript:showSubDescription('#wide_action')"><img src="https://images.altools.co.kr/altoolsRenewal/img_1_1_1.jpg" alt="NEW! Windows8 정식지원 - 윈도우8에 최적화 된 알집을 만나보세요!"></a></li>
+            </ul>    
+            <a href="#n" class="bann_btn"><span class="blind">이전 배너보기</span></a>
+            <a href="#n" class="bann_btn last"><span class="blind">다음 배너보기</span></a>
+        </div>
+        <h4 class="h4_space">주요 기능</h4>
+        <ul class="func_detail main_function" data-event-category="06_Scroll_Traking" data-event-action="0601_Scroll" data-event-label="060102_Alzip">
+            <li class="dtl_01 odd">
+                <img src="https://images.altools.co.kr/altoolsRenewal/icon_1_1_1.gif" alt="윈도우8 32/64bit OS 지원" class="func_img" />
+                <a href="javascript:showSubDescription('#wide_action')" class="info">
+                    <dl>
+                        <dt>
+                            윈도우<span class="ls0">10 32/64bit OS</span> 지원<img src="https://images.altools.co.kr/altoolsRenewal/icon_new.png" alt="새로운 기능"/>
+                        </dt>
+                        <dd>윈도우<span class="ls0">10</span> 에서도 안정성 있게 완벽 지원하며, 다양한 <span class="ls0">OS</span>에서도 사용하실 수 있는 무료 압축 유틸리티입니다.</dd>
+                    </dl>
+                </a>
+                <a href="javascript:showSubDescription('#wide_action')" class="more_org">자세히 보기</a>
+            </li>
+            <li class="dtl_02">
+                <img src="https://images.altools.co.kr/altoolsRenewal/icon_1_1_2.gif" alt="멀티코어 압축하기 지원" class="func_img" />
+                <a href="javascript:showSubDescription('#strong_compress')" class="info">
+                    <dl>
+                        <dt>
+                            멀티코어 압축하기 지원<img src="https://images.altools.co.kr/altoolsRenewal/icon_new.png" alt="새로운 기능"/>
+                        </dt>
+                        <dd>ZIP 새로압축 시 멀티코어 <span class="ls0">CPU</span>를 사용하여 더욱 빠르게 압축할 수 있습니다.</dd>
+                    </dl>
+                </a>
+                <a href="javascript:showSubDescription('#strong_compress')" class="more_org">자세히 보기</a>
+            </li>                
+            <li class="dtl_03 odd">
+                <img src="https://images.altools.co.kr/altoolsRenewal/icon_1_1_3.gif" alt="40여개의 다양한 포맷 지원" class="func_img" />
+                <a href="javascript:showSubDescription('#wide_action')" class="info">
+                    <dl>
+                        <dt>40여개의 다양한 포맷 지원</dt>
+                        <dd>다양한 파일의 압축하기와 압축풀기를 할 수 있는 <span class="ls0">ZIP, EGG, ALZ</span> 등 40여 개의 다양한 압축 포맷을 지원합니다.</dd>
+                    </dl>
+                </a>
+                <a href="javascript:showSubDescription('#wide_action')" class="more_org">자세히 보기</a>
+            </li>
+            <li class="dtl_04">
+                <img src="https://images.altools.co.kr/altoolsRenewal/icon_1_1_4.gif" alt="친절한 윈도탐색기 연동 기능" class="func_img" />
+                <a href="javascript:showSubDescription('#window_search')" class="info">
+                    <dl>
+                        <dt>친절한 윈도탐색기 연동 기능</dt>
+                        <dd>마우스 오른쪽 버튼을 이용하여 압축파일 리스트 확인 등 대부분의 압축 기능을 바로 이용 할 수 있습니다.</dd>
+                    </dl>
+                </a>
+                <a href="javascript:showSubDescription('#window_search')" class="more_org">자세히 보기</a>
+            </li>
+            <li class="dtl_05 odd">
+                <img src="https://images.altools.co.kr/altoolsRenewal/icon_1_1_5.gif" alt="진화된 새로압축" class="func_img" />
+                <a href="javascript:showSubDescription('#conv_func')" class="info">
+                    <dl>
+                        <dt>진화된 새로압축</dt>
+                        <dd>기존에 여기저기 흩어져 있는 파일을 모아 압축하기 번거로우셨죠? ‘새로압축’ 창을 통해 간편하게 파일 압축하기 가능!</dd>
+                    </dl>
+                </a>    
+                <a href="javascript:showSubDescription('#conv_func')" class="more_org">자세히 보기</a>
+            </li>
+            <li class="dtl_06">
+                <img src="https://images.altools.co.kr/altoolsRenewal/icon_1_1_6.gif" alt="차세대 포맷 EGG" class="func_img" />
+                <a href="javascript:showSubDescription('#egg_format')" class="info">
+                    <dl>
+                        <dt>차세대 포맷 <span class="ls0">EGG</span></dt>
+                        <dd>알집에서 선보인 강력한 기능의 똑똑한 차세대 포맷 <span class="ls0">EGG</span>의 장점과 특징을 확인 해 볼까요?</dd>
+                    </dl>
+                </a>
+                <a href="javascript:showSubDescription('#egg_format')" class="more_org">자세히 보기</a>
+            </li>
+            <li class="dtl_07 odd">
+                <img src="https://images.altools.co.kr/altoolsRenewal/icon_1_1_7.gif" alt="업그레이드 된 암호화" class="func_img" />
+                <a href="javascript:showSubDescription('#var_func_zip')" class="info">
+                    <dl>
+                        <dt>업그레이드 된 암호화</dt>
+                        <dd><span class="ls0">LEA</span> 암호화 방식 지원으로 보다 빠르고 강화된 수준의 보안성을 제공합니다.</dd>
+                    </dl>
+                </a>
+                <a href="javascript:showSubDescription('#var_func_zip')" class="more_org">자세히 보기</a>
+            </li>
+            <li class="dtl_08">
+                <img src="https://images.altools.co.kr/altoolsRenewal/icon_1_1_8.gif" alt="유니코드 지원" class="func_img" />
+                <a href="javascript:showSubDescription('#deal_global')" class="info">
+                    <dl>
+                        <dt>유니코드 지원</dt>
+                        <dd>유니코드 형태의 파일명을 손실 없이 읽고 쓰거나 압축할 수 있습니다.</dd>
+                    </dl>
+                </a>
+                <a href="javascript:showSubDescription('#deal_global')" class="more_org">자세히 보기</a>
+            </li>                                       
+        </ul>
+        <h4 class="h4_space f_size"><span class="ls0">EGG</span> 포맷 및 해제모듈 관련 안내</h4>
+        <a href="../Support/License.aspx?menu=egg" class="egg"><span class="ls0">EGG</span> 라이선스 자세히 보기</a>
+        <p>(주)이스트소프트의 제품을 통해 배포된 포맷 및 포맷과 관련한 기술 및 아이디어는 (주)이스트소프트의 자산이므로 관련된 내용을<br />상업적 용도로 이용하려면 (주)이스트소프트로부터 사전에 승인을 받아 라이선스를 취득하여야 합니다.<br />자세한 내용은 아래의 <span class="orange"><span class="ls0">EGG</span> 포맷 관련 명세 및 압축해제(<span class="ls0">UnEgg/UnAlz</span>) 모듈(라이선스 정책 문서 포함)을 다운</span>받아 확인하시기 바랍니다.</p>
+        <a href="http://advert.estsoft.com/?event=200910281124692" class="btn_28"><span class="bg_28"><span class="ls0">EGG</span> 포맷 명세</span></a>
+        <a href="http://advert.estsoft.com/?event=200910288850740" class="btn_28"><span class="bg_28">해제모듈 (<span class="ls0">32bit / 64bit</span>)</span></a>
+        <a href="http://advert.estsoft.com/?event=201104265462814" class="btn_28"><span class="bg_28"><span class="ls0">UnEGG</span>소스코드 (리눅스용)</span></a>
+        <a href="http://advert.estsoft.com/?event=201203271910156" class="btn_28"><span class="bg_28"><span class="ls0">UnEgg</span> 안드로이드 활용 샘플</span></a>
+    </div>           
+    <!--소개 end-->
+    <!--주요기능 start-->
+    <h3 class="tab_3_2"><a href="#n" onclick="sendOneEventToGA('05_Product_SNB_Section','0502_Function_Click','050201_Alzip')">주요기능</a></h3>
+    <div style="display:none" class="ctnt tab2_cont">
+        <ul class="tab_snb">
+            <li class="first"><a href="#wide_action" class="on">폭 넓은 대응능력</a></li>
+            <li><a href="#strong_compress">강력한 압축/해제 기능</a></li>
+            <li><a href="#conv_func">꼼꼼한 편의기능</a></li>
+            <li><a href="#window_search" class="win_s">친절한 윈도탐색기 연동 기능</a></li>
+            <li><a href="#var_func_zip">다양한 부가기능</a></li>
+            <li><a href="#deal_global">글로벌 환경에 대응</a></li>
+            <li><a href="#egg_format">알집 <span class="ls0">EGG</span>포맷에 관하여</a></li>
+        </ul>            
+        <div class="tab_content" id="wide_action" style="display:block">
+            <div class="tab_title">
+                <h4>폭 넓은 대응능력</h4>
+                <p class="intro_txt">다양한 <span class="ls0">OS</span>와 포맷을 지원하는 알집. 전 세계적으로 사용되고 있는 다양한 압축포맷 지원은 물론 다양한 OS 지원까지.<br />알집은 최적의 멀티 압축 유틸리티 프로그램입니다.</p>
+                <a href="http://advert.estsoft.com/?event=200811052105965" target="_blank" class="on_help">온라인 도움말</a>
+            </div>
+            <h5>다양한 <span class="ls0">OS</span>지원</h5>
+            <p>다양한 <span class="ls0">OS</span>를 지원합니다. 윈도우 <span class="ls0">Vista, XP, 7, 8</span>에서는 물론 윈도우 <span class="ls0">10</span>에서도 정상 작동합니다.</p>
+            <h5 class="mgt_tit">다양한 포맷 지원</h5>
+            <p>40여 개의 다양한 포맷을 지원합니다.</p>
+            <ul class="mgt_txt">
+                <li><span class="orange">[압축 가능한 포맷]</span><br /><span class="ls0">EGG, ALZ, ZIP, TAR, TBZ, TGZ, LZH, JAR</span></li>
+                <li><span class="orange">[해제 가능한 포맷]</span><br /><span class="ls0">EGG, ALZ, ARC, ARJ, B64, BH, BHX, BIN, BZ, BZ2, CAB, EAR, ENC, GZ, HA, HQX, ICE, IMG, ISO, JAR,<br /> LCD, LHA, LZH, MIM, NRG, PAK, RAR, TAR, TBZ, TBZ2, TGZ, UUE, UU, WAR, XXE, Z, ZIP, ZOO, 7Z</span></li>
+            </ul>
+            <h5 class="mgt_tit">더욱 견고해진 안정성</h5>
+            <p>이스트소프트의 축적된 기술력으로 안정성을 보다 끌어올렸습니다.</p>
+            <h5 class="mgt_tit"><span class="ls0">CD</span>이미지 포맷 지원</h5>
+            <p><span class="ls0">ISO, BIN, LCD, IMG, NRG</span>등 다양한 <span class="ls0">CD</span>이미지를 지원함은 물론, 대용량 <span class="ls0">ISO</span>이미지도 지원합니다.</p>
+            <p class="refer mgt_tit">* 알집 <span class="ls0">v6.0</span> 이후 버전에서 지원하는 <span class="ls0">7z</span> 파일형식의 압축해제 기능은 GNU LGPL(<span class="ls0">Library General Public - License</span>)규약을 준수합니다.<br />이에 따라 관련 소스코드를 알툴즈 홈페이지에 공개하고 다운로드 받을 수 있도록 하고 있습니다.<a href="http://sdn.altools.co.kr/etc/7Zip_for_ALZip.zip">소스다운로드 : <span class="ls0">ALZip7Zip</span></a></p>                    
+        </div>
+        <div class="tab_content" id="strong_compress" style="display:none"> 
+            <div class="tab_title">
+            <h4>강력한 압축/해제 기능</h4>
+                <p class="intro_txt">솔리드 압축으로 더욱 강력하게! 분할압축은 억!소리나게!<br />빠른 압축 속도와 편리한 분할 압축을 지원하고 있는 통합 압축 관리 프로그램입니다.</p>
+                <a href="http://advert.estsoft.com/?event=200811052105965&unique=41" target="_blank" class="on_help">온라인 도움말</a>
+            </div>
+            <h5>안전한 대용량 파일 압축</h5>
+            <p><span class="ls0">2GB, 4GB</span> 등 대용량 파일의 압축도 문제가 없습니다.<br />초고속 인터넷과 하드용량의 비약적인 발전에 따라 기가(<span class="ls0">GB</span>)급 대용량 파일이 흔해진 컴퓨터 환경에서 용량 걱정 없이 척척 압축할 수 있습니다.</p>
+            <h5 class="mgt_tit">강력한 솔리드 압축</h5>
+            <p>솔리드 압축을 통해 더 높은 압축률을 제공합니다.<br />솔리드 압축이란 파일단위로 압축하는 기존 방식과 달리 모든 파일을 한 개의 파일인 것처럼 연결한 후 압축하는 방법으로 유사한 내용의 파일이 많거나 작은 파일을 다수 압축할 경우 월등한 압축 성능을 보여줍니다.<img src="https://images.altools.co.kr/altoolsRenewal/img_1_2_2_1.gif" alt="강력한 솔리드 압축" class="at_bp"/></p>
+            <h5>멀티코어 압축</h5>
+            <p>멀티코어를 사용하여 빠른 파일 압축이 가능 합니다.<br /><span class="ls0">ZIP</span>새로압축 시, 알집 9.0부터 추가 된 멀티코어를 사용한 파일 압축 방식을 이용하면 더욱 빠르게 압축할 수 있습니다.<img src="https://images.altools.co.kr/altoolsRenewal/img_1_2_2_2.gif" alt="멀티코어 압축" class="at_bp"/> </p>    
+            <h5>넉넉한 분할압축</h5>
+            <p>42억개까지 분할압축이 가능합니다. 분할 압축에 사실상 제약이 사라지게 되어 분할 압축 시 고민이 필요 없습니다.</p> 
+            <h5 class="mgt_tit">빠른 속도와 높은 압축률</h5>
+            <p>더욱 빨라진 압축속도와 강력한 압축률을 제공합니다.</p>         
+            <h5 class="mgt_tit">분할 및 병합</h5>
+            <p>간편하게 파일을 분할하거나 분할된 파일을 합칠 수 있습니다. <img src="https://images.altools.co.kr/altoolsRenewal/img_1_2_2_3.gif" alt="분할 및 병합" class="at"/> </p>
+        </div>
+        <div class="tab_content" id="conv_func" style="display:none">
+            <div class="tab_title">
+                <h4>꼼꼼한 편의기능</h4>
+                <p class="intro_txt">새로압축, 분할압축, 검색 및 필터 등 알집을 더 똑똑하게 사용 하는 방법!<br />컴퓨터 초보자에서부터 전문가까지 쉽고 빠르게 사용할 수 있는 편리한 환경을 제공합니다.</p>
+                <a href="http://advert.estsoft.com/?event=200811052105965&unique=42" target="_blank" class="on_help">온라인 도움말</a>
+            </div>
+            <h5>진화된 ”새로 압축하기”</h5>
+            <p>여러 경로의 파일들을 손쉽게 조합하여 한꺼번에 압축할 수 있습니다.<br />기존에 여기저기 흩어져 있는 파일을 한데 모아 압축하기 위해 했던 번거로운 작업이 사라집니다.<br />“새로압축” 창을 통해 간단히 파일을 추가/삭제하여 손쉬운 압축이 가능합니다.  <img src="https://images.altools.co.kr/altoolsRenewal/img_1_2_3_1.gif" alt="진화된 ”새로 압축하기”" class="at_bp" /></p>
+            <h5>강력한 분할압축</h5>
+            <p>제공되는 템플릿으로 간편하게 분할하거나 원하는 크기로 분할하여 압축할 수 있습니다.<br />원하는 크기 및 대용량 분할 압축을 지원하는 것은 물론 아래의 탬플릿처럼 웹 작업이나 CD/DVD 버닝에 맞는 옵션을 제공하여 편리함이 배가되었습니다. <img src="https://images.altools.co.kr/altoolsRenewal/img_1_2_3_2.gif" alt="강력한 분할압축" class="at_bp"/>  </p> 
+            <h5>파일 추천</h5>
+            <p>압축 해제한 파일들의 내용에 따라 사용자의 다음 동작을 예측하여 실행할 파일을 추천해 줍니다.<br />압축 해제 결과창에 일반적으로 사용자들이 자주 사용하는 파일들을 필터링하여 보여줌으로써 사용자의 귀중한 시간을 절약해 줍니다. <img src="https://images.altools.co.kr/altoolsRenewal/img_1_2_3_3.gif" alt="파일 추천" class="at_bp"/> </p>
+            <h5>자동 압축 풀림 파일로 압축하기</h5>
+            <p>압축 프로그램 없이 압축풀기가 가능한 파일로 만들 수 있습니다.</p> 
+            <h5 class="mgt_tit">검색 및 필터</h5>    
+            <p>검색 및 필터 기능을 통해 압축파일 내부를 빠르게 검색하고 분류할 수 있습니다.<br />압축파일 내의 수많은 목록을 검색 및 필터링하여 원하는 대로 보여주고 빨리 찾아낼 수 있습니다. <img src="https://images.altools.co.kr/altoolsRenewal/img_1_2_3_4.gif" alt="검색 및 필터" class="at"/> </p>
+        </div>
+        <div class="tab_content" id="window_search" style="display:none">
+            <div class="tab_title">
+                <h4>친절한 윈도탐색기 연동 기능</h4>
+                <p class="intro_txt">알집을 실행하지 않고도 간편하게 알집의 주요기능을 사용 할 수 있습니다.<br />마우스 오른쪽 버튼을 이용하여 압축파일 리스트확인 등 알집의 주요 기능들을 바로 이용 할 수 있는 유용한 기능입니다.</p>
+            </div>
+            <h5>스피드 한 작업 지원</h5>
+            <p>윈도탐색기에서 마우스 오른쪽 버튼을 이용하여 대부분의 압축 기능을 바로 이용할 수 있습니다.</p>
+            <h5 class="mgt_tit">압축파일 내부 미리보기 지원</h5>
+            <p>윈도탐색기에서 마우스 오른쪽 버튼 메뉴를 통해 압축파일 리스트를 미리 확인할 수 있습니다.<br />알집을 실행하지 않고도 마우스 오른쪽 버튼을 이용해서 압축파일 내부를 미리 들여다 볼 수 있어 불필요한 실행이나 해제 작업을 생략할 수 있습니다.<img src="https://images.altools.co.kr/altoolsRenewal/img_1_2_4_1.gif" alt="압축파일 내부 미리보기 지원" class="at_bp"/></p> 
+            <h5>폴더/파일 별 작업 지원</h5>
+            <p>폴더/파일 별로 각각 압축하기와 다수 파일 연속해제 기능을 제공합니다.<br />기존에 지원하던 ‘각각 폴더명으로 압축풀기’에 추가하여 ‘각각 폴더명으로 압축하기’와 ‘각각 파일명으로 ‘압축하기’ 기능이 추가되어 무의미한 단순반복 작업이 사라졌습니다.<img src="https://images.altools.co.kr/altoolsRenewal/img_1_2_4_2.gif" alt="폴더/파일 별 작업 지원" class="at_bp"/></p>
+            <h5>차세대 OS의 관리자 권한 대응</h5>
+            <p>Vista 이상 운영체제에서는 관리자 권한으로 압축하기 및 해제하기를 지원합니다.<br />Vista 이상의 OS에서 관리자의 접근 권한이 필요한 폴더나 파일에 대한 압축 및 해제 작업이 가능하도록 도와주어 최신 OS에서도 아무 불편 없이 사용이 가능합니다.<img src="https://images.altools.co.kr/altoolsRenewal/img_1_2_4_3.gif" alt="자동 압축 풀림 파일로 압축하기" class="at_bp"/></p> 
+            <h5 class="mgt_tit">자동 압축 풀림 파일로 압축하기</h5>
+            <p>압축 프로그램 없이 압축풀기가 가능한 파일로 만들 수 있습니다.</p>
+            <h5 class="mgt_tit">업그레이드 된”새”폴더</h5>
+            <p>새로운 추가된 새(鳥) 폴더를 만나실 수 있습니다.</p> 				                                                                                      
+        </div>
+        <div class="tab_content" id="var_func_zip" style="display:none">
+            <div class="tab_title">
+                <h4>다양한 부가기능</h4>
+                <p class="intro_txt">암호화, 바이러스 검사, 복구기능 등 여러가지 부가 기능을 제공합니다.<br />알집을 사용자 <span class="ls0">PC</span>에 설치된 백신을 통해 압축파일 안에 바이러스가 포함되어 있는지 검사 할 수 있고,<br /> 압축파일이 정상인지 확인하는 기능으로 압축파일의 오류를사전에 점검 하는 등 압축/해제 외에도<br />여러가지 부가기능들을 제공하고 있습니다.</p>
+                <a href="http://advert.estsoft.com/?event=200811052105965&unique=56" target="_blank" class="on_help">온라인 도움말</a>
+            </div>
+            <h5>압축 해제 후 바이러스 검사 기능</h5>
+            <p>압축 해제 후 바이러스 검사를 수행할 수 있습니다. 알약 사용 시 간편하게 연결이 가능합니다.<br />사용자 <span class="ls0">PC</span>에 설치된 백신을 통해 압축 해제 시 자동 또는 수동으로 검사할 수 있어 압축파일로부터 감염될 수 있는 바이러스나 악성코드의 원천 차단이 가능합니다.<img src="https://images.altools.co.kr/altoolsRenewal/img_1_2_5_1.gif" alt="압축파일 내부 미리보기 지원" class="at_bp"/></p>
+
+            <h5>업그레이드된 암호화</h5> 
+            <p><span class="ls0">LEA</span> 암호화 방식 지원으로 보다 빠르고 강화된 수준의 보안성을 제공합니다.<br />기존 <span class="ls0">ZIP2.0, AES 128bit/256bit</span> 알고리즘에 <span class="ls0">LEA(Lightweight Encryption Algorithm)128bit/256bit</span> 가 추가되어 더욱 고도화된 암호를 적용할 수 있습니다.<img src="https://images.altools.co.kr/altoolsRenewal/img_1_2_5_2.gif" alt="업그레이드된 암호화" class="at_bp"/></p>
+
+            <h5>기본 메일 클라이언트 연동</h5>
+            <p>간편하게 파일을 메일에 첨부할 수 있습니다.</p>
+            <h5 class="mgt_tit">분리된 커맨드라인 지원</h5>
+            <p>완벽한 <span class="ls0">Console</span> 지원을 통해 서버환경 또는 일괄작업에 강력합니다.<br />알집 프로그램을 실행하지 않아도 명령 프롬프트 창에서 커맨드라인 명령문을 이용하여 압축/해제 및 기타 작업을 할 수 있습니다.</p>
+            <h5 class="mgt_tit">강력해진 복구기능</h5>
+            <p>복구 기능이 더욱 강력해 졌습니다. 파일 내부에서 복구 가능한 모든 부분을 검출합니다.</p>		                                                                                      
+        </div>
+        <div class="tab_content" id="deal_global" style="display:none">
+            <div class="tab_title">
+                <h4>글로벌 환경에 대응</h4>
+                <p class="intro_txt">상황별로 언어변환 기능을 이용 할 수 있습니다.<br />유니코드를 지원하지 않는 압축형식을 이용해서 압축된 경우, 압축파일이 생성된 <span class="ls0">OS</span>언어환경에 따라<br />파일목록이 비정상적으로 나오는 문제를 알집의 언어변환기능을 통해 해결 할 수 있습니다.</p>
+                <a href="http://advert.estsoft.com/?event=200811052105965&unique=55" target="_blank" class="on_help">온라인 도움말</a>
+            </div>
+            <h5>유니코드 지원</h5>
+            <p>유니코드 형태의 파일명을 손실 없이 읽고, 쓰고, 압축할 수 있습니다.</p>
+            <h5 class="mgt_tit">똑똑한 다국어 압축</h5>
+            <p>유니코드를 지원하지 않는 포맷의 경우 자동으로 압축 당시의 <span class="ls0">OS</span> 언어정보를 저장하며 해제 시에는 저장된 언어정보를 사용하여 압축 및 해제합니다. 유니코드를 지원하지 않는 포맷이라도 알집에서 압축하면 <span class="ls0">OS</span>의 언어정보를 저장해 두었다가, 알집으로 압축 해제 시 자동으로 언어정보를 확인하여 풀어줍니다.</p>
+            <h5 class="mgt_tit">간편한 언어변환</h5>
+            <p>유니코드를 지원하지 않는 포맷은 손쉽게 언어변환을 통해 파일명/코멘트 손실 없이 압축 및 해제할 수 있습니다.<img src="https://images.altools.co.kr/altoolsRenewal/img_1_2_6_1.gif" alt="간편한 언어변환" class="at" /></p>
+        </div>
+        <div class="tab_content" id="egg_format" style="display:none">
+            <div class="tab_title">
+                <h4>알집 <span class="ls0">EGG</span>포맷에 관하여</h4>
+                <p class="intro_txt">여러분의 성원과 사랑에 힘입어 알집에서 강력한 기능의 차세대 포맷을 선 보입니다.<br />지금부터 <span class="ls0">EGG</span>포맷의 장점과 특징을 확인해 보시기 바랍니다.</p>
+            </div>
+            <h5><span class="ls0">EGG</span> 포맷은 <span class="orange">확장성</span>과 <span class="orange">호환성</span>을 지향하는 포맷입니다.</h5>
+            <ul>
+                <li>- 미래의 확장에 대비하여 추가적인 정보를 담을 수 있는 구조로 설계되었습니다.</li>
+                <li>- 포맷이 개선되거나 확장되어도 기존에 출시된 버전이 기본적인 동작을 하는데 무리가 없도록 설계되었습니다.</li>
+                <li>- 기능이 확장되어도 포맷의 기본 구조를 변경할 필요가 없습니다.</li>
+            </ul>
+            <h5 class="mgt_tit">EGG 포맷은 <span class="orange">유니코드</span>를 지원합니다.</h5>
+            <ul>
+                <li>- <span class="ls0">UTF-8</span> 형태의 유니코드를 기본적으로 지원합니다.</li>
+                <li>- <span class="ls0">EGG</span> 포맷은 어떠한 언어의 <span class="ls0">OS</span>에서 압축을 하더라도 원본을 유지합니다.</li>
+                <li>- 유니코드 지원이 불가능한 플랫폼에 대비하여 언어정보를 포함하는 비 유니코드 형식을 지원합니다.</li>
+            </ul>
+            <h5 class="mgt_tit"><span class="ls0">EGG</span> 포맷은 <span class="orange">플랫폼으로부터 자유롭습니다.</span></h5>
+            <ul>
+                <li>- 대용량 압축 파일에 대응할 수 없는 플랫폼을 고려하여 내부적으로 분할하여 저장합니다.</li>
+				<li>- <span class="ls0">Mac, Linux</span> 등 다른 <span class="ls0">OS</span> 환경은 추후 지원 예정입니다.</li>
+            </ul>
+            <h5 class="mgt_tit"><span class="ls0">EGG</span> 포맷은 <span class="orange">똑똑</span>합니다.</h5>
+            <ul>
+                <li class="txt_indent">- 압축 효율이 높을 것으로 예상되는 파일은 압축률 위주로, 압축 효율이 낮을 것으로 예상되는 파일은 속도 위주로, 이미 압축된 파일은 압축 없이~ 더 효율적인 알고리즘을 자동으로 선택하여 압축하는 ‘최적압축’을 지원하기 때문에 <span class="ls0">EGG</span>포맷은 인터넷 환경에 최적화된 포맷입니다.</li>
+				<li class="mgt_txt txt_indent">- 하나의 파일도 다수의 블록으로 데이터를 분할하여 저장할 수 있으며, 블록 별로 최적화된 알고리즘을 적용하여 압축률을 높일 수 있습니다. 또한 블록으로 분할하여 저장 가능하므로 부분 압축해제가 가능합니다.</li>
+            </ul>  
+            <h5 class="mgt_tit"><span class="ls0">EGG</span> 포맷의 <span class="orange">다양한 부가기능과 옵션</span></h5>
+            <ul>
+                <li>- 무한 개의 파일로 분할압축이 가능합니다.</li>
+				<li>- 솔리드 압축을 지원합니다.&nbsp;&nbsp;<a id="showLayerEgg" href="#n" class="view_blue_s">솔리드 압축이란</a></li>
+				<li>- LEA 같은 높은 수준의 암호 알고리즘을 지원합니다.</li>
+            </ul>
+        </div>                                                                                                        
+        <p class="usage_info">㈜이스트소프트의 제품을 통해 배포된 포맷 및 포맷과 관련한 기술 및 아이디어는 ㈜이스트소프트의 자산이므로<br />관련된 내용을 상업적 용도로 이용하려면 ㈜이스트소프트로부터 라이선스를 취득하셔야 합니다. </p>
+    </div>   
+    <!-- 주요기능 end-->
+    <!-- 버전 히스토리 start-->
+    <h3 class="tab_3_3"><a href="#n">버전 히스토리</a></h3>
+    <div style="display:none" class="ctnt tab3_cont">
+        <input type="hidden" id="showHistory"/>
+        
+    <div class="history_con">
+        
+                <div class="version_div">
+                    <h4>알집 v10.88 공개용 출시!</h4>
+                    <p class="version_date">2019-03-28 오전 12:00:00</p>
+                    <ul>
+                        <li>### 알집 v10.88 ### - 추가된 기능 및 수정사항<br/>- 특정 파일 압축해제 오류 수정<br/>- 탐색영역 필터탭, 검색탭에서 파일 목록 나오도록 개선<br/>- 기타 버그 수정 및 안정성 강화</li>
+                    </ul>
+                </div>
+            
+                <div class="version_div">
+                    <h4>알집 v10.87 공개용 출시!</h4>
+                    <p class="version_date">2019-03-04 오전 12:00:00</p>
+                    <ul>
+                        <li>### 알집 v10.87 ### - 추가된 기능 및 수정사항<br/>- 명령 프롬프트 환경에 LNK 파일 경고 조건 추가<br/>- WinRAR 보안 취약점 대응으로 ACE 포맷 지원 종료</li>
+                    </ul>
+                </div>
+            
+                <div class="version_div">
+                    <h4>알집 v10.86 공개용 출시!</h4>
+                    <p class="version_date">2019-01-30 오전 12:00:00</p>
+                    <ul>
+                        <li>### 알집 v10.86 ### - 추가된 기능 및 수정사항<br/>- LNK 파일 경고 조건 강화<br/>- 압축파일 암호 설정 권장문구 추가<br/>- TAR 포맷 인식 오류 수정<br/>- 버그 수정 및 안정성 강화</li>
+                    </ul>
+                </div>
+            
+                <div class="version_div">
+                    <h4>알집 v10.85 공개용 출시!</h4>
+                    <p class="version_date">2019-01-10 오전 12:00:00</p>
+                    <ul>
+                        <li>### 알집 v10.85 ### - 추가된 기능 및 수정사항<br/>- ISO 원격코드 보안 강화</li>
+                    </ul>
+                </div>
+            
+                <div class="version_div">
+                    <h4>알집 v10.84 공개용 출시!</h4>
+                    <p class="version_date">2018-12-19 오전 12:00:00</p>
+                    <ul>
+                        <li>### 알집 v10.84 ### - 추가된 기능 및 수정사항<br/>- 버그 수정 및 안정성 강화<br/>- 최종 사용자 라이선스 동의 (EULA) 약관 업데이트 </li>
+                    </ul>
+                </div>
+                                                                                     
+    </div>
+    <div id="pageList" class="paging_nav">
+        <span id="ctl00_ContentPlaceHolder1_history_lblPage"><a href='#n' class='first on'>1</a><a href='/download/alzip.aspx?page=2'>2</a><a href='/download/alzip.aspx?page=3'>3</a><a href='/download/alzip.aspx?page=4'>4</a><a href='/download/alzip.aspx?page=5'>5</a><a href='/download/alzip.aspx?page=6' class='btn_list next'><span class='blind'>다음 목록 보기</span></a></span>
+	</div>	
+    </div>
+    <!-- 버전 히스토리 end-->
+
+    <div id="eggSolidLayer" style="position:absolute; top:0; left:0; display:none;">
+        <img src="../img/product/egg_pop_solid.gif" style="border:0;" alt="솔리드 압축" usemap="#Map" />
+        <map name="Map" id="Map"><area shape="rect" coords="420,353,471,379" href="javascript:CloseLayerEgg('eggSolidLayer');" alt="솔리드 압축" /></map>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+
+        var chash = window.location.hash;
+        if (chash && chash !== '#n') {
+            showSubDescription(chash);
+        }
+
+        $('#showLayerEgg').click(function (e) {
+            var divTop = $('#showLayerEgg').position().top - $('#eggSolidLayer').outerHeight() + 100;
+            var divLeft = $('#showLayerEgg').position().left + $('#eggSolidLayer').outerWidth() - 200;
+
+            $('#eggSolidLayer').css({
+                "top": divTop,
+                "left": divLeft,
+                "position": "absolute"
+            }).show();
+        });
+    });
+
+    function CloseLayerEgg(id) {
+        $('#' + id).hide();
+    }   
+
+</script>
+
+        </div>
+        
+<div class="right_banner">
+    <ul class="right_banner_area">
+        
+            <li>
+                <iframe title="알배너 메인" allowTransparency="true" frameborder="0" width="104" height="130" scrolling="no" src="https://ko-kr-albn.altools.com/albn?no=80420"></iframe>
+            </li>
+        
+        
+            <li>
+                <iframe id="alzipFrame" title="알배너 메인" allowTransparency="true" frameborder="0" width="104" height="104" scrolling="no" src="https://ko-kr-albn.altools.com/albn?no=80421"></iframe>
+            </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </ul>
+</div>
+
+
+        
+<div id="footer">
+    <div class="footer_wrap">
+        <p class="logo"><a href="http://www.estsoft.co.kr/" target="_blank" title="새창"><img src="https://images.altools.co.kr/altoolsRenewal/footer_logo.gif" alt="ESTsoft 로고"/></a></p>
+        <div class="footer_txt">
+            <div class="siteinfo">
+                <h2 class="blind">사이트이용정보</h2>
+                <ul>
+                    <li><a href="http://www.estsoft.co.kr/" title="새창" target="_blank">회사소개</a></li>
+                    <li><a href="/etc/Joint.aspx">제휴문의</a></li>
+                    <li><a href="http://ad.altools.co.kr/" title="새창" target="_blank">광고문의</a></li>
+                    <li><a href="/Member/Stipulation/Default.aspx">이용약관</a></li>
+                    <li><a href="/Member/Privacy/Default.aspx"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="/Member/EULA/Default.aspx">소프트웨어 사용권 계약서</a></li>
+                    <li><a href="/etc/ContactUs.aspx"><span class="ls0">Contact Us</span></a></li>
+                    <li><a href="/etc/Sitemap.aspx">사이트맵</a></li>
+                </ul>
+            </div>
+            <address><a href="http://www.estsoft.co.kr" target="_blank">(주)이스트소프트</a> 서울시 서초구 반포대로 3 이스트빌딩 (우)<span class="ls0">06711</span><br />대표이사:정상원 사업자등록번호 : <span class="ls0">229-81-03214</span>  통신판매업신고번호 : <span class="ls0">2011</span>-서울서초-<span class="ls0">1962</span>  <span class="ls0">TEL.1544-8209  FAX.02-882-1155 E-mail.</span> <a href="mailto:altools@estsoft.com" class="orange"><span class="ls0">altools@estsoft.com</span></a></address>
+            <div class="familysite">
+                <h2 class="blind">관련사이트</h2>
+                <ul>
+                    <li><a href="http://www.estsecurity.com/product/alyac" title="알약 바로가기" target="_blank"><img src="https://images.altools.co.kr/altoolsRenewal/footer_3.png" alt="알약 바로가기" /></a></li>  
+                     <li><a href="https://tmup.com/" title="팀업 바로가기" target="_blank"><img src="https://images.altools.co.kr/altoolsRenewal/footer_9.gif" alt="팀업 바로가기" /></a></li>                  
+                    <li><a href="http://www.estsecurity.com/product/internetdisk" title="인터넷디스크 바로가기" target="_blank"><img src="https://images.altools.co.kr/altoolsRenewal/footer_6.gif" alt="인터넷디스크 바로가기" /></a></li>
+                    <li><a href="http://www.estsecurity.com/product/securedisk" title="시큐어디스크 바로가기" target="_blank"><img src="https://images.altools.co.kr/altoolsRenewal/footer_7.gif" alt="시큐어디스크 바로가기" /></a></li>
+                    <li><a href="http://zum.com/" title="줌 바로가기" target="_blank"><img src="https://images.altools.co.kr/altoolsRenewal/footer_8.gif" alt="줌 바로가기" /></a></li>
+                    <li><a href="http://www.cabal.co.kr/" title="카발온라인 바로가기" target="_blank"><img src="https://images.altools.co.kr/altoolsRenewal/footer_1.gif" alt="카발온라인 바로가기" /></a></li>
+                    <li><a href="http://www.cabal2.co.kr/" title="카발2온라인 바로가기" target="_blank"><img src="https://images.altools.co.kr/altoolsRenewal/footer_2.gif" alt="카발2온라인 바로가기" /></a></li>                   
+                </ul>
+            </div>
+        </div>
+    </div>
+    <iframe title="다운로드" name="frmDown" id="frmDown" src="../blank.html" style="DISPLAY:none"></iframe> 
+</div>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2735421-7"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-2735421-7', {
+        'linker': {
+            'domains': ['altools.co.kr']
+        }
+    });
+</script>
+
+
+<!-- /js/est-ga.js GA스크립트(gtag.js)와 무관하게 참조한다  -->
+<script src="/js/est-ga.js?20180725"></script>
+
+
+<!--[if (!IE) | (gt IE 8)]><!-->
+<script>
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        }; if (!f._fbq) f._fbq = n;
+        n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
+        t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+    }(window,
+document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '1054595134574555');
+    fbq('track', "PageView");
+</script>
+<!--<![endif]-->
+<!--[if lte IE 8]>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1054595134574555&ev=PageView&noscript=1"/>
+<![endif]-->
+<noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1054595134574555&ev=PageView&noscript=1"/>
+</noscript>
+
+
+    <!-- adinsight 공통스크립트 start -->
+    <script type="text/javascript">
+        var TRS_AIDX = 10870;
+        var TRS_PROTOCOL = document.location.protocol;
+        document.writeln();
+        var TRS_URL = TRS_PROTOCOL + '//' + ((TRS_PROTOCOL == 'https:') ? 'analysis.adinsight.co.kr' : 'adlog.adinsight.co.kr') + '/emnet/trs_esc.js';
+        document.writeln("<scr" + "ipt language='javascript' src='" + TRS_URL + "'></scr" + "ipt>");
+    </script>
+    <!-- adinsight 공통스크립트 end -->
+
+        <div class="popbg"></div>
+    </form> 
+</body>
+
+<script type="text/javascript" src="/JS/jquery.visible.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        var chash = window.location.hash;
+
+        if (getParam('page') != '') {
+            // 히스토리 보기 관련 기능
+            $(".main_content > h3").removeClass("on");
+            $(".main_content > div").hide();
+
+            $(".main_content > h3").eq(2).addClass("on");
+            $(".main_content > div").eq(2).show();
+        }
+        else if (!chash || chash == '#n') {
+
+            $(".main_content > h3").eq(0).addClass("on");
+            $(".main_content > div").eq(0).show();
+        }
+        else if (chash && chash !== '#n') {
+            if (chash == '#lyrics_site') {
+                showSubDescription('#livelyrics');
+            }
+            else if (chash == '#ocr_text') {
+                //showSubDescription('#livelyrics');
+            }
+            else {
+                showSubDescription(chash);
+            }
+        }
+
+        // 주요기능 항목(.main_function)의 첫번째 엘리먼트의 전체 내용이 보이는 경우 또는 스크롤이 50%가 내려온 경우 GA로 이벤트 전송
+        // library : https://github.com/customd/jquery-visible
+        var timer;
+
+        $(window).scroll(function () {
+            if (timer) {
+                window.clearTimeout(timer);
+            }
+
+            timer = window.setTimeout(function () {
+                var $mainFunction = $(".main_function:visible");
+                var scrollTop = $(window).scrollTop();
+                var docHeight = $(document).height();
+                var winHeight = $(window).height();
+                var scrollPercent = (scrollTop) / (docHeight - winHeight);
+                var scrollPercentRounded = Math.round(scrollPercent * 100);
+                if ($mainFunction.children().first().visible() || scrollPercentRounded >= 50) {
+                    var eventCategory = $mainFunction.attr("data-event-category");
+                    var eventAction = $mainFunction.attr("data-event-action");
+                    var eventLabel = $mainFunction.attr("data-event-label");
+                    sendOneEventToGA(eventCategory, eventAction, eventLabel);
+                }
+            }, 500);
+        });
+    });
+</script>
+</html>

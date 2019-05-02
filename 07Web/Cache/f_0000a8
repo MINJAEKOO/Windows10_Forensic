@@ -1,0 +1,2071 @@
+﻿@charset "utf-8";
+
+/* reset */
+html{overflow-y:scroll}
+html,body,div,span,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,label,a,strong,img{margin:0;padding:0}
+body,h1,h2,h3,h4,h5,h6{font-family:'맑은 고딕',malgun gothic,'돋움',dotum,sans-serif;font-size:13px;color:#48494b;line-height:1}
+ul,ol{list-style:none}
+img{border:0;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+caption{width:0;height:0;font-size:0;line-height:0;overflow:hidden}
+address,em{font-style:normal}
+input,textarea,select{font-size:inherit;font-family:inherit}
+input{padding:0;margin:0;border:0;font-family:'맑은 고딕',malgun gothic,'돋움',dotum,AppleGothic,sans-serif;overflow:visible;background:transparent}
+button{padding:0;margin:0;border:0;cursor:pointer;line-height:0;vertical-align:top;overflow:visible;font-size:16px;font-family:'맑은 고딕';background:transparent}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+a{text-decoration:none;color:#48494b}
+a:hover{text-decoration:underline}
+a:active{background-color:transparent}
+
+/* common */
+body{width:100%;background:url("../img/altoolsRenewal/bg_sub.gif") repeat-x}
+.page_download{background:url("../img/altoolsRenewal/bg_download.gif") repeat-x}
+.page_no_tab{background:url("../img/altoolsRenewal/bg_notab.gif") repeat-x}
+.page_no_tab_m{background:url("../img/altoolsRenewal/bg_notab_m.gif") repeat-x}
+#header.page_main{height:88px;*z-index:1000}
+.blind{position:absolute;left:-9999px;font-size:0;line-height:0}
+.content_wrap{position:relative;width:960px;margin:0 auto}
+.orange{color:#f75a0a}
+strong{color:#111113}
+.gray{color:#848485}
+.light_gray{color:#656667}
+#header, #footer, .top_content, .s_main_con{letter-spacing:-1px}
+.ls0{letter-spacing:0 !important}
+.ctnt{position:relative; width:960px;letter-spacing:-1px}
+.top_content .al_info .info_txt dl, .top_content .al_info .info_txt p, .ctnt p, .ctnt ul, .ctnt h6, .ctnt dl{line-height:19px}
+.tab1_cont ul li dl dt, .s_main_con dl dt, .mobile_main_banner dl dt{color:#111113}
+.tab1_cont ul li dl dd, .s_main_con dl dd, .mobile_main_banner dl dd{color:#656667;font-size:12px}
+/*페이징 네비*/
+.paging_nav{position:relative;text-align:center}
+.paging_nav .first{background:0 none}
+.paging_nav .page_num ul{width:110px;overflow:hidden;margin-left:-8px}
+.paging_nav a{display:inline-block;font-family:'돋움',dotum;font-weight:bold;color:#1a1c22;background:url("../img/altoolsRenewal/spr_bullet.gif") 0 1px no-repeat;padding:0 6px 0 8px}
+.paging_nav .on{color:#df3b09}
+.paging_nav .btn_list{display:inline-block;position:relative;background:url("../img/altoolsRenewal/btn_list_move.gif") 0 0 no-repeat; width:6px;height:9px;padding:0}
+.paging_nav .btn_list.next{background-position:100% 0;margin-left:5px}
+/*기업, 공공기관용 및 공개용 바로가기*/
+.go_company_big{display:block;position:absolute;top:0;right:0;background:url("../img/altoolsRenewal/bg_main_link_1_1.gif") 0 0 no-repeat;width:107px;height:88px;z-index:10}
+.go_company_small{display:block;position:absolute;top:181px;right:0;background:url("../img/altoolsRenewal/bg_main_link_1_2.gif") 0 0 no-repeat;width:30px;height:153px;z-index:15}
+/*fade 배너*/
+
+.banner_wrap{position:absolute;top:0;left:50%;width:1920px;height:100%;margin-left:-960px}
+.banner_wrap .absol_banner li{width:1920px;position:absolute;top:0;left:50%;margin-left:-960px}
+.banner_wrap .absol_banner li a{display:block;width:100%}
+.banner_wrap .bann_nav{position:absolute;overflow:hidden;z-index:1}
+.banner_wrap .bann_nav li{float:left;width:15px;height:15px;margin-right:4px}
+.banner_wrap .bann_nav li a{display:block;width:15px;height:15px;background:url("../img/altoolsRenewal/spr_btn_main_1_nav.png") 0 -15px no-repeat}
+.banner_wrap .bann_nav .on a{background-position:0 0 !important}
+.banner_wrap .move{display:none;position:absolute;top:0;width:100px;height:100%}
+.banner_wrap .move.prev{left:360px}
+.banner_wrap .move.next{right:360px;background-position:-101px 0 !important}
+
+/*skip*/
+.skip{position:absolute;display:block;height:1px;width:1px;margin:0 -1px -1px 0;padding:0;overflow:hidden;font-size:0;line-height:0}
+*:first-child+html .skip{margin:-1px}
+.skip:active, .skip:focus{position:absolute;top:0;left:0;width:100%; height:auto;margin:0;padding:7px 0;text-indent:10px;font-weight:bold;font-size:12px;color:#fff;background:#000;line-height:1;text-align:center;z-index:1100}
+
+/*header*/
+#header{position:relative;width:960px;height:136px;z-index:10;*zoom:1;margin:0 auto}
+#header:after{content:"";display:block;clear:both}
+#header h1{float:left;font-size:0;width:100%}
+#header h1 a{display:inline-block;margin-top:15px}
+#header h1 a.lg{margin:0 0 0 2px !important}
+#header .logn_menu{position:absolute;right:0;top:7px;z-index:10}
+#header .logn_menu ul:after{content:"";display:block;clear:both}
+#header .logn_menu ul .login{background:0 none}
+#header .logn_menu ul .login a{display:block;width:53px;height:22px}
+#header .logn_menu ul .join{padding-left:0}
+#header .logn_menu ul .sns a{display:inline-block;*display:inline;*zoom:1;background:url("../img/altoolsRenewal/spr_sns_gnb.png") no-repeat;padding-left:12px}
+#header .logn_menu ul .sns.blog a{background-position:0 5px}
+#header .logn_menu ul .sns.facebook a{background-position:0 -19px}
+#header .logn_menu ul .sns.twitter a{background-position:0 -46px;padding-left:17px}
+#header .logn_menu ul li{float:left;padding:0 11px;background:url("../img/altoolsRenewal/spr_bullet.gif") 100% -221px no-repeat;line-height:19px}
+#header .logn_menu ul li a{font-size:12px;color:#abb2b8}
+#header .logn_menu ul .user_id{position:relative;padding-right:0}
+#header .logn_menu ul .user_id .btn_myp{background:url("../img/altoolsRenewal/btn_mypage.png") 100% 2px no-repeat;_background-position:100% 4px;padding-right:19px}
+#header .logn_menu ul .user_id .btn_myp.on{background-position:100% -17px;_background-position:100% -15px}
+#header .logn_menu ul .user_id  ul{position:absolute;top:24px;right:0;background:#fff;width:90px;border:1px solid #1b242f;padding:3px 0 5px 0}
+#header .logn_menu ul .user_id  ul li{padding:0 12px 0 8px;background:0 none}
+:root #header .logn_menu ul .user_id  ul li{line-height:19px \0/IE9+10} 
+#header .logn_menu ul .user_id  ul li a{color:#48494b}
+#header .logn_menu ul .logout{background:0 none;padding:0 0 0 5px} 
+#header .logn_menu ul .logout button{width:52px;height:22px;background:url("../img/altoolsRenewal/btn_logout.png") 0 0 no-repeat;*vertical-align:2px;_overflow:hidden}
+#header .logn_menu ul .last{padding-right:0;background:0 none}
+#header .gnb{position:absolute;top:44px;right:0;*zoom:1;font-size:0;white-space:nowrap}
+#header .gnb:after, #header .gnb li ul:after{content:"";display:block;clear:both}
+#header .gnb li .on, #header .gnb li ul .on a{color:#f75a0a}
+#header .gnb li, #header .gnb li a{display:inline-block;*display:inline;*zoom:1;vertical-align:top}
+#header .gnb li{padding-left:65px}
+#header .gnb li a{color:#e3e4e7;font-weight:bold;font-size:16px;height:29px;line-height:normal}
+#header .gnb li a .gnb_new{display:inline-block;*display:inline-block;*zoom:1;vertical-align:middle;*vertical-align:-4px;padding-left:5px}
+#header .gnb li ul{white-space:nowrap;display:none;position:absolute;top:56px;height:21px;font-size:0}
+#header .gnb li ul.dc_sub{right:0;margin-right:-9px}
+#header .gnb li ul.dc_sub li{padding:0 9px}
+#header .gnb li ul.down_s li a{font-size:13px}
+#header .gnb li ul li.first{background:none}
+#header .gnb li ul.mob_sub{left:53px}
+#header .gnb li ul.lab_sub{left:-12px}
+#header .gnb li ul li{background:url("../img/altoolsRenewal/spr_bullet.gif") 0 5px no-repeat;padding:0 12px}
+#header .gnb li ul li a{color:#48494b;font-size:14px;height:21px;line-height:21px}
+@-moz-document url-prefix(){#header .gnb li ul li a{line-height:20px}}
+#header .loca{position:absolute;left:0;top:103px;font-size:12px;line-height:15px}
+:root #header .loca{top:102px \0/IE9+10}
+#header .loca .arrow{padding:0 5px;color:#b2b7bd;font-size:12px}
+#header .gnb li .ico{display:inline-block;*display:inline;*zoom:1;margin:-2px 5px 0 0}
+.page_main_products #header .gnb .buy a{background:url("../img/altoolsRenewal/icon_header_buy2.png") 0 0 no-repeat}
+
+/*footer*/
+#footer{width:100%;height:130px;border-top:1px solid #E9E9E9}
+#footer .footer_wrap{position:relative;overflow:hidden;width:960px;margin:0 auto}
+#footer .logo{float:left;width:121px;margin:10px 84px 0 0}
+#footer .lang_select{position:absolute;right:0;top:30px;width:56px;overflow:hidden;margin-right:-4px}
+#footer .lang_select li{float:left}
+#footer .lang_select li a{display:block;width:22px;height:15px;background:url("../img/altoolsRenewal/spr_icon_lang.gif") 0 0 no-repeat;margin-right:4px}
+#footer .lang_select .japanese a{background-position:-27px 0}
+#footer .footer_txt{float:left;width:732px;margin-top:26px}
+#footer .footer_txt .siteinfo{overflow:hidden}
+#footer .footer_txt .siteinfo ul{width:732px;height:14px;*height:16px;margin-left:-6px}
+#footer .footer_txt .siteinfo ul li{float:left;padding:0 6px;background:url("../img/altoolsRenewal/spr_bullet.gif") 0 -206px no-repeat}
+#footer .footer_txt .siteinfo ul li a{color:#48494b;font-size:12px;line-height:17px}
+#footer .footer_txt address{font-size:11px; color:#656667;line-height:15px;margin:7px 0 9px 0}
+#footer .footer_txt .familysite{height:12px;overflow:hidden}
+#footer .footer_txt .familysite ul{width:745px;height:11px;margin-left:-8px}
+#footer .footer_txt .familysite li{float:left;background:url("../img/altoolsRenewal/spr_bullet.gif") 0 2px no-repeat;height:11px;padding:0 8px;_background-position:0 1px}
+#footer .footer_txt .familysite li a{display:inline-block;height:11px;vertical-align:top}
+
+/*content */
+#content{margin-bottom:60px}
+
+
+/*메인*/
+#content.main{min-width:960px;_width:100%;margin-bottom:0}
+.main_wrap{width:100%}
+.pg_main_top{position:relative;height:348px;overflow:hidden;background:#ebece7;border-bottom:1px solid #dcddd9}
+.pg_main_top .banner_wrap .bann_nav{top:269px;left:531px}
+.pg_main_top .banner_wrap .move{background:url("../img/altoolsRenewal/spr_btn_main_1_move.png") 0 0 no-repeat}
+.pg_main_content .event_area{position:relative;background:url("../img/altoolsRenewal/bg_main_event2.gif") 0 0 repeat-x;height:146px;border-bottom:1px solid #d0d8de;border-top:1px solid #d0d8de}
+.pg_main_content .event_area .banner_img{height:146px;overflow:hidden}
+.pg_main_content .event_area .banner_img li{width:960px;float:left}
+.pg_main_content .event_area .bann_nav{position:absolute;right:397px;top:25px;z-index:10;width:36px;overflow:hidden}
+.pg_main_content .event_area .bann_nav li{float:left;width:12px;height:15px}
+.pg_main_content .event_area .bann_nav li a{display:block;width:12px;height:15px;background:url("../img/altoolsRenewal/spr_btn_main2_2_nav.png") 0 -13px no-repeat;_background:url("../img/altoolsRenewal/spr_btn_main2_2_nav.gif") 0 -13px no-repeat}
+.pg_main_content .event_area .bann_nav .on a{background-position:0 0}
+.install_area .install_all{border-bottom:1px solid #f3efe6;letter-spacing:-1px;padding:12px 0}
+.install_area .install_all .all_wrap{width:400px;margin:0 auto}
+.install_area .install_all .all_wrap h2{display:inline;font-size:16px;color:#111113;vertical-align:-2px;*vertical-align:1px}
+.install_area .install_all .all_wrap .all_install{display:inline-block;width:139px;height:38px;background:url("../img/altoolsRenewal/spr_btn_main_install_1.gif") 0 0 no-repeat;vertical-align:middle;margin-left:18px}
+.install_area .install_all .all_wrap .all_install:hover, .install_area .install_all .all_wrap .all_install:focus{background-position:0 -48px}
+.install_area .content_wrap{padding:10px 0 23px 0}
+.install_area .content_wrap ul{overflow:hidden;text-align:center;font-size:0;padding:26px 0 6px}
+.install_area .content_wrap ul li{display:inline-block;width:62.7px;background:url("../img/altoolsRenewal/spr_icon_main_al_default.png") no-repeat;font-size:12px;color:#797979;text-align:center;line-height:15px;margin-right:22px}
+.install_area .content_wrap ul li .new.png{background:url("../img/altoolsRenewal/icon_new_download.png") 94% 4px no-repeat}
+.install_area .content_wrap ul li .new.png.txt{background-position:74% 4px;font-size:11px}
+.install_area .content_wrap ul .zip{background-position:0 0}
+.install_area .content_wrap ul .see{background-position:0 -115px}
+.install_area .content_wrap ul .yac{background-position:0 -230px}
+.install_area .content_wrap ul .explo{_position:relative;_height:64px;background-position:2px -1159px}
+.install_area .content_wrap ul .toolbar{background-position:0 -345px}
+.install_area .content_wrap ul .song{background-position:0 -460px}
+.install_area .content_wrap ul .mind{background-position:0 -574px}
+.install_area .content_wrap ul .capture{background-position:0 -689px}
+.install_area .content_wrap ul .back{background-position:0 -804px}
+.install_area .content_wrap ul .keeper{background-position:0 -919px}
+.install_area .content_wrap ul .drive{background-position:-3px -1034px}
+.install_area .content_wrap ul .pdf{background-position:-1px -794px}
+.install_area .content_wrap ul .ransom{background-position:-1px -1282px}
+.install_area .content_wrap ul .swing{background:url("../img/altoolsRenewal/icon_swing.jpg") 50% 16px no-repeat;width:70px}
+.install_area .content_wrap ul .oneclick{width:82px;background:url("../img/altoolsRenewal/icon_oneclick.jpg") 50% 2px no-repeat}
+.install_area .content_wrap ul .oneclick a{color:#fd5a01}
+.install_area .content_wrap ul li a{color:#48494b;display:block;*cursor:pointer;letter-spacing:-1px;padding-top:81px}
+.install_area .content_wrap ul li a:hover{text-decoration:none}
+.install_area .content_wrap ul .explo .txt{_position:absolute;_left:0;display:block;width:97px;margin:1px 0 0 -15px;_margin-top:0;font-size:11px;letter-spacing:-1px}
+.install_area .content_wrap ul .explo .state{_position:absolute;_left:0;_top:79px;margin-top:4px}
+:root .install_area .content_wrap ul .explo .state{margin-top:5px \0/IE9+10}
+.install_area .content_wrap ul li .al_install, .install_area .content_wrap ul li .al_update, .install_area .content_wrap ul li .al_newest{margin-top:5px;_margin-top:4px;padding:0 !important}
+@-moz-document url-prefix(){.install_area .content_wrap ul li .al_install, .install_area .content_wrap ul li .al_update, .install_area .content_wrap ul li .al_newest{margin-top:6px}}
+:root .install_area .content_wrap ul li .al_install, .install_area .content_wrap ul li .al_update, .install_area .content_wrap ul li .al_newest{margin-top:6px \0/IE9+10}
+.install_area .content_wrap ul li .al_newest, .install_area .content_wrap ul li .al_install, .install_area .content_wrap ul li .al_update{display:block;width:62px;height:27px}
+.install_area .content_wrap ul li .al_newest{background:url("../img/altoolsRenewal/btn_main_newest.gif") 0 0 no-repeat}
+.install_area .content_wrap ul li .al_install{background:url("../img/altoolsRenewal/btn_main_install_2.gif") 0 0 no-repeat}
+.install_area .content_wrap ul li .al_update{background:url("../img/altoolsRenewal/btn_main_update.gif") 0 0 no-repeat}
+.install_area .content_wrap ul li .al_blank{display:none}
+.pg_main_content .content_wrap{letter-spacing:-1px;overflow:hidden}
+.pg_main_content .content_wrap h2{color:#111113;font-weight:normal}
+.pg_main_content .event_area .move{display:block;position:absolute;top:0;width:50px;height:146px;z-index:10;background:url("../img/altoolsRenewal/spr_btn_main2_2_move.png") 0 0 no-repeat}
+.pg_main_content .event_area .move.prev{left:0}
+.pg_main_content .event_area .move.next{background-position:100% 0;right:0}
+.page_main h1 a{position:relative;z-index:1}
+/* 140407 추가(김유진) */
+.pg_main_content .m_news .left_con, .pg_main_content .m_news .right_con{float:left}
+.pg_main_content .m_news .left_con{width:480px}
+.pg_main_content .m_news .right_con{padding-left:45px}
+.pg_main_content .m_news .date{color:#838282}
+.pg_main_content .al_mobile_news{padding:28px 0 30px;background-color:#f8f8f8}
+.pg_main_content .al_mobile_news h2{margin-bottom:13px}
+.pg_main_content .al_mobile_news ul{height:90px;overflow:hidden}
+.pg_main_content .al_mobile_news ul li{float:left;margin-right:29px}
+.pg_main_content .al_mobile_news ul .last{margin-right:0}
+.pg_main_content .al_news{padding:24px 0 24px;border-top:1px solid #e4e4e4;border-bottom:1px solid #e4e4e4;background-color:#eee}
+.pg_main_content .al_news .left_con, .pg_main_content .al_news .right_con{padding-top:7px}
+.pg_main_content .al_news .left_con{border-right:1px solid #e4e4e4}
+.pg_main_content .al_news .left_con h2{margin-bottom:12px}
+.pg_main_content .al_news .left_con .news{margin-bottom:38px}
+.pg_main_content .al_news .left_con div{position:relative;width:435px}
+.pg_main_content .al_news .left_con ul{font-size:0}
+.pg_main_content .al_news .left_con div li{font-size:13px;height:25px;position:relative;line-height:23px;zoom:1}
+.pg_main_content .al_news .left_con div li:after{content:"";display:block;clear:both}
+.pg_main_content .al_news .left_con div li a, .pg_main_content .al_news .left_con div li img{display:inline-block;*display:inline;*zoom:1}
+.pg_main_content .al_news .left_con div li img{vertical-align:-3px;margin-left:4px}
+.pg_main_content .al_news .left_con div li .date{position:absolute;right:0;top:0;}
+.pg_main_content .al_news .left_con div .more{position:absolute;right:0;top:3px;padding-right:7px;font-size:11px;color:#848485;background:url("../img/altoolsRenewal/bul_arrow04.gif") 100% 6px no-repeat;line-height:13px}
+.pg_main_content .al_news .right_con{padding-left:45px}
+.pg_main_content .al_news .right_con h2{margin-bottom:16px}
+.pg_main_content .al_news .right_con .f_con{zoom:1}
+.pg_main_content .al_news .right_con .f_con.top{margin-bottom:12px}
+.pg_main_content .al_news .right_con .f_con:after{content:"";display:block;clear:both}
+.pg_main_content .al_news .right_con .f_con img{float:left}
+.pg_main_content .al_news .right_con .f_con .f_txt{float:left;width:255px;margin-left:21px}
+.pg_main_content .al_news .right_con .f_con .f_txt dl{margin:3px 0 10px;*margin-bottom:11px}
+.pg_main_content .al_news .right_con .f_con .f_txt dt{margin-bottom:6px;font-size:14px;color:#111113;font-weight:bold}
+.pg_main_content .al_news .right_con .f_con .f_txt dd{line-height:18px;font-size:12px;color:#656667}
+.pg_main_content .al_news .right_con .f_con .f_txt span{font-size:11px;display:block;height:13px;width:60px;color:#919daa;background:url("../img/altoolsRenewal/bul_arrow04.gif") 100% 5px no-repeat;_line-height:13px}
+.pg_main_content .al_blog{padding:31px 0;background-color:#f8f8f8}
+.pg_main_content .al_blog h2{margin-bottom:12px}
+.pg_main_content .al_blog dt, .pg_main_content .al_blog dd{line-height:20px}
+.pg_main_content .al_blog dt img{vertical-align:-3px;margin-left:4px}
+.pg_main_content .al_blog dt{height:20px;margin-bottom:1px;font-weight:bold}
+.pg_main_content .al_blog dt span{*zoom:1}
+.pg_main_content .al_blog .more_txt{width:430px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;color:#656667}
+
+/***********다운로드************/
+
+/*top_content*/
+.top_content{width:100%; position:relative;padding-top:35px;*z-index:200}
+.top_content .al_img{position:relative;width:168px;height:158px;border:1px solid #d0d0d0}
+.top_content .al_info{position:absolute;left:190px;top:45px;width:531px;*z-index:300}
+.top_content .al_info .help:after,.top_content .al_info .info_txt dl:after{content:"";display:block;clear:both}
+.top_content .al_info .title{*height:34px;*overflow:hidden;margin-bottom:11px;font-size:0;line-height:0;_margin-bottom:12px}
+.top_content .al_info .new2{padding-left:8px}
+:root .top_content .al_info .title{margin-bottom:10px \0/IE9+10}
+.top_content .al_info .title span{display:inline-block;font-family:Tahoma;font-weight:normal;color:#111113;font-size:39px;line-height:31px;letter-spacing:-2px;margin-top:-1px;*margin-right:-2px}
+.quick_link{overflow:hidden}
+.quick_link li{float:left}
+.quick_link li a{display:block;width:23px;height:23px;background:url("../img/altoolsRenewal/spr_icon_link.gif") no-repeat;margin-right:4px}
+.quick_link .link1 a{background-position:0 0}
+.quick_link .link2 a{background-position:-24px 0}
+.quick_link .link3 a{background-position:-48px 0}
+.top_content .al_info .quick_link{position:absolute;left:0;top:115px;}
+.top_content .al_info .info_txt dl{width:531px}
+.top_content .al_info .info_txt dl dt{float:left;padding-right:8px; color:#848485}
+.top_content .al_info .info_txt dl dd{float:left;padding-right:16px}
+.top_content .al_info .btn_more{width:37px;height:14px;position:absolute;top:86px}
+@-moz-document url-prefix(){.top_content .al_info .btn_more{top:90px}}
+.top_content .btn_area{position:absolute;right:0;top:45px;width:239px}
+.top_content .btn_area a{_overflow:hidden}
+.top_content .btn_area .install_1{width:239px;height:71px;background:url("../img/altoolsRenewal/btn_install_1.gif") 0 0 no-repeat}
+.top_content .btn_area .install_small{width:118px;height:71px}
+.top_content .btn_area .install_small.inst_1{background:url("../img/altoolsRenewal/btn_install_1-small.gif") 0 0 no-repeat}
+.top_content .btn_area .install_small.btn_back{position:absolute;right:0;top:0;background:url("../img/altoolsRenewal/btn_install_1_alback.gif") 0 0 no-repeat}
+.top_content .btn_area .buy{width:239px;height:71px;background:url("../img/altoolsRenewal/btn_buy.gif") 0 0 no-repeat}
+.top_content .btn_area a{display:block;margin-bottom:5px}
+.top_content .btn_area .faq{width:118px}
+.top_content .btn_area .btn_license{position:absolute;bottom:0;right:0}
+
+/*more 레이어팝업*/
+.ly_pc_envir{position:absolute;top:109px;left:50%;width:656px;border:1px solid #24303e;min-height:303px;_height:303px;background:#fff;margin-left:-328px;z-index:100;letter-spacing:-1px;zoom:1}
+.ly_pc_envir .ly_head.pc{height:43px}
+.ly_pc_envir .ly_head.pc h2{font-size:16px;color:#fff;font-weight:normal;line-height:41px;padding-left:19px}
+.ly_pc_envir .ly_content_pc{padding:28px 28px 24px 28px;font-size:12px;color:#656667}
+.ly_pc_envir .ly_content_pc table{width:100%;border-left:1px solid #fd994c}
+.ly_pc_envir .ly_content_pc table tr td, .ly_pc_envir .ly_content_pc table tr th{text-align:center;padding:7px 0;line-height:16px}
+.ly_pc_envir .ly_content_pc table .list{width:105px}
+.ly_pc_envir .ly_content_pc table thead{background:#fd994c;color:#fff}
+.ly_pc_envir .ly_content_pc table th, .ly_pc_envir .ly_content_pc table td{border-right:1px solid #fd994c;border-bottom:1px solid #fd994c}
+.ly_pc_envir .ly_content_pc ul{line-height:19px;padding-top:15px}
+.ly_pc_envir .ly_content_pc ul li.txt_indent{text-indent:-7px;margin-left:7px}
+
+/*main_content*/
+.main_content{width:100%; position:relative;padding-top:115px}
+.main_content h3{position:absolute;top:30px;height:40px;text-align:center;font-size:16px;background:#ebebeb;border-left:1px solid #b7b7b7;border-top:1px solid #b7b7b7;border-bottom:1px solid #888;font-weight:normal}
+.main_content h3 a{display:block;color:#111113;width:100%;height:40px;line-height:37px}
+.main_content h3 a img{vertical-align:-2px;_padding-top:12px;padding-left:4px}
+.main_content h3 a:hover{text-decoration:none}
+.main_content .tab_4_4 a{line-height:39px}
+.main_content h3.on{height:41px;z-index:3;background:#fff;border-left:1px solid #9c9c9c;border-top:1px solid #9c9c9c;border-right:1px solid #9c9c9c;border-bottom:0 none;font-weight:bold}
+.main_content h3.on a{height:41px}
+.main_content .on a{color:#f75a0a}
+.main_content .mgt_tit{margin-top:50px}
+.main_content .mgt_txt{margin-top:15px}
+.main_content .btn_28{display:inline-block;background:url("../img/altoolsRenewal/spr_btn.png") 100% -738px no-repeat;height:28px;margin-right:2px;padding-right:1px}
+.main_content .btn_28 .bg_28{display:inline-block;background:url("../img/altoolsRenewal/spr_btn.png") 0 -707px no-repeat;min-width:28px;height:21px;*line-height:14px;*cursor:pointer;padding:7px 11px 0 12px;_padding-top:8px;_height:20px}
+.main_content .btn_28:hover{text-decoration:none}
+.main_content .qna_area dl dt{height:30px;font-weight:bold;color:#111113;background:url("../img/altoolsRenewal/spr_icon_qna.png") 12px -38px no-repeat;padding-left:57px}
+.main_content .qna_area dl dd{*zoom:1;background:url("../img/altoolsRenewal/spr_icon_qna.png") 12px -85px no-repeat;padding-left:57px;margin-top:7px}
+
+/*탭*/
+.main_content .tab_2_1,.main_content .tab_3_1,.main_content .tab_4_1{left:0}
+.main_content .tab_2_2,.main_content .tab_3_3,.main_content .tab_4_4{border-right:1px solid #b7b7b7}
+/*2개 탭*/
+.main_content .tab_2_1, .main_content .tab_2_2{width:479px}
+.main_content .tab_2_2{left:480px}
+/*3개 탭*/
+.main_content .tab_3_1, .main_content .tab_3_2, .main_content .tab_3_3{width:319px}
+.main_content .tab_3_2{left:320px}
+.main_content .tab_3_3{left:640px}
+/*4개 탭*/
+.main_content .tab_4_1, .main_content .tab_4_2, .main_content .tab_4_3, .main_content .tab_4_4{width:239px}
+.main_content .tab_4_2{left:240px}
+.main_content .tab_4_3{left:480px}
+.main_content .tab_4_4{left:720px}
+
+/*OCR*/
+.OCR h4{font-size:24px;line-height:29px;color:#111113;font-weight:normal;letter-spacing:-2px;margin-bottom:7px;padding-left:104px;padding-top:6px}
+.OCR strong.red{font-size:14px;color:#bf0b04;margin:30px 0 18px;display:block}
+.OCR {position:relative}
+.OCR p img{position:absolute;top:13px;right:0px}
+.OCR .at_bp{padding:30px 0 45px 185px}
+.OCR .usage_info{clear:both;text-align:center;background:#f7f9f9;border:1px solid #f2f4f4;color:#777d85;font-size:12px;line-height:18px;padding:10px 0;*padding:5px 0 9px 0}
+.OCR h5{font-size:16px;background:url("../img/altoolsRenewal/spr_bullet.gif") 0 -92px no-repeat;font-weight:bold;color:#111113;margin-bottom:12px;padding-left:10px}
+.OCR img.at_bp_pdf{margin:18px 0 80px}
+.ocr_icon{position:absolute}
+.ocr_text{padding-left:104px;border-bottom:1px solid #d4d4d4;padding-bottom:54px}
+.ocr_table{width:100%;margin-bottom:40px}
+.ocr_table th{background-color:#f7f7f7;color:#111113;font-size:15px;padding:18px 0;border-bottom:1px solid #ebebeb}
+.ocr_table td{text-align:center;border-bottom:1px solid #ebebeb;padding:8px 0;font-size:15px}
+
+/*소개 탭*/
+.tab1_cont h4{font-size:24px;line-height:29px;color:#111113;font-weight:normal;letter-spacing:-2px;margin-bottom:13px}
+.tab1_cont p{margin-bottom:24px}
+.tab1_cont .info_banner_area{position:relative;width:958px;height:417px;border:1px solid #d4d4d4;overflow:hidden}
+.tab1_cont .info_bann_img{height:417px}
+.tab1_cont .info_bann_img li{top:0px; position:absolute;}
+.tab1_cont .func_detail li .func_img{float:left}
+.tab1_cont .info_banner_area .bann_nav{position:absolute;top:387px;left:0;z-index:10;width:100%;font-size:0;text-align:center}
+.tab1_cont .info_banner_area .bann_nav li{display:inline-block;*display:inline;*zoom:1;overflow:hidden;margin-right:1px}
+.tab1_cont .info_banner_area .bann_nav li a{display:block;width:15px;height:15px;background:url("../img/altoolsRenewal/spr_btn_product_nav.png") 0 0 no-repeat;_background:url("../img/altoolsRenewal/spr_btn_product_nav.gif") 0 0 no-repeat}
+.tab1_cont .info_banner_area .bann_nav .on a{background-position:0 -20px;}
+.tab1_cont .info_banner_area .bann_btn{position:absolute;top:0;left:0;width:91px;height:417px;background:url("../img/altoolsRenewal/spr_btn_product_move.png") 0 0 no-repeat}
+.tab1_cont .info_banner_area .bann_btn.last{left:auto;right:0;background-position:100% 0}
+.tab1_cont .h4_space{margin-top:42px}
+.tab1_cont .more_org{position:absolute;top:89px;_top:90px;left:149px;line-height:13px;font-size:11px;color:#848485;background:url("../img/altoolsRenewal/spr_bullet.gif") 100% -430px no-repeat;_background-position:100% -432px;padding-right:8px}
+@-moz-document url-prefix(){.tab1_cont .more_org{background-position:100% -430px}}
+:root .tab1_cont .more_org{line-height:11px \0/IE9+10 !important}
+ @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){.tab1_cont .more_org{line-height:11px}}
+.tab1_cont .func_detail{width:960px;border-top:1px solid #e4e4e4}
+.tab1_cont .func_detail:after,.tab1_cont .func_detail li:after{content:"";display:block;clear:both}
+.tab1_cont .func_detail li{float:left;position:relative;width:459px; height:107px;border-bottom:1px solid #e4e4e4;padding:17px 0 0 20px}
+.tab1_cont .func_detail li .info{float:left;padding-top:4px}
+.tab1_cont .func_detail .odd{border-right:1px solid #e4e4e4}
+.tab1_cont .func_detail .textover{width:317px}
+.tab1_cont .func_detail .textover_odd{width:297px}
+.tab1_cont ul li dl dt, .tab1_cont h5, .tab1_cont dl.main_func dt{font-size:14px;font-weight:bold;line-height:19px}
+.tab1_cont .func_detail li dl dt img{padding-left:5px;vertical-align:-2px}
+.tab1_cont .func_detail li dl dd{width:291px;margin-top:4px}
+.tab1_cont .func_detail li dl dd.w_310{width:310px}
+:root .tab1_cont .func_detail li dl dd{margin-top:3px \0/IE9+10}
+.tab1_cont .func_detail li a dl{*cursor:pointer}
+.tab1_cont .cont_table{width:100%;color:#111113}
+.tab1_cont .ver_compare .price_row th, .tab1_cont .ver_compare .price_row td{padding:10px 0 11px 0}
+.tab1_cont .ver_compare tr th, .tab1_cont .ver_compare tr td, .tab1_cont .cont_table tr td, .tab1_cont .cont_table tr th{border-right:1px solid #e4e4e4;border-bottom:1px solid #e4e4e4;padding:11px 0 12px}
+.tab1_cont .ver_compare .not_bdr, .tab1_cont .cont_table .not_bdr{border-right:0 none}
+.tab1_cont .ver_compare thead, .tab1_cont .cont_table thead{background:#faf7f2}
+.tab1_cont .ver_compare thead tr th, .tab1_cont .cont_table thead tr th{border-top:1px solid #d6d6d6;border-bottom:1px solid #d6d6d6;font-size:14px}
+.tab1_cont .qna_area.tab1_qna{border:1px solid #EEE;height:107px;background:#F8F8F8;padding:24px 0 0 18px}
+.tab1_cont .qna_area.tab1_qna dt{font-size:15px;line-height:25px}
+.tab1_cont .qna_area.tab1_qna dd{color:#707274;height:19px;font-size:14px;padding:0 0 11px 57px !important}
+.tab1_cont .qna_area.tab1_qna dd .view_more{font-size:12px;text-decoration:underline}
+.tab1_cont .qna_area.tab1_qna dd.answer_2{background:none;margin-top:-6px}
+
+/*주요기능 탭*/
+.tab2_cont {overflow:hidden}
+.tab2_cont .tab_snb{float:left;width:168px}
+.tab2_cont .tab_snb li{border-bottom:1px solid #e9e9e9}
+.tab2_cont .tab_snb li a{display:block;font-size:14px;color:#48494b;padding:13px 0 15px 0}
+.tab2_cont .tab_snb li .win_s{_letter-spacing:-2px}
+.tab2_cont .tab_snb .first a{padding-top:1px}
+.tab2_cont .tab_snb li a.on{font-weight:bold;color:#f75a0a}
+.tab2_cont .tab_content{position:relative;float:right;width:730px;margin-bottom:55px}
+.tab2_cont .tab_content p, .tab_content dl, .tab2_cont .tab_content ul, .tab_content div.ir{margin-left:10px}
+.tab2_cont .tab_content ul li ul,.tab2_cont .tab_content ul li dl,.tab2_cont .tab_content .not_mgl, .qna_area dl, .qna_area dl dd ul, .qna_area dl dd p{margin-left:0 !important}
+.tab2_cont h5{font-size:16px;background:url("../img/altoolsRenewal/spr_bullet.gif") 0 -92px no-repeat;font-weight:bold;color:#111113;margin-bottom:12px;padding-left:10px}
+.tab2_cont .tab_content .tab_title{position:relative;width:730px;border-bottom:1px solid #dedede;padding-bottom:17px;margin:0 0 38px 0}
+.tab2_cont .tab_content .tab_title.more{padding-bottom:7px}
+.tab2_cont .tab_content .tab_title.more .on_help{bottom:18px}
+.tab2_cont .tab_content .tab_title h4{font-size:20px;line-height:23px;color:#111113;font-weight:bold;margin-bottom:11px}
+.tab2_cont .tab_content .tab_title .intro_txt{color:#656667;margin-left:0}
+.tab2_cont .tab_content .tab_title .on_help{position:absolute;right:0;bottom:19px;font-size:11px;height:13px;line-height:13px;color:#848485;background:url("../img/altoolsRenewal/spr_bullet.gif") 100% -41px no-repeat;padding-right:9px}
+@-moz-document url-prefix(){.tab2_cont .tab_content .tab_title .on_help{background-position:100% -40px}}
+.tab2_cont .tab_content .tab_title .on_help.over{bottom:3px}
+:root .tab2_cont .tab_content .tab_title .on_help{line-height:10px \0/IE9+10;bottom:18px \0/IE9+10}
+@media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){.tab2_cont .tab_content .tab_title .on_help{line-height:10px;bottom:18px}}
+.tab2_cont .tab_content p img, .tab2_cont .tab_content ul li img{display:block}
+.tab2_cont .tab_content .at{margin-top:10px}
+.tab2_cont .tab_content .mt18{margin-top:18px}
+.tab2_cont .tab_content .bt{margin-bottom:26px}
+.tab2_cont .tab_content .at_bt{margin-top:12px;margin-bottom:26px}
+.tab2_cont .tab_content .at_bp{margin-top:12px;margin-bottom:50px}
+.tab2_cont .tab_content .at_bh{margin-top:12px;margin-bottom:35px}
+.tab2_cont .tab_content .at_32{margin-top:29px}
+.tab2_cont .tab_content .mt_mb{margin-top:-20px;margin-bottom:47px}
+.tab2_cont .tab_content .at_br{margin:10px 0 10px 0}
+.tab2_cont .tab_content .mgl{margin-left:10px}
+.tab2_cont .tab_content .lnh{line-height:22px;padding-top:2px}
+.tab2_cont .tab_content h6{color:#111113;padding-left:10px}
+.tab2_cont .tab_content .txt_indent{text-indent:-8px;margin-left:8px}
+.tab2_cont .tab_content .tind{text-indent:8px}
+.tab2_cont .tab_content .vta{vertical-align:-3px}
+.tab2_cont .tab_content .dl_fl{width:720px;overflow:hidden}
+.tab2_cont .tab_content .dl_fl dt{float:left}
+.tab2_cont .tab_content .ir{text-indent:-9999px}
+.tab2_cont .tab_content .func_nav{border:1px solid #ddd;height:73px;overflow:hidden;padding:25px 0 0 54px}
+.tab2_cont .tab_content .func_nav li{width:175px;float:left;margin-bottom:8px}
+.tab2_cont .tab_content .func_nav li a{background:url("../img/altoolsRenewal/spr_bullet.gif") 100% -74px no-repeat;padding-right:10px}
+@-moz-document url-prefix(){.tab2_cont .tab_content .func_nav li a{background-position:100% -72px}}
+.tab2_cont .tab_content .qna_area{border:5px solid #f6f6f6;padding:50px 43px}
+.tab2_cont .tab_content .qna_area .sev_answer{border:0 none;margin-bottom:0}
+.tab2_cont .tab_content .qna_area dl dt{font-size:18px;line-height:23px}
+.tab2_cont .tab_content .qna_area dl dd{border-bottom:1px solid #eee;padding:2px 0 40px 57px;margin:7px 0 40px}
+.tab2_cont .tab_content .qna_area dl .last{border:0 none;margin-bottom:0;padding-bottom:0}
+.tab2_cont .tab_content .qna_area dl dt.tip{background-position:12px 0}
+.tab2_cont .tab_content .qna_area dl dd.tip{background:0 none;padding-left:12px}
+.tab2_cont .tab_content .qna_area dl dd .q_at{margin-top:23px}
+.tab2_cont .tab_content .qna_area .q_linfo{margin:26px 0 10px 0}
+.tab2_cont .tab_content .qna_area dl dd .view_more{text-decoration:underline;margin:16px 20px 0 0}
+@-moz-document url-prefix(){.tab2_cont .tab_content .qna_area dl dd a{background-position:100% -179px}}
+.tab2_cont .tab_content .anti_qna{padding-bottom:35px}
+.tab2_cont .tab_content .process_info{width:718px;height:29px;background:#F7F9F9;border:1px solid #F2F4F4;text-align:center;margin-left:10px;padding-top:17px}
+.tab2_cont .tab_content .process_info img{vertical-align:middle;margin:0 40px}
+.tab2_cont .tab_content .ir h5{background:0 none}
+.tab2_cont .tab_content .view_blue_s{font-size:11px;color:#3a6cdb;text-decoration:underline}
+.tab2_cont .more_org{font-size:12px;color:#f75a0a;background:url("../img/altoolsRenewal/spr_bullet.gif") 100% 6px no-repeat;padding:0 8px 0 5px}
+.tab2_cont .tab_content .in_img{display:inline-block;vertical-align:middle !important}
+
+/**알툴즈 통합팩**/
+.top_content.pack .al_img{width:238px;height:118px}
+.top_content.pack .al_info{left:260px;width:455px}
+.top_content.pack .al_info .quick_link{top:76px !important}
+.top_content.pack .btn_area .btn_license{top:76px}
+.main_pack{padding-top:76px}
+.tab1_cont .func_detail.pack li{height:117px}
+.tab1_cont .func_detail.pack li .info{padding-top:3px}
+.tab1_cont .func_detail.pack li .more_org{top:98px;left:149px} 
+.tab1_cont .func_detail.pack li dd{margin-top:9px}
+:root .tab1_cont .func_detail.pack li dd{margin-top:8px \0/IE9+10}
+.tab1_cont .func_detail.pack{border-bottom:1px solid #E4E4E4}
+.tab1_cont .func_detail.pack li .info{padding-left:11px}
+.tab1_cont .func_detail.pack li.dtl_13{border-bottom:0}
+
+/**알집**/
+.top_content .al_info .btn_more.zip{left:239px}
+#wide_action .refer a{color:#0066cc;padding-left:6px}
+.tab1_cont .h4_space.f_size{font-size:18px}
+.tab1_cont .egg{position:absolute;left:243px;bottom:126px;font-size:11px;line-height:15px;color:#f75a0a;background:url("../img/altoolsRenewal/spr_bullet.gif") 100% 6px no-repeat;text-decoration:underline;padding-right:8px}
+
+/* for mac 탭*/
+.tab4_cont .formac{position:relative;background:url("../img/altoolsRenewal/icon_1_1.gif") -19px -14px no-repeat;border-bottom:1px solid #e4e4e4;height:94px;margin-top:-15px;padding:33px 0 0 135px}
+.tab4_cont .formac .down_info{display:block;width:168px}
+.tab4_cont .formac .install_2{position:absolute;right:30px;top:44px;width:146px}
+.tab4_cont .formac dl dt{font-weight:bold;font-size:16px;color:#111113;margin-bottom:6px}
+.tab4_cont .formac img{margin-right:10px;vertical-align:-5px}
+.tab4_cont .formac dl dd{color:#656667}
+.tab4_cont .formac .feature{display:inline-block;font-size:12px;height:13px;color:#3a6cdb;background:url("../img/altoolsRenewal/spr_bullet.gif") 100% -129px no-repeat;padding-right:8px;margin-top:6px}
+.tab4_cont .formac .feature{line-height:11px \0/IE8}
+:root .tab4_cont .formac .feature{line-height:9px \0/IE9+10;margin-top:8px \0/IE9+10}
+.tab4_cont .about_license{position:relative;background:#f6f6f6;border:1px solid #efefef;padding:22px 24px;margin-top:40px;width:910px}
+.tab4_cont .about_license h4{font-size:16px;color:#df3b09;margin-bottom:15px}
+.tab4_cont .about_license p{font-size:12px;color:#656667;line-height:19px}
+.tab4_cont .about_license a{display:block;position:absolute;top:19px;left:180px;width:135px;height:26px}
+
+/**알씨**/
+.top_content .al_info .btn_more.see{left:227px}
+#alsee_deco .deco_info{width:100%;overflow:hidden;padding-top:16px}
+#alsee_deco .deco_info li{float:left;width:264px;line-height:19px;background:url("../img/altoolsRenewal/spr_icon_2_deco_1.gif") 0 0 no-repeat;color:#191919;height:46px;padding:6px 0 0 75px;margin-bottom:28px}
+#alsee_deco .deco_info .deco2{background-position:0 -63px}
+#alsee_deco .deco_info .deco3{background-position:0 -126px}
+#alsee_deco .deco_info .deco4{background-position:0 -189px}
+#alsee_deco .deco_info .deco5{background-position:0 -252px}
+#alsee_deco .deco_info .deco6{background-position:0 -315px}
+#alsee_deco .deco_info .deco7{background-position:0 -378px}
+#alsee_deco .deco_info .deco8{background-position:0 -441px}
+#alsee_deco .deco_info .deco9{background-position:0 -504px}
+#alsee_deco .deco_info .align{height:47px;padding-top:6px}
+#img_transfer h6{font-weight:normal}
+#phone_photo .view_more{text-decoration:underline}
+#photo_print h5{font-size:14px;margin-bottom:20px}
+#photo_print .cct{position:relative;width:690px;height:310px;background:url("../img/altoolsRenewal/img_alsee_cct.jpg") 0 0 no-repeat}
+#photo_print .cct .link_area{position:absolute;left:297px;font-size:0;line-height:0}
+#photo_print .cct .link_area a{display:inline-block;margin-right:10px}
+#photo_print .cct .l_top{top:162px}
+#photo_print .cct .l_top a{width:150px;height:32px}
+#photo_print .cct .l_btm{top:212px}
+#photo_print .cct .l_btm a{width:70px;height:67px}
+
+#photo_print .cct .link_btm{top:212px}
+#photo_print .cct .link_btm a{display:inline-block;}
+.download_list.see li{background:url("../img/altoolsRenewal/icon_2.gif") -19px -14px no-repeat}
+
+/**알송**/
+.top_content .al_info .btn_more.song{left:234px}
+#livelyrics .lyrics_site{width:100%;overflow:hidden;margin-top:23px}
+#livelyrics .lyrics_site dd{padding-left:184px;letter-spacing:0}
+#livelyrics .lyrics_site dd a{color:#0066ff}
+.tab2_cont .usage_info{clear:both;text-align:center;background:#f7f9f9;border:1px solid #f2f4f4;color:#777d85;font-size:12px;line-height:18px;padding:10px 0;*padding:5px 0 9px 0}
+
+/**알툴바**/
+.top_content .al_info .btn_more.toolbar{left:234px}
+#safe_alpass{width:501px;height:638px;background:url("../img/altoolsRenewal/img_4_2_2_4.gif") 0 0 no-repeat}
+#password_forget{width:501px;height:198px;background:url("../img/altoolsRenewal/img_4_2_2_5.gif") 0 0 no-repeat}
+#mouse_action .qna_area{margin-bottom:26px}
+#bookmark .tab_title{padding-bottom:34px}
+#bookmark .qna_area dt{font-size:16px}
+#disc h6{float:left;padding-right:4px}
+#quick_search{background:0 none}
+#quick_search .ir{width:730px;height:500px;background:url("../img/altoolsRenewal/img_4_2_7_1.gif") 0 0 no-repeat;margin-left:0}
+#quick_search .func_nav .width_c{width:140px}
+#quick_search .func_nav .width_s{width:165px}
+#anti_fishing .ir{width:653px;height:380px;background:url("../img/altoolsRenewal/img_4_2_10_1.gif") 0 0 no-repeat}
+#more_func_toolbar .func_nav{margin-left:0;padding:25px 33px}
+#more_func_toolbar .func_nav li{width:165px}
+#more_func_toolbar .func_nav .width_w{width:195px}
+#more_func_toolbar .func_nav .width_m{width:155px}
+#more_func_toolbar .func_nav .width_n{width:145px}
+/* 140602 */
+#dictionary .mt17{margin-top:17px}
+#anti_fishing .danger_site{margin-top:15px}
+#anti_fishing .danger_site li p{margin-left:0;padding-left:19px;background:url("../img/altoolsRenewal/spr_altoobar_10.gif") no-repeat}
+#anti_fishing .danger_site li .site_1{background-position:-3px 0}
+#anti_fishing .danger_site li .site_2{background-position:-3px -32px}
+#anti_fishing .tip{margin-top:19px}
+
+/**알약**/
+.top_content .al_info .btn_more.yac{left:217px}
+.tab2_cont .tab_content .caution{background:url("../img/altoolsRenewal/spr_icon_5_caution.gif") 0 0 no-repeat;height:47px;margin:30px 0 0 0;padding:8px 0 0 74px}
+#self_protect .caution{background-position:0 -67px}
+#usb_check .caution{margin-left:10px}
+#pc_opti .tindt{text-indent:-145px;margin-left:145px}
+#mali_bot .ir{background:url("../img/altoolsRenewal/img_5_2_6_1.gif") 0 0 no-repeat;width:517px;height:215px}
+
+/**알백**/
+.top_content .al_info .btn_more.back{left:283px}
+#three_back .qna_area dl dd .ir{width:536px;height:249px;background:url("../img/altoolsRenewal/img_6_2_1_1.gif") 0 0 no-repeat}
+.tab1_cont .back_price{border:1px solid #d4d4d4;width:960px;overflow:hidden}
+.tab1_cont .back_price li{float:left;padding:30px 30px 28px 30px;overflow:hidden}
+.tab1_cont .back_price .free{background:url("../img/altoolsRenewal/spr_bullet.gif") 100% -255px no-repeat}
+.tab1_cont .back_price li img{float:left}
+.tab1_cont .back_price li dl{float:left;width:324px}
+.tab1_cont .back_price li dl dt{font-size:16px;margin-bottom:5px}
+.tab1_cont .back_price li dl dd{line-height:15px}
+.tab1_cont .alback_tb th, .tab1_cont .alback_tb td{padding:14px 0}
+.tab1_cont .alback_tb tbody th{font-weight:normal}
+.tab1_cont .alback_tb tbody th{width:149px}
+.tab1_cont .alback_tb tbody td{width:404px;text-align:center;line-height:18px}
+.tab1_cont .alback_tb tbody td strong{letter-spacing:0;color:#ff5400}
+.tab1_cont .back_price_ps{display:block;font-size:12px;color:#848485;line-height:13px;background:url("../img/altoolsRenewal/spr_bullet.gif") -248px -430px no-repeat;line-height:14px;padding-left:5px;margin-top:13px}
+.tab1_cont .back_buy_info li{width:100%;background:url("../img/altoolsRenewal/spr_bullet.gif") 0 -664px no-repeat;padding-left:8px}
+.tab1_cont .back_buy_info li a.link_buy{background:url("../img/altoolsRenewal/spr_bullet.gif") 100% -126px no-repeat;color:#0066cc;text-decoration:underline;margin-left:3px;padding-right:8px}
+
+/**알마인드**/
+.top_content .al_info.almind{top:55px}
+.top_content .al_info.almind .ly_pc_envir.almind{top:90px}
+.top_content .btn_area .install_mind_lite{background:url("../img/altoolsRenewal/btn_7_buy.gif") 0 0 no-repeat;width:118px;height:71px}
+.top_content .btn_area .install_mind_pro{position:absolute;top:0;right:0}
+.top_content .al_info.almind .quick_link{top:96px}
+.top_content .al_info.almind .btn_more{top:67px;left:183px}
+.tab1_cont .ver_compare{position:relative;width:100%;margin-bottom:-10px}
+.tab1_cont .ver_compare .th_1{width:172px;*width:157px}
+.tab1_cont .ver_compare .th_2{width:298px;*width:283px}
+.tab1_cont .ver_compare tr th{color:#111113}
+.tab1_cont .ver_compare tr td{color:#f75a0a;text-align:center}
+.tab1_cont .ver_compare tr td.dark{color:#111113}
+.tab1_cont .ver_compare tbody tr th{font-weight:normal}
+.tab1_cont .ver_compare .item{width:479px}
+.tab1_cont .ver_compare tbody th{text-align:left;padding-left:15px}
+.tab1_cont .ver_compare .price{display:inline-block;width:55px;height:18px;margin-left:5px}
+.tab1_cont .ver_compare .price img{vertical-align:-5px}
+.tab1_cont .info_banner_area .info_bann_img .video_play{display:block;position:absolute;top:141px;left:288px;width:383px;height:216px}
+.top_content .btn_area .bubble.mb{position:absolute;left:0;top:-32px;width:118px;height:29px;text-align:center;line-height:26px;font-family:"돋움",dotum;font-size:11px;background:url("../img/altoolsRenewal/bg_mindbubble.gif") no-repeat}
+
+/**알캡처**/
+.top_content .al_info .btn_more.capture{left:234px}
+
+/**알드라이브**/
+.top_content .al_info .btn_more.drive{left:186px}
+
+/**알키퍼**/
+.top_content .al_info .btn_more.keeper{left:239px}
+
+/*버전 히스토리*/
+.tab3_cont .history_con .version_div{border-bottom:1px solid #d4d4d4;margin-bottom:20px}
+.tab3_cont .history_con .version_div h4{font-size:16px;font-family:'돋움',dotum,AppleGothic,sans-serif;color:#f75a0a;margin-bottom:11px}
+:root .tab3_cont .history_con .version_div h4{margin-bottom:9px \0/IE9+10} 
+.tab3_cont .history_con .version_div .version_date{color:#a3a3a3}
+.tab3_cont .history_con .version_div .version_date, .tab3_cont .history_con ul{letter-spacing:0 !important}
+.tab3_cont .history_con .version_div h5{font-weight:normal;line-height:19px}
+.tab3_cont .history_con .version_div ul{line-height:19px}
+.tab3_cont .history_con .version_div ul li .func_imp, .tab3_cont .history_con .version_div ul{margin-bottom:20px}
+
+/*모바일, 알툴즈Lab 공통*/
+.s_main{position:relative;min-width:960px;_width:100%;height:306px;overflow:hidden;background:#fff;z-index:1;margin:-1px 0 45px}
+.s_main .banimg{position:absolute;top:0;left:50%;width:1920px;height:306px;margin-left:-960px}
+.s_main .banner_wrap .absol_banner{background:#FD8E57}
+.s_main .banner_wrap .bann_nav{left:500px;bottom:27px}
+.s_main .banner_wrap .bann_nav li a{background-position:0 -30px}
+.s_main .banner_wrap .move{background:url("../img/altoolsRenewal/spr_btn_m_main_move.png") 0 0 no-repeat}
+.s_main_con ul{width:960px;*zoom:1;padding-bottom:15px}
+.s_main_con ul:after{content:"";clear:both;display:block}
+.s_main_con ul li{position:relative;float:left;width:480px;height:97px;padding-bottom:30px}
+.s_main_con ul li .icon{float:left;margin-right:24px}
+.s_main_con ul li .icon.icon_98{margin-right:23px}
+.s_main_con ul li a.info, .s_main_con ul li .system a{float:left;height:40px}
+.s_main_con ul li a.info{_float:none}
+.s_main_con ul li dl dt, .s_main_con ul li dl dd{line-height:19px}
+.s_main_con dl dt{font-size:16px;margin-top:-2px}
+.s_main_con ul li dl dd{margin-top:5px}
+.s_main_con .more_info,.mobile_main_banner .more_info{display:inline-block;*display:inline;*zoom:1;color:#3a6cdb;font-size:12px;line-height:17px;background:url("../img/altoolsRenewal/spr_bullet.gif") 100% -180px no-repeat;padding-right:9px}
+:root .s_main_con .more_info,.mobile_main_banner .more_info{line-height:16px \0/IE9+10}
+
+.s_main_con ul li .more_info{position:absolute;top:45px;left:121px}
+.s_main_con ul li span.more_info{top:43px;width:250px;background:none !important;letter-spacing:0}
+.main_content.mobile_cont, .main_content.lab_cont{padding-top:124px}
+.main_content.mobile_cont function, .main_content.lab_cont h4{font-size:18px;line-height:24px;margin-bottom:11px}
+.main_content .function_p{width:960px}
+.main_content .function_p p{color:#656667;padding-left:17px}
+.main_content .function_p p a{text-decoration:underline}
+.main_content .function_p .last{margin-bottom:0}
+
+.top_content .al_info .title_wrap{overflow:hidden}
+.top_content .al_info .title_wrap h2{float:left;margin-right:20px}
+.top_content .al_info .title_wrap .quick_link{float:left;position:relative !important;top:0 !important}
+.top_content.mobile .al_info .title_wrap .quick_link{margin-top:4px}
+
+/* 우측 배너 */
+.right_banner{position:absolute;top:0;right:20px;width:104px}
+.right_banner_area{position:absolute;left:0;width:104px;z-index:5;display:none}
+.right_banner_area li{margin-bottom:10px}
+.right_banner_area li a{display:block;width:104px;height:104px}
+
+/**[[모바일]]**/
+/*메인*/
+.mobile_content{margin-bottom:0 !important}
+.mobile_content .s_main .ban{background:#A2D0E0 !important}
+.s_main_con .service_info .info{white-space:nowrap;font-size:0;cursor:pointer}
+.s_main_con .service_info li dl{position:relative}
+.s_main_con .service_info li dt{vertical-align:top;display:inline-block;*display:inline;*zoom:1;padding-right:6px}
+.s_main_con .service_info li .info:hover dt, .s_main_con .service_info li .info:hover dd{text-decoration:underline}
+.s_main_con .service_info li .info:hover, .s_main_con .service_info li:hover .info dd.kind{text-decoration:none}
+.s_main_con .service_info li dl .kind{display:inline-block;*display:inline;*zoom:1;color:#848485;line-height:normal;vertical-align:top;margin-top:0}
+.s_main_con .service_info li dl .kind img{display:inline-block;*display:inline;*zoom:1;padding-left:4px;vertical-align:-3px}
+.s_main_con .service_info li .system{position:absolute;top:69px;left:122px}
+.s_main_con .service_info li .system .ios, .s_main_con .service_info li .system .android, .s_main_con .service_info li .system .win_8{height:33px;background:url("../img/altoolsRenewal/m_btn_mobile_down.gif");margin-top:-3px}
+.s_main_con .service_info li .system .ios{width:112px;background-position:0 -37px}
+.s_main_con .service_info li .system .android{width:123px}
+.s_main_con .service_info li .system .win_8{width:123px;background-position:0 -74px}
+.s_main_con .service_info li .system a{height:28px;margin-right:4px}
+.mobile_main_banner{width:100%;background:#f6f6f6;border-top:1px solid #efefef;padding:32px 0 28px 0}
+.mobile_main_banner .content_wrap{width:960px;margin:0 auto;overflow:hidden}
+.mobile_main_banner .content_wrap ul{width:960px;overflow:hidden}
+.mobile_main_banner .content_wrap ul li{float:left;width:274px;letter-spacing:-1px;margin-right:64px}
+:root .mobile_main_banner .content_wrap{line-height:15px \0/IE9+10}
+.mobile_main_banner .content_wrap ul li.last{width:284px;margin-right:0}
+.mobile_main_banner .content_wrap .banner_img{width:274px;height:90px;margin:15px 0}
+.mobile_main_banner .content_wrap ul li dl dt{font-size:14px;font-weight:bold}
+.mobile_main_banner .content_wrap ul li dl dd{line-height:18px;margin:8px 0 5px 0;margin-bottom:6px \0/IE8}
+.tablet .tablet_move  .t_move{display:block;position:absolute;top:50%;width:35px;height:75px;background:url("../img/altoolsRenewal/spr_btn_tablet.png") 0 50% no-repeat;margin-top:-37.5px}
+.tablet .tablet_move .t_move.prev{left:0}
+.tablet .tablet_move .t_move.next{right:0;background-position:100% 50%}
+.tablet .go_company_small{display:none !important}
+.tablet .move{display:none !important}
+
+
+/*top_content*/
+.top_content.mobile, .top_content.lab{padding-top:42px}
+.top_content.mobile .info_txt p{width:375px;letter-spacing:-1px}
+.top_content.mobile .al_info .quick_link{top:5px}
+.top_content.mobile .al_img_mobile{position:relative;width:114px;height:116px}
+.top_content.mobile .al_info{left:135px;top:57px}
+.top_content.mobile .al_info h2{margin-bottom:11px}
+.top_content.mobile .btn_area_mobile{position:absolute;right:0;top:53px}
+.top_content.mobile .btn_area_mobile a{display:inline-block;width:96px;height:87px;margin-left:2px}
+.top_content.mobile .al_info .new2{padding:1px 0 0 5px}
+.top_content.mobile .al_info .title_wrap{height:45px}
+
+/*main_content*/
+.main_content.mobile_cont h3{top:37px}
+.main_content .tab1_cont ul.main_func{width:960px;overflow:hidden;margin-top:18px;padding-bottom:25px}
+.main_content .tab1_cont .main_func li{float:left;width:202px;height:420px;margin-right:50px}
+.main_content .tab1_cont .adjust_h li, .main_content .tab1_cont.m_alsee_con .main_func li{height:469px}
+.main_content .tab1_cont.adjust_h .main_func li, .main_content .tab1_cont .main_func.android li{height:478px}
+.main_content .tab1_cont .main_func.key_theme li{height:459px}
+.main_content .tab1_cont .main_func .last{margin-right:0}
+.main_content .tab1_cont .main_func li dl{margin-top:15px}
+.main_content .tab1_cont .main_func li dl dt, .main_content .tab1_cont h5{color:#111113;background:url("../img/altoolsRenewal/spr_bullet.gif") 0 -153px no-repeat;padding:0 0 4px 17px}
+.main_content .tab1_cont .main_func li dl dd, .main_content .tab1_cont dl.main_func dd{font-size:13px}
+.main_content .tab1_cont .mail_info{background:#f6f6f6;border:1px solid #efefef;font-size:12px;padding:20px 0;text-align:center;margin:40px 0 0 0}
+.main_content .tab1_cont .mail_info .orange{letter-spacing:0}
+.main_content .tab1_cont h4.ft_18{font-size:18px;line-height:24px;letter-spacing:-1px}
+.mobile_cont .function_p, .mobile_cont_notab .function_p{border-top:1px solid #e4e4e4;padding-top:26px}
+.main_content .mf_wrap{border-bottom:1px solid #E4E4E4}
+.main_content .mf_wrap .func_float{float:left;overflow:hidden}
+.main_content .view_more{display:inline-block;color:#3a6cdb;background:url("../img/altoolsRenewal/spr_bullet.gif") 100% -183px no-repeat;_background-position:100% -184px;line-height:1;*line-height:14px;*background-position:100% -183px;margin-left:10px;padding-right:7px}
+:root .main_content .view_more{line-height:9px \0/IE9+10} 
+@-moz-document url-prefix(){.main_content .view_more{background-position:100% -182px}}
+
+/**알송 모바일**/
+.top_content.mobile .al_info .quick_link.alsong_m{left:167px}
+.main_content.mobile_cont_notab .function_p .s_andorid{display:block;margin:28px 0 36px}
+.main_content.mobile_cont_notab .function_p .s_andorid img{margin-right:23px}
+
+/**알씨 모바일**/
+.top_content.mobile .al_info.m_alsee h2{margin-bottom:8px}
+.main_content .tab1_cont.m_alsee_con ul.main_func, .main_content .tab1_cont.m_alkey_con ul.main_func{margin-top:14px}
+.main_content .tab1_cont.m_alsee_con .main_func li dl dt, .main_content .tab1_cont.m_alkey_con .main_func li dl dt{background:none;padding-left:0}
+.main_content .tab1_cont h5 .exp{color:#656667;font-weight:normal;font-size:13px;padding-left:4px}
+
+/**알집 모바일**/
+.ctnt.tab1_cont .source_down{border-top:1px solid #E4E4E4;padding:25px 0 0 4px;margin-bottom:-6px}
+.ctnt.tab1_cont .source_down strong{display:block;position:relative;background:url("../img/altoolsRenewal/spr_bullet.gif") 0 -726px no-repeat;padding-left:12px}
+:root .ctnt.tab1_cont .source_down strong{line-height:17px \0/IE9+10}
+.ctnt.tab1_cont .source_down a{line-height:1;margin:7px 0 0 12px}
+:root .ctnt.tab1_cont .source_down a{margin-top:9px \0/IE9+10}
+
+/**알약 안드로이드**/
+.top_content.mobile .al_info .quick_link.alyac_andro{left:226px}
+/**알약 프리미엄**/
+.top_content.mobile .al_info .quick_link.alyac_pre{left:343px}
+.main_content.mobile_cont_notab{padding-top:82px}
+
+/*알람이*/
+.main_content .alarmie ul.main_func{width:945px}
+.main_content .alarmie ul.main_func li{width:188px;margin-right:64px;height:auto}
+.main_content .alarmie .mf_wrap{width:945px;margin-bottom:36px}
+.main_content .alarmie dl.main_func{margin-top:12px}
+.main_content .alarmie dl.main_func dt{padding-top:17px}
+.main_content .alarmie .mf_wrap{padding-bottom:38px}
+.main_content .alarmie .mf_wrap dl.main_func{clear:both}
+.main_content .alarmie .mf_wrap .func_float{_height:466px}
+.main_content .alarmie .mf_wrap .func_float .main_func{width:auto;_margin-right:-64px}
+.main_content .alarmie .mf_wrap .func_float .main_func li.last{width:188px}
+.main_content .alarmie .sa_area{padding:42px 80px 44px 414px;margin-bottom:34px;border:1px solid #d6d3d3;background:url("../img/altoolsRenewal/img_mobile_6_top.jpg") 150px 43px no-repeat}
+.main_content .alarmie .sa_area span{display:block;padding-bottom:35px;font-size:18px;color:#5c759e}
+.main_content .alarmie .sa_area h4{margin-bottom:6px}
+.main_content .alarmie .sa_area p{margin-bottom:45px;line-height:18px;color:#656667}
+.main_content .alarmie .sa_area .btn_area a{margin-right:6px}
+.main_content .alarmie ul.main_func li img{width:188px}
+
+/**[[알툴즈Lab]]**/
+/*메인*/
+.s_main_con .latest_p{padding-top:15px}
+.s_main_con .latest_p li{height:97px}
+.s_main_con .latest_p li img.icon{border:1px solid #dadada}
+.s_main_con .latest_p .install_3{position:absolute;top:69px;left:122px;background:url("../img/altoolsRenewal/btn_install_3.gif") 0 0 no-repeat;width:93px;height:28px}
+.s_main_con .banner_area{width:960px;overflow:hidden}
+.s_main_con .banner_area .first{margin-right:19px}
+.s_main_con .latest_p li dl dt{*height:19px}
+.s_main_con .latest_p li dl dt span{*float:left}
+.s_main_con .latest_p li dl dt .new{vertical-align:-1px;*vertical-align:1px;padding-left:5px}
+
+/*top_content*/
+.top_content.lab .al_img{width:108px;height:109px}
+d.top_content.lab .al_info{left:136px;top:46px}
+.top_content.lab .al_info h2{margin-bottom:9px}
+.top_content.lab .al_info .btn_more{left:243px;top:84px}
+:root .top_content.lab .al_info .btn_more.ftp{top:85px \0/IE9+10}
+.top_content.lab .al_info .quick_link{top:24px}
+.top_content.lab .btn_area{top:42px}
+.top_content.lab .al_info .title_wrap{height:62px}
+.top_content.lab .title_wrap .new2{padding-top:19px}
+.top_content.lab .al_info .title_wrap .quick_link{margin-top:22px}
+
+/*main_content*/
+.main_content.lab_cont h3{top:42px}
+.main_content.lab_cont .tab1_cont h5{font-size:15px}
+
+/**알FTP서버**/
+.top_content.lab .al_info .quick_link.ftp{left:162px}
+
+/**알송 스킨메이커**/
+.top_content.lab .al_info .quick_link.skinmaker{left:222px}
+
+/**키보드 도우미**/
+.top_content.lab .al_info .quick_link.key_help{left:194px}
+
+/**알키보드 네트워크 입력기**/
+.main_content ol.function_p{margin:15px 0 257px}
+.main_content ol.function_p li{padding-left:20px;margin-bottom:31px;font-size:15px;color:#111113;background:url("../img/altoolsRenewal/spr_func_num.gif") 0 1px no-repeat}
+.main_content ol.function_p .sec{background-position:0 -61px}
+.main_content ol.function_p .thi{background-position:0 -125px}
+.main_content ol.function_p .for{background-position:0 -187px}
+.main_content ol.function_p li .s_txt{display:block;margin-top:9px;font-size:13px;color:#707274}
+.main_content ol.function_p li a{text-decoration:underline}
+
+
+/***********고객센터,회원가입************/
+
+/* 멤버 헤더 */
+.page_member{background:url("../img/altoolsRenewal/bg_member.gif") repeat-x}
+.page_member #header{background:#24303E;height:69px}
+.page_member h1 a{*vertical-align:top;margin-top:0 !important}
+.page_member h1 img.title_buy{*vertical-align:top;margin-left:3px}
+.page_member label{cursor:pointer;}
+
+/* leftmenu */
+#container{position:relative;width:960px;margin:60px auto 0;*margin-bottom: 60px}
+#container .side{float:left;margin-right:45px;width:170px}
+#container .content_wrap{float:left;width:745px}
+
+#container .side a{display:block;padding:0 5px;height:34px;line-height:32px;font-size:15px;letter-spacing:-1px}
+#container .side a:hover{color:#f75a0a;text-decoration:underline}
+#container .side a.on{height:32px;background:#ff8403;border:1px solid #ff8403;color:#fff;text-decoration:none}
+#container .side .side_li02 a{line-height:18px !important;padding:7px 5px}
+#container .side .side_li02 a.on{height:36px !important}
+
+/* Member */
+.mb_login{width:457px;margin:160px auto}
+.mb_login h2{margin-bottom:12px}
+.mb_login h2 span{display:inline-block;margin:8px 0 0 12px;font-weight:normal;letter-spacing:-1px}
+.mb_login_wrap{position:relative;*zoom:1;padding:46px 58px;border:1px solid #e3e5e5;background:#f8f8f8}
+.mb_login_wrap .field{position:relative;height:32px}
+.mb_login_wrap .field.first{margin-bottom:6px}
+.mb_login_wrap .field label{position:absolute;left:10px;top:9px;color:#a6a6a6}
+.mb_login_wrap .field .inp_text{background:#fff;height:30px;line-height:30px;width:222px;font-weight:bold}
+.mb_login_wrap .bc.bc_org{position:absolute;left:307px;top:46px}
+.mb_login_wrap .btn_lnk{margin-top:13px;margin-bottom:19px;text-align:right;font-size:12px;color:#454545;letter-spacing:-1px}
+.mb_login_wrap .btn_lnk.easy{margin-top:32px;margin-bottom:0px}
+.mb_login .guide_txt{padding-left:8px;background:url(../img/altoolsRenewal/bul_mb_arrow.gif) no-repeat 0 50%;margin-top:19px;*margin-top:17px;letter-spacing:-1px}
+:root .mb_login .guide_txt{margin-top:18px \0/IE9+10} 
+.mb_login .guide_txt input{vertical-align:middle;*vertical-align:bottom}
+.mb_login .guide_txt a{text-decoration:underline}
+.mb_login .guide_txt .pt img{vertical-align:-4px;_vertical-align:bottom}
+
+.mb_login.no{width:513px}
+.mb_login.no .mb_login_wrap{padding:46px 60px}
+.mb_login.no .mb_login_wrap .field label{display:inline-block;position:static;color:#111113;font-size:14px;letter-spacing:-1px;font-weight:bold;width:63px;margin-top:8px;vertical-align:top;line-height:1.2}
+.mb_login.no .mb_login_wrap .field .inp_text{width:182px}
+.mb_login.no .mb_login_wrap .bc.bc_org{position:absolute;left:332px}
+
+.mb_login .dormant{text-align:center;letter-spacing:-1px}
+.mb_login .dormant h2{margin-bottom:15px}
+.mb_login .dormant p{margin-bottom:50px;line-height:1.5}
+
+.mb_join{width:762px;margin:100px auto}
+.mb_join .tit{margin-bottom:11px}
+.mb_join .txt{color:#656667;letter-spacing:-1px}
+
+.join_divi{width:761px;height:335px;margin:20px 0 38px 0;background:url(../img/altoolsRenewal/bg_join_divi.gif) no-repeat}
+.join_divi dl{float:left;width:380px;margin-top:38px;letter-spacing:-1px;text-align:center}
+.join_divi dt{margin-bottom:10px;font-size:18px;_line-height:21px;font-weight:bold}
+.join_divi dd{color:#848485;font-size:12px;line-height:15px}
+.join_divi dd .bc{margin-top:142px}
+
+.special{letter-spacing:-1px}
+.special h3{float:left;width:161px;font-size:14px;line-height:1.2}
+.special div{float:left}
+.special div.con_1{width:191px}
+.special div.con_2{width:226px}
+.special h4{padding-left:7px;margin-bottom:5px;color:#f75a0a;background:url(../img/altoolsRenewal/bul_mb_arrow2.gif) no-repeat 0 60%}
+.special li{padding-left:7px;color:#656667;background:url(../img/altoolsRenewal/bul_mb_square.gif) no-repeat 2px 50%;line-height:17px}
+
+.mb_wrap{padding:58px 30px 20px}
+.mb_com_wrap{padding:108px 30px 60px}
+
+.mb_path{background:#f8f8f8;border-bottom:1px solid #e0e2e2}
+.mb_path ol{width:960px;height:93px;margin:0 auto;background:url(../img/altoolsRenewal/spr_mb_path.gif) no-repeat}
+.mb_path.ent ol.on_1{background-position:0 0}
+.mb_path.ent ol.on_2{background-position:0 -95px}
+.mb_path.ent ol.on_3{background-position:0 -190px}
+.mb_path.ent ol.on_4{background-position:0 -285px}
+.mb_path.per ol.on_1{background-position:0 -390px}
+.mb_path.per ol.on_2{background-position:0 -485px}
+.mb_path.per ol.on_3{background-position:0 -580px}
+.mb_path.per ol.on_4{background-position:0 -675px}
+
+/*휴면*/
+.mb_dormant{text-align:center;line-height:1.5;letter-spacing:-1px}
+.mb_dormant h2{margin-bottom:18px;font-size:22px;color:#111113}
+.mb_dormant .cancle{padding:202px 0 145px}
+.mb_dormant .cancle p{margin-bottom:60px}
+.mb_dormant .email{padding:225px 0 16px;background:url("../img/altoolsRenewal/bg_member-dormant.gif") 50% 65px no-repeat}
+.mb_dormant .email strong{display:block;margin:19px 0 44px;font-weight:normal;color:#656667}
+.mb_dormant .email strong span{color:#3a6cdb}
+.mb_dormant .email dl{height:30px;padding:0 213px 40px}
+.mb_dormant .email dt{float:left;width:70px;font-weight:bold;line-height:30px;text-align:left;}
+.mb_dormant .email dd{float:left;width:463px;text-align:left;}
+.mb_dormant .email dd .ff{color:#999}
+.mb_dormant .email dd .bc.bc_gry.g_sml{margin-left:2px}
+
+.lev_path{height:53px;background:url(../img/altoolsRenewal/bg_lev_path.gif) no-repeat;border-bottom:1px solid #e0e2e2}
+.lev_path li{float:left;width:247px;line-height:51px;font-size:16px;color:#959595;letter-spacing:-1px;text-align:center;font-weight:bold}
+.lev_path li span{font-family:'Arial';vertical-align:-1px}
+.lev_path li.on{color:#f75a0a}
+
+.policy legend{padding-bottom:10px;margin-left:-2px;*margin-left:-9px;_margin-left:-7px;font-size:14px;color:#111113;letter-spacing:-1px;font-weight:bold}
+.policy .box{padding:18px 16px;height:112px;border:1px solid #e5e7eb;background:#f5f5f7;color:#656667;line-height:15px;overflow-y:scroll}
+.policy.easy_policy .box{height:40px}
+.policy.easy_policy .agree_3 .box{height:15px;overflow:hidden}
+.policy .check{height:14px;margin-top:10px;letter-spacing:-1px}
+.policy.easy_policy .check{float:right}
+.policy .check input,.policy .check label{vertical-align:middle}
+.policy.easy_policy .check label{vertical-align:middle;margin:0 13px}
+#lab_agree_3{margin-right:10px}
+
+.policy .check a{margin-left:6px;color:#3a6cdb;text-decoration:underline;vertical-align:middle}
+.policy .agree_1{padding-bottom:30px;margin-bottom:28px;border-bottom:1px solid #e4e4e4}
+.policy.easy_policy .agree_1{border-bottom:none;margin-bottom:0px;margin-top:50px}
+.policy.easy_policy .agree_2{padding-bottom:30px;margin-bottom:0px}
+
+.bot_btn{margin-top:40px;text-align:center;clear:both}
+.bot_btn_pw{margin-left:-90px !important}
+.bot_btn.mt_1{margin-top:19px}
+
+.prdts_btn{margin-top:50px;text-align:center}
+.prdts_btn.mt_1{margin-top:30px}
+
+.join_hd{padding-bottom:25px;border-bottom:1px solid #dedede;letter-spacing:-1px;clear:both}
+.join_hd h2{margin-bottom:7px;font-size:16px;color:#111113}
+.join_hd p{color:#656667}
+
+.info_hd{margin-top:-3px;letter-spacing:-2px}
+.info_hd h2{margin-bottom:13px;font-size:22px;*line-height:26px;color:#111113}
+.info_hd p{margin-left:2px;color:#656667;letter-spacing:-1px}
+
+.tit_hd{margin:33px 0;font-size:18px;letter-spacing:-1px}
+
+.indispens{margin:9px 0 20px 0;text-align:right;color:#f75a0a;font-size:11px;letter-spacing:-1px}
+.indispens span{color: #ff3333;font-family: '돋움';font-size: 12px;font-weight: bold;vertical-align: middle}
+
+.field_wrap.v_1{margin:61px auto 0}
+.field_wrap.v_2{width:643px;margin:0 auto}
+.field_wrap.w_1{width:366px;margin:72px auto 0}
+.field_wrap.w_2{width:643px;margin:12px 0 0 152px}
+.field_wrap.w_3{margin:20px 20px 0 79px}
+
+.field_wrap .field_1{padding:0 0 15px 10px}
+.field_wrap .field_1.noline{border-bottom:none;padding-bottom:0}
+.field_wrap .field_2{margin:38px 0 0 0;padding-left:10px}
+.field_wrap legend.tit{padding-bottom:25px;*margin-left:-7px;font-size:16px;color:#f75a0a;letter-spacing:-1px;font-weight:bold}
+
+.write_inp{border-collapse:collapse;border-spacing:0;border:0} 
+.write_inp.center{display:inline-block}
+.write_inp th{text-align:left;color:#111113;letter-spacing:-1px}
+.write_inp th.th{vertical-align:top;padding-top:16px}
+.write_inp th label span{margin-left:5px;color:#ff3333;font-family:'돋움';font-size:12px}
+
+.write_inp th input{vertical-align: middle}
+.write_inp td{text-align:left;padding:8px 0 7px 0;color:#48494b;font-size:14px}
+.write_inp td .ff{font-family:'돋움';font-size:12px;color:#999}
+.write_inp .td_pd_ver{position:relative}
+.write_inp .td_pd_ver .ver_help{display:inline-block;width:18px;height:30px;background:url("../img/altoolsRenewal/btn_cus_2_info.gif") 0 6px no-repeat;vertical-align:top;margin-:7px}
+.write_inp .td_pd_ver .tooltip{display:none;position:absolute;left:289px;top:50px;width:276px;background:#EEF5FB;border-left:1px solid #D2DAE1;border-right:1px solid #D2DAE1;font-family:"돋움",dotum;font-size:11px;z-index:5;padding:11px 17px 0 17px}
+.write_inp .td_pd_ver .tooltip.t_pd_info{height:137px}
+.write_inp .td_pd_ver .tooltip.t_m_info{height:66px}
+.write_inp .td_pd_ver .tooltip .tt_bg{position:absolute;left:-1px;display:block;width:312px;height:13px}
+.write_inp .td_pd_ver .tooltip .tooltip_top{top:-13px;background:url("../img/altoolsRenewal/bg_tooltip_top.png") 0 0 no-repeat}
+.write_inp .td_pd_ver .tooltip .tooltip_btm{bottom:-13px;background:url("../img/altoolsRenewal/bg_tooltip_btm.png") 0 0 no-repeat}
+.write_inp .td_pd_ver .tooltip dl{line-height:16px}
+.write_inp .td_pd_ver .tooltip dt{font-weight:bold;color:#262626;background:url("../img/altoolsRenewal/spr_bullet.gif") -248px -431px no-repeat;padding-left:5px}
+.write_inp .td_pd_ver .tooltip dd{color:#656667;margin-bottom:9px;padding-left:5px}
+
+.write_inp.info th{vertical-align:top;padding-top:9px}
+.write_inp.info td{height:30px;padding:0 0 25px 0}
+.write_inp.info .mb_t td{padding-bottom:10px}
+.write_inp.info .mb_i td{padding-bottom:20px}
+.write_inp.info .last td{padding-bottom:0}
+.write_inp.info .inp_text.address, table.contentBox .infoInput3c .content-form .address{margin-top:10px}
+
+.write_inp .sml_txt{margin-top:3px;color:#848485;font-size:11px;line-height:15px;letter-spacing:-1px}
+.write_inp .sml_txt2{margin-top:12px;color:#656667;font-size:12px;line-height:18px;letter-spacing:-1px}
+.write_inp .sml_txt2 a{text-decoration: underline}
+.write_inp .sml_inp{margin-top:7px;font-size:13px;letter-spacing:-1px}
+.write_inp .sml_inp input{vertical-align:middle}
+
+.write_inp .check{display:inline-block;height:22px;padding-left:4px;font-size:11px;color:#111113;letter-spacing:-1px;vertical-align:top;margin-top:4px;margin-left:4px}
+.write_inp .check.on{background:url(../img/altoolsRenewal/spr_check.gif) no-repeat 0 0}
+.write_inp .check.on strong{border:1px solid #b3d8f1;background:#cfe9fc;border-left:0 !important}
+.write_inp .check.off{background:url(../img/altoolsRenewal/spr_check.gif) no-repeat 0 -23px}
+.write_inp .check.off strong{_position:absolute;border:1px solid #ffc2c2;background:#ffd3d3}
+.write_inp .check.off strong{margin-left:-1px}
+.write_inp .check strong{display:inline-block;padding:0 9px;min-height:17px;line-height:18px;font-weight:normal;padding-bottom:2px}
+.info_box .write_inp .check strong{position:absolute}
+
+.write_inp .file_wrap{position: relative;width: 612px;height: 32px;background: url(../img/altoolsRenewal/bg_inp_file.gif) no-repeat;overflow: hidden;}
+.write_inp .file_wrap .inp_text{float: left;width: 511px;line-height: 32px;background: none;border:0;}
+.write_inp .file_wrap .file_input{position: absolute;top: -1px;right:0;width:612px;height:34px;font-size:10.5px;cursor: pointer;line-height:34px;opacity: 0;filter: alpha(opacity=0)}
+*:first-child+html .write_inp .file_wrap .file_input{font-size:11px}
+
+.view_box{text-align:center;letter-spacing:-1px}
+.view_box.type_1 .msg{color:#656667;line-height:19px}
+.view_box.type_1 .rlt{margin:41px 0 53px 0;font-size:16px;color:#111113}
+.view_box.type_1 .rlt span{margin-left:8px;letter-spacing:0;font-size:20px}
+
+.view_box.type_2 h2{margin-bottom:13px;font-size:22px;_line-height:21px}
+.view_box.type_2 .msg{color:#656667;line-height:18px;font-size:12px;color:#656667}
+.view_box.type_2 .msg b{color:#454545}
+.view_box.type_2 .msg.fz{font-size: 13px}
+.view_box.type_2 .rlt{margin-top:51px;padding:29px 0 5px 0;font-size:14px;color:#111113;font-weight:bold}
+.view_box.type_2 .rlt h3{font-size:14px;margin-bottom:13px}
+.view_box.type_2 .rlt h3 .pt{font-weight:normal !important}
+.view_box.type_2 .rlt .rlt_2 p{float:left}
+.view_box.type_2 .rlt:after{content:"";clear:both;display:block}
+.view_box.type_2 .rlt .rlt_2{background-color:#e9e9e9;width:561px;height:100px;float:left;margin-left:0px;padding-left:126px}
+.view_box.type_2 .rlt h3 b{color:#48494b}
+.view_box.type_2 .rlt.vlu input{vertical-align:-2px}
+.view_box.type_2 .rlt.vlu span{margin-left:10px}
+.view_box.type_2 .rlt.vlu .space{margin-right:80px}
+.view_box.type_2 .img{display:inline-block;margin:0 0 36px 0}
+.view_box.type_2 .rlt .agree{margin:18px 0 0 0;text-align:left;font-weight:normal;font-size:13px;color:#48494b}
+.view_box.type_2 .rlt .agree .text{background-color:#ffffff;padding:5px;text-align:center}
+.view_box.type_2 .rlt .agree input::-webkit-input-placeholder {color:#c7c7c7}
+.view_box.type_2 .rlt .agree input:-ms-input-placeholder {color:#c7c7c7}
+.view_box.type_2 .rlt .agree input:-moz-input-placeholder {color:#c7c7c7}
+.view_box.type_2 .rlt .agree_l{float:left;background:url(../img/altoolsRenewal/agree_bg_left.png);width:4px;height:100px}
+.view_box.type_2 .rlt .agree_r{float:right;background:url(../img/altoolsRenewal/agree_bg_right.png);width:4px;height:100px}
+.view_box.type_2 .rlt .agree span{display:block;margin-bottom:4px}
+.view_box.type_2 .rlt .agree span.last{margin-bottom:0}
+.view_box.type_2 .rlt .agree span.last .text{margin-left:38px}
+.view_box.type_2 .rlt .agree span input{margin-left:22px;vertical-align:middle;border:1px solid #b7b7b7}
+.view_box.type_2 .rlt .def{text-align:left} 
+.view_box.type_2 .rlt .def dt{margin-bottom:14px;padding-left:10px;background:url(../img/altoolsRenewal/bul_mb_arrow2.gif) no-repeat 0 50%}
+.view_box.type_2 .rlt .def dd{margin:0 0 29px 10px;font-size:13px;color:#656667;font-weight:normal}
+.view_box.type_2 .rlt .def dd .line{margin:0 10px;color:#dcdddd}
+.view_box.type_2 .rlt .def dd.last{margin-bottom:0}
+.view_box.type_2 .rlt.tbl{padding:22px 0 21px 0;border-top:1px solid #e7e8e8;border-bottom:1px solid #e7e8e8}
+.view_box.type_2 .rlt.tbl .ff{font-weight: normal;}
+.view_box.type_2 .explan{margin-top:10px;line-height:19px;color:#656667;text-align:left}
+.view_box.type_2 .explan dt{margin-bottom:6px;color:#111113;font-size:14px;font-weight:bold}
+.view_box.type_2 .explan dd{margin-bottom:33px}
+.view_box.type_2 .exp_txt{margin-top:10px;line-height:19px;color:#656667;text-align:left}
+.tbl_2 {margin-top:32px !important}
+
+.view_box.pw_rlt{width:695px}
+.view_box.pw_rlt img{margin-bottom:27px;}
+.view_box.pw_rlt h2{margin-bottom:12px;line-height:32px}
+.view_box.pw_rlt .tit_main{text-align:center}
+.view_box.pw_rlt .process{margin-top: 27px}
+
+.view_box.email_rlt{width: 643px;margin-top: 55px}
+.view_box.lev_rlt{width:643px;padding-top:0 !important}
+
+.email_auth{margin:50px 0 0 0;text-align:center;letter-spacing:-1px}
+.email_auth h2{margin:37px 0 18px 0;color:#111113;font-size:18px;letter-spacing:-2px}
+.email_auth .txt{margin-bottom:28px;line-height:19px}
+.email_auth .txt_2{margin-bottom:32px;color:#656667;line-height:19px}
+.email_auth .txt_2 a{color:#3a6cdb}
+
+.join_finish{margin:50px 0 20px 0;text-align:center;letter-spacing:-1px}
+.join_finish h2{margin:37px 0 14px 0}
+.join_finish .txt{margin-bottom:27px;line-height:19px}
+.join_finish .prdts_btn{margin-top: 43px}
+
+.info_box{margin-top:40px;padding-bottom:40px;border:1px solid #d7d8d9}
+.info_box.login{border: 0}
+.info_box .write_inp th{font-size:13px}
+.info_box .write_inp th.com{padding-left:22px}
+.info_box .sub_t_txt{margin-bottom:24px;line-height:19px;letter-spacing:-1px;text-align:center}
+.info_box .sub_b_txt{display:inline-block;margin-top:14px;font-size:12px;line-height:15px;color:#656667;letter-spacing:-1px;text-align:left;*display:inline;zoom:1}
+.info_box .sub_b_txt.tc{text-align:center !important}
+.info_box .sub_b_txt .line_bk{display:inline-block;margin-top:3px}
+
+.info_box .field_wrap{text-align:center}
+.info_box .field_wrap.w_3{text-align:left}
+.info_box .field_wrap .field_in{display:inline-block;display:-moz-inline-stack;*display:inline;zoom:1;*text-align:left;text-align:center;margin:32px 0 0 0}
+.info_box .view_box{padding-top:30px}
+
+.select_tit{height:82px;margin:0 50px;line-height:82px;border-bottom:1px solid #e7e8e8;text-align:center}
+.select_tit label{margin:0 105px 0 5px;font-size:14px;color:#111113;letter-spacing:-1px;font-weight:bold;vertical-align:2px}
+.select_tit label.last{margin-right:0}
+.select_tit span{display:inline-block}
+
+.select_s_tit{margin:0 0 12px 0;text-align:center}
+.select_s_tit label{margin:0 41px 0 5px;font-size:14px;color:#48494b;letter-spacing:-1px;font-weight:bold;vertical-align:2px}
+.select_s_tit label.last{margin-right:0}
+
+.article{width:643px;text-align:left;letter-spacing:-1px}
+.article .index_tit{margin-bottom:13px;font-size:13px;font-weight:bold}
+.article .index{padding-bottom:25px;overflow:hidden;border-bottom:1px solid #e5e5e5}
+.article .index li{float:left;line-height:23px;font-weight:bold}
+.article .index li.n1{width:345px}
+.article .index li span{display:inline-block;width:56px}
+.article .index li a{color:#f75a0a}
+
+.article .index_2{padding-bottom:25px;border-bottom:1px solid #e5e5e5}
+.article .index_2 li{line-height:23px}
+.article .index_2 li span{display:inline-block;width:26px;font-size:12px;vertical-align:middle}
+.article .index_2 a{color:#f75a0a;font-weight:bold}
+
+.article .art_con{color:#656667;font-size:12px;line-height:18px}
+
+.article .art_con.type_1 h2,
+.article .art_con.type_1 h3{font-size:14px;color:#48494b}
+.article .art_con.type_1 h2 span,
+.article .art_con.type_1 h3 span{color:#f75a0a}
+.article .art_con.type_1 h2{margin-top:30px}
+.article .art_con.type_1 h3{margin:30px 0 8px 0}
+
+.article .art_con.type_2 h3{font-size:14px;color:#f75a0a}
+.article .art_con.type_2 h3{margin:36px 0 14px 0}
+
+.article .art_con .ml{margin-left:17px;*margin-left:25px}
+.article .art_con li ol{margin-left:30px}
+.article .art_con .list_style li{list-style-type:decimal}
+.article .art_con a{color:#3a6cdb}
+
+.article .index_def{margin-bottom:24px;letter-spacing:-1px;border-bottom:1px solid #e5e5e5}
+.article .index_def dt{margin-bottom:7px;font-size:14px;font-weight:bold}
+.article .index_def dd{margin-bottom:26px;font-size:12px;color:#656667;line-height:18px}
+
+.quick_top{display:none;position:fixed;_position:absolute;bottom:40px;right:40px;margin:0 auto;text-align:right}
+
+.inp_text, input.basic{margin:0;*margin:-1px 0 0 0;padding:0 10px;height:28px;line-height:26px;background:#f9f9f9;border-width:1px;border-color:#898f94 #b3bbc1 #b3bbc1 #898f94;border-style:solid;color:#262626;font-size:14px;font-family:'맑은 고딕';vertical-align:middle}
+:root .inp_text, input.basic{line-height:18px \0/IE9+10}
+.inp_select{height:30px;*height:auto;font-size:13px;font-family:'맑은 고딕';vertical-align:middle;color:#262626;padding:5px}
+:root .inp_select{padding-top:4px}
+@media screen and (-webkit-min-device-pixel-ratio:0){.inp_select{padding:5px !important}}
+@-moz-document url-prefix(){.inp_select{padding:5px !important}}
+.inp_textarea{margin:0;*margin:-1px 0 -1px 0;padding:0 10px;line-height:28px;background:#f9f9f9;border-width:1px;border-color:#898f94 #b3bbc1 #b3bbc1 #898f94;border-style:solid;color:#262626;font-size:14px;font-family:'맑은 고딕';vertical-align:middle}
+
+.tabcons,
+.tabsubcons{display:none}
+.tabcons_pw{padding-left:90px}
+
+.pt{color:#f75a0a !important}
+.ct{margin:15px;color:#848485!important}
+.clear{display:block;clear:both;height:0}
+.fwn{font-weight: normal;}
+
+*:first-child+html .checkbox{margin:-4px 0 -4px -4px}
+* html .checkbox{margin:-4px 0 -4px -4px}
+*:first-child+html .radio{margin:-4px -3px -4px -4px}
+* html .radio{margin:-4px -3px -4px -4px}
+
+.clearfix:after{display:block;clear:both;content:".";visibility:hidden;height:0}
+.clearfix{display:block}
+* html .clearfix{height:1%}
+
+form,fieldset,tr,th,td,legend{border:0;padding:0;margin:0}
+br{letter-spacing:0 }
+
+table.contentBox{width:745px;border-top:1px solid #d7d8d9;border-left:1px solid #d7d8d9;border-right:1px solid #d7d8d9;_float:left;margin-top:40px;padding-bottom:40px}
+table.contentBox .infoInput3c{padding:20px 0 0 80px}
+table.contentBox .infoInput3c .top{text-align:right;color:#f75a0a;font-size:11px;letter-spacing:-1px;margin:0 20px 20px 0}
+table.contentBox .infoInput3c .content-form th{width:115px;text-align:left;vertical-align:top;color:#111113;letter-spacing:-1px;padding-top:9px}
+table.contentBox .infoInput3c .content-form td{height:30px;padding:0 0 25px 0}
+table.contentBox .infoInput3c .content-form .yellow{font-size:12px;font-family:'돋움',dotum;color:#ff3333}
+table.contentBox .infoInput3c .content-form .td_email{padding-bottom:1px}
+table.contentBox .infoInput3c .content-form .td_agree{padding-bottom:17px}
+table.contentBox .infoInput3c .content-form .td_agree input{vertical-align:middle;margin-right:4px}
+table.contentBox .infoInput3c .content-form .td_agree label{letter-spacing:-1px}
+.clearfix .button{width:743px;border-left:1px solid #d7d8d9;border-right:1px solid #d7d8d9;border-bottom:1px solid #d7d8d9;text-align:center;margin:0 0 65px 215px;padding:12px 0 51px}
+
+.view_box.type_2 .rlt.vlu{text-align:left}
+.view_box.type_2 .rlt.vlu .chk_mail{margin:8px 4px 0 195px}
+.view_box.type_2 .rlt.vlu .sml_inp{font-size:13px;font-weight:normal}
+
+
+/* 버튼 */
+
+.bc{display:inline-block;background:url(../img/altoolsRenewal/spr_btn.png) no-repeat;overflow:hidden;padding-right:4px;white-space:nowrap;cursor:pointer;font-size:16px;letter-spacing:-1px;text-align:center;vertical-align:top}
+.bc span{display:inline-block;background:url(../img/altoolsRenewal/spr_btn.png) no-repeat}
+.bc a,.bc button,.bc input{display:inline-block;text-align:center;font-size:16px;letter-spacing:-1px;cursor:pointer;text-decoration:none;color:#fff;margin-right:-4px;font-weight:bold}
+.bc.disable a,.bc.disable button,.bc.disable input{color:#a3a3a3 !important;cursor:default}
+.bc_org2 input{color:#656667!important}
+.bc_org{background-position:100% -394px}
+.bc_org2{background-position:100% -495px}
+.bc_org span{background-position:0 -345px}
+.bc_org2 span{background-position:0 -445px}
+.bc_org a, .bc_org button,.bc_org input,.bc_org2 a, .bc_org2 button,.bc_org2 input{min-width:162px;_width:162px;font-size:15px}
+.bc_org a, .bc_org2 a{height:49px;line-height:47px;line-height:46px \0/IE8}
+:root .bc_org a{line-height:45px \0/IE9+10}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){.bc_org a{line-height:45px}}
+.bc_org button, .bc_org input,.bc_org2 button, .bc_org2 input{font-size:15px;*height:49px;padding:13px 18px 16px 18px;*padding:0}
+.bc_org.englice a,.bc_org.englice button,.bc_org.englice input{min-width:200px;_width:200px}
+
+.bc_org.o_big{background-position:100% -72px}
+.bc_org.o_big span{background-position:0 0}
+.bc_org.o_big a,.bc_org.o_big button,.bc_org.o_big input{min-width:90px;_width:90px}
+.bc_org.o_big a{height:71px;line-height:67px}
+:root .bc_org.o_big a{line-height:65px \0/IE9+10}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){.bc_org.o_big a{line-height:65px}}
+.bc_org.o_big button,.bc_org.o_big input{*height:71px;padding:24px 0 27px 0;*padding:0}
+.bc_org.order a,.bc_org.order button,.bc_org.order input{min-width:120px;_width:120px}
+
+.bc_org.o_mbig{background-position:100% -2262px}
+.bc_org.o_mbig span{background-position:0 -2210px}
+.bc_org.o_mbig a,.bc_org.o_mbig button,.bc_org.o_mbig input{position:relative;min-width:202px;_width:202px;height:43px;line-height:41px}
+.bc_org.o_mbig img{vertical-align:0;_margin-top:22px;margin-left:10px}
+
+.bc_org.o_mid{background-position:100% -286px}
+.bc_org.o_mid span{background-position:0 -230px}
+.bc_org.o_mid a,.bc_org.o_mid button,.bc_org.o_mid input{position:relative;min-width:202px;_width:202px;height:56px;line-height:52px}
+.bc_org.o_mid img{vertical-align:0;_margin-top:22px;margin-left:10px}
+
+.bc_org.o_msml{background-position:100% -1786px}
+.bc_org.o_msml span{background-position:0 -1755px}
+.bc_org.o_msml a,.bc_org.o_msml button,.bc_org.o_msml input{min-width:83px;_width:83px;height:31px;line-height:29px;_line-height:31px;font-size: 13px;font-weight: normal;}
+:root .bc_org.o_msml a{line-height:27px \0/IE9+10}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){.bc_org.o_msml a{line-height:27px}}
+
+.bc_org.o_sml{background-position:100% -1562px}
+.bc_org.o_sml span{background-position:0 -1534px;*vertical-align:top}
+.bc_org.o_sml a,.bc_org.o_sml button,.bc_org.o_sml input{min-width:87px;_width:87px;height:28px;line-height:26px;font-size: 13px;font-weight: normal}
+:root .bc_org.o_sml a,.bc_org.o_sml button, :root .bc_org.o_sml input{line-height:23px \0/IE9+10}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){.bc_org.o_sml a,.bc_org.o_sml button,.bc_org.o_sml input{line-height:23px}}
+
+.bc_b_org{background-position:100% -911px}
+.bc_b_org span{background-position:0 -865px}
+.bc_b_org a,.bc_b_org button,.bc_b_org input{min-width:126px;_width:126px;}
+.bc_b_org button,.bc_b_org input{*height:47px;padding:11px 0 15px 0;*padding:0;margin-top: -1px;*margin-top:-2px}
+:root .bc_b_org button,.bc_b_org input{padding:10px 0 16px 0 \0/IE9+10} 
+.bc_b_org a{height:47px;line-height:42px;line-height:41px \0/IE8}
+:root .bc_b_org a{line-height:41px \0/IE9+10}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){.bc_b_org a{line-height:41px}}
+
+.bc_gry{background-position:100% -495px}
+.bc_gry span{background-position:0 -445px}
+.bc_gry a,.bc_gry button.bc_gry input{min-width:162px;_width:162px;height:49px;line-height:47px;line-height:46px \0/IE8;font-size:15px;color:#656667}
+:root .bc_gry a{line-height:45px \0/IE9+10}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){.bc_gry a{line-height:45px}}
+
+.bc_gry.mid{background-position:100% -1640px}
+.bc_gry.mid span{background-position:0 -1595px}
+.bc_gry.mid a,.bc_gry.mid button,.bc_gry.mid input{position:relative;min-width:146px;_width:146px;height:45px;line-height:45px;line-height:44px \0/IE8;color:#000;font-weight: normal}
+:root .bc_gry.mid a, :root .bc_gry.mid button, :root .bc_gry.mid input{line-height:42px \0/IE9_10}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){.bc_gry.mid a, .bc_gry.mid button, .bc_gry.mid input{line-height:42px}}
+
+.bc_gry.g_sml{background-position:100% -580px}
+.bc_gry.g_sml span{background-position:0 -550px}
+.bc_gry.g_sml a,.bc_gry.g_sml button,.bc_gry.g_sml input{min-width:83px;_width:83px;height:30px;line-height:30px;line-height:28px \0/IE8;font-size:13px;font-weight:normal;color:#48494b}
+:root .bc_gry.g_sml a{line-height:28px \0/IE9+10}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){.bc_gry.g_sml a{line-height:28px}}
+
+.bc_gry.g_vsml{background-position:100% -1507px}
+.bc_gry.g_vsml span{background-position:0 -1480px;*vertical-align:top}
+.bc_gry.g_vsml a,.bc_gry.g_vsml button,.bc_gry.g_vsml input{min-width:74px;_width:74px;height:27px;line-height:27px;font-size:13px;font-weight:normal;color:#3d3d3d}
+:root .bc_gry.g_vsml a, :root .bc_gry.g_vsml button, :root .bc_gry.g_vsml input{line-height:23px \0/IE9+10}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){.bc_gry.g_vsml a,.bc_gry.g_vsml button,.bc_gry.g_vsml input{line-height:22px}}
+.bc_gry.setup a,.bc_gry.setup button,.bc_gry.setup input{min-width:89px;_width:89px;font-size:12px;color:#111113}
+
+.bc_wht{background-position:100% -660px}
+.bc_wht span{background-position:0 -615px}
+.bc_wht a,.bc_wht button.bc_wht input{min-width:152px;_width:152px;height:45px;line-height:43px;_line-height:45px;font-size:13px;color:#48494b}
+:root .bc_wht a, :root .bc_wht button.bc_wht input{line-height:41px \0/IE9+10}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){.bc_wht a,.bc_wht button.bc_wht input{line-height:41px}}
+
+.bc_wht.w_big{background-position:100% -1259px}
+.bc_wht.w_big span{background-position:0 -1160px}
+.bc_wht.w_big a{min-width:110px;_width:110px;height:98px;line-height:96px;font-size: 14px;color:#3d3d3d;font-weight: normal;}
+.bc_wht.w_big button,.bc_wht.w_big input{min-width:110px;_width:110px;padding:48px 0 50px 0;*padding:35px 0 58px 0;font-size: 14px;color:#3d3d3d;font-weight: normal;}
+:root .bc_wht.w_big button,.bc_wht.w_big input{padding:47px 0 51px \0/IE9+10}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){.bc_wht.w_big button,.bc_wht.w_big input{padding:47px 0 51px}}
+
+.bc_wht.w_sq.dm{margin-top:15px;}
+.bc_wht.w_sq{background-position:100% -188px}
+.bc_wht.w_sq span{background-position:0 -150px}
+.bc_wht.w_sq a,.bc_wht.w_sq button,.bc_wht.w_sq input{min-width:337px;_width:337px;height:38px;line-height:36px;font-size:14px;font-weight:normal;color:#48494b}
+:root .bc_wht.w_sq a, :root .bc_wht.w_sq button, :root .bc_wht.w_sq input{line-height:34px \0/IE9+10}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){.bc_wht.w_sq a,.bc_wht.w_sq button,.bc_wht.w_sq input{line-height:34px}}
+
+.bc_blk{background-position:100% -816px}
+.bc_blk span{background-position:0 -770px}
+.bc_blk a,.bc_blk button.bc_blk input{min-width:126px;_width:126px;height:46px;line-height:42px;line-height:41px \0/IE8;font-size:16px;color:#fff}
+:root .bc_blk a, :root .bc_blk button.bc_blk input{line-height:40px \0/IE9+10}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){.bc_blk a,.bc_blk button.bc_blk input{line-height:40px}}
+
+.bc_blk.b_sml{background-position:100% -1392px}
+.bc_blk.b_sml span{background-position:0 -1360px}
+.bc_blk.b_sml a,.bc_blk.b_sml button,.bc_blk.b_sml input{min-width:74px;_width:74px;padding:8px 0;*padding:0;margin-top:-1px;margin-bottom: -1px;font-size:13px;color:#fff;font-weight: normal}
+:root .bc_blk.b_sml a, :root .bc_blk.b_sml button, :root .bc_blk.b_sml input{padding:6px 0 9px \0/IE9+10}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){.bc_blk.b_sml a, .bc_blk.b_sml button, .bc_blk.b_sml input{padding:6px 0 9px}}
+.bc_blk.faq a,.bc_blk.faq button,.bc_blk.faq input{*width:55px;*height:33px;min-width:55px;_width:55px}
+
+.bc_blk.b_sml2{background-position:100% -1721px}
+.bc_blk.b_sml2 span{background-position:0 -1690px}
+.bc_blk.b_sml2 a,.bc_blk.b_sml2 button,.bc_blk.b_sml2 input{min-width:65px;_width:65px;margin-top:-2px;font-size:13px;color:#fff;font-weight: normal;}
+.bc_blk.b_sml2 a{height:33px;line-height:33px}
+.bc_blk.b_sml2 button,.bc_blk.b_sml2 input{*height:33px;padding:8px 9px;*padding:0}
+:root .bc_blk.b_sml2 button, :root .bc_blk.b_sml2 input{padding:7px 9px 9px \0/IE9+10} 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){.bc_blk.b_sml2 button,.bc_blk.b_sml2 input{padding:7px 9px 9px}}
+
+.bc_blk.b_sml3{background-position:100% -1928px}
+.bc_blk.b_sml3 span{background-position:0 -1897px}
+.bc_blk.b_sml3 a,.bc_blk.b_sml3 button,.bc_blk.b_sml3 input{min-width:55px;_width:55px;padding:6px 0 8px;*padding:0;margin-top:-1px;margin-bottom: -1px;font-size:13px;color:#fff;font-weight: normal}
+.bc_blk.b_sml3 button,.bc_blk.b_sml3 input{*height:31px}
+:root .bc_blk.b_sml3 a, :root .bc_blk.b_sml3 button, :root .bc_blk.b_sml3 input{padding:5px 0 8px \0/IE9+10}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){.bc_blk.b_sml3 a, .bc_blk.b_sml3 button, .bc_blk.b_sml3 input{padding:5px 0 8px}}
+
+.bc_blk.b_vsml{background-position:100% -1453px}
+.bc_blk.b_vsml span{background-position:0 -1430px}
+.bc_blk.b_vsml a,.bc_blk.b_vsml button,.bc_blk.b_vsml input{font-family:"돋움",dotum;min-width:36px;_width:36px;font-size:12px;color:#fff;font-weight: normal}
+.bc_blk.b_vsml a{height:24px;line-height:21px;margin-top:-2px}
+.bc_blk.b_vsml a,.bc_blk.b_vsml button,.bc_blk.b_vsml input{min-width:36px;_width:36px;height:24px;margin-top:-2px;line-height:21px;*line-height:16px;font-size:12px;color:#fff;font-weight: normal;*padding-top:4px}
+
+.bc_drk.d_big{background-position:100% -1058px}
+.bc_drk.d_big span{background-position:0 -960px}
+.bc_drk.d_big a,.bc_drk.d_big button,.bc_drk.d_big input{min-width:110px;_width:110px;padding:48px 0 50px 0;*padding:35px 0 59px 0;*;font-size: 14px;color:#fff;font-weight: normal;}
+:root .bc_drk.d_big a, :root .bc_drk.d_big button, :root .bc_drk.d_big input{padding:47px 0 51px 0 \0/IE9+10}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){.bc_drk.d_big a, .bc_drk.d_big button, .bc_drk.d_big input{padding:47px 0 51px 0}}
+
+.bc_org.o_flat{background-position:100% -2022px}
+.bc_org.o_flat span{background-position:0 -1961px}
+.bc_gray.g_flat{background-position:100% -2145px}
+.bc_gray.g_flat span{background-position:0 -2088px}
+.bc_org.o_flat a, .bc_gray.g_flat a{width:156px;min-width:156px;height:56px;font-size:16px;line-height:51px;text-shadow:0 -1px 1px rgba(0,0,0,0.2)}
+
+/* ETC */
+.page_etc{background:url("../img/altoolsRenewal/bg_etc.gif") repeat-x}
+
+.etc_top{height:48px;padding-top: 38px}
+.etc_top.part{border-bottom:1px solid #888}
+.etc_top .title{float:left}
+.etc_top p{padding-top:8px;*padding-top:15px;letter-spacing:-1px}
+
+.sitemap{letter-spacing:-1px}
+.sitemap .individual{margin-top:55px;zoom:1}
+.sitemap h3{position:relative;left:-11px;top:-33px;margin-bottom:-18px;padding-left:9px;background:url(../img/altoolsRenewal/bul_org_square.gif) no-repeat 0 50%;font-size:18px;color:#f75a0a}
+.sitemap h4 a{display:inline-block;margin-bottom:10px;font-size:15px;color:#111113;}
+.sitemap li{float:left;width:145px;height:308px;padding-left:10px;border-right:1px solid #ebecee}
+.sitemap li.last{border-right:0;}
+.sitemap li ul li{padding-left:0;height:auto;line-height:24px;font-size:13px;border-right:0}
+.sitemap li ul li a:hover{color:#f75a0a}
+.sitemap li ul li .al_nw{font-size:12px;letter-spacing:-2px}
+.sitemap .blank{padding-right:17px !important;background:url(../img/altoolsRenewal/icon_pagelink.gif) no-repeat 100% 50%}
+.sitemap .company h3{left:3px;top:0;margin-bottom:15px;margin-top:47px}
+.sitemap .company a{font-size:15px;color:#111113;font-weight:bold;padding:0 9px}
+.sitemap .company .line{color:#ebecee;font-family:'돋움';font-size: 13px}
+
+.contactus{position:relative;padding-top:22px;letter-spacing: -1px}
+.contactus h2{margin-bottom: 6px;font-size: 18px;color: #f75a0a;}
+.contactus p{position:relative;z-index:10;margin-bottom: 23px;line-height: 18px}
+.contactus .img{position:absolute;right:0;top:20px;}
+.contactus h3{margin: 356px 0 13px 0;font-size: 16px;color: #111113;}
+.contactus dl{padding-left: 53px}
+.contactus dt{position:relative;padding:3px 0 7px 0;*padding-top: 0;font-size: 14px;color: #111113;font-weight: bold;}
+.contactus dt img{position:absolute;left:-52px;top:0;}
+.contactus dd{padding-bottom: 13px;color: #656667;}
+
+.partner .field_wrap .indispens{width: 810px;}
+.partner .field_wrap table{margin:42px 0 0 114px}
+.partner .field_wrap table .inp_text{width:208px}
+.partner .field_wrap table .inp_text.tc{width:44px}
+.partner .field_wrap table td .inp_text.email_f{width:82px}
+.partner .field_wrap table td .inp_text.email_b{width:80px}
+.partner .field_wrap table textarea{width:593px;height:300px}
+
+.collect_agree{padding-top: 37px;letter-spacing: -1px;border-top:1px solid #e5e5e5}
+.collect_agree h3{margin-bottom: 16px;font-size: 16px;}
+.collect_agree h3 span{font-size: 12px;font-weight: normal}
+.collect_agree p{margin-bottom: 14px;font-size: 12px;color: #656667;line-height: 18px}
+.collect_agree .check input{vertical-align:middle}
+.collect_agree .check label{font-weight: bold;}
+
+/* MAIN - COMPANY */
+.page_main_products{background:url("../img/altoolsRenewal/bg_main_products.gif") repeat-x}
+.page_main_products #header{height:88px}
+.page_main_products #header .gnb{width:auto;padding-left:0}
+.page_main_products #content{margin-bottom: 0}
+.page_main_products .link_main{position:absolute;top:0}
+.main_products li{border-bottom: 1px solid #e6e5dc;background: #f4f4f2;letter-spacing: -1px}
+.main_products li.even{background: #f9f9f8}
+.main_products li.last{border-bottom:0;}
+.main_products .heading{padding-top: 20px;border-bottom: 0;}
+.main_products .heading .content_wrap{height: 57px;}
+.main_products .heading p{height: 55px;padding-left: 48px;background: #f8f8f7 url(../img/altoolsRenewal/bul_exc_org2.gif) no-repeat 25px 50%;border: 1px solid #e2e2e2;line-height: 55px}
+.main_products .content_wrap{position:relative;height: 309px}
+.main_products .al_img{position:relative;width:198px;top: 59px}
+.main_products .al_info{position:absolute;min-width:176px;*width:480px;left:232px;top:72px}
+.main_products .al_info .title{font-size: 34px;color: #111113;font-weight: normal;letter-spacing:-3px;padding-right:5px}
+.main_products .al_info .title span{display:block;margin:0 0 9px 3px;font-size: 17px;letter-spacing: -1px;color: #48494b;_line-height:19px}
+.main_products .al_info .title img{margin:5px 0 0 10px}
+.main_products .al_info p{margin:14px 0 11px 5px;font-size: 14px;line-height: 21px;color: #656667}
+.main_products .al_info .lk{margin-left: 5px}
+.main_products .al_info .lk a{font-size: 12px;color: #3a6cdb}
+.main_products .al_info .lk .dot{padding:0 3px 0 8px;color: #adc1f0;font-weight: bold}
+.main_products .al_info .lk .blank{padding-right: 16px;background: url(../img/altoolsRenewal/icon_pagelink2.gif) no-repeat 100% 50%}
+.main_products .btn_area{position:absolute;right:-4px;top:94px}
+.main_products .btn_area .bc{margin-right: 5px}
+
+/* CUSTOMER */
+.btn_sch{width:33px;font-size:0;line-height:0;color:#F5F5F5;vertical-align:top;cursor:pointer}
+.page_customer{background:url("../img/altoolsRenewal/bg_customer.gif") repeat-x}
+.cus_hd{position:relative;height: 100px;}
+.cus_hd.cus_main{height:98px;border-bottom:2px solid #50575F;margin-bottom:39px}
+.cus_hd h2{padding:34px 0 0 3px;}
+.cus_hd .faq_sch{position:absolute;right:0;top:49px;font-size:0;line-height:0}
+.cus_hd .faq_sch .inp_text{width:148px;height:30px;line-height: 26px;background: #fff;border:1px solid #CFCFCF;vertical-align:top}
+:root .cus_hd .faq_sch .inp_text{line-height:18px \0/IE9+10}
+.cus_hd .faq_sch .btn_sch{height:32px;background:url("../img/altoolsRenewal/btn_faq_search.gif") 0 0 no-repeat}
+.cus_hd .tab_menu{position:absolute;right:0;top:59px;width: 100%;text-align:right;}
+.cus_hd .tab_menu ul{float:right}
+.cus_hd.cus_deny{border-bottom:2px solid #888;margin-bottom:93px}
+.cus_deny_con{text-align:center;letter-spacing:-1px;padding-top:53px}
+.cus_deny_con.deny_default{background:url("../img/altoolsRenewal/h3_cus_deny.gif") 50% 0 no-repeat}
+.cus_deny_con.deny_ok{background:url("../img/altoolsRenewal/h3_cus_deny_ok.gif") 50% 0 no-repeat}
+.cus_deny_con.deny_no{background:url("../img/altoolsRenewal/h3_cus_deny_no.gif") 50% 0 no-repeat}
+.cus_deny_con p{line-height:19px}
+.cus_deny_con.deny_ok p a{text-decoration:underline}
+.cus_deny_con strong{display:block;font-size:14px;color:#48494b}
+.cus_deny_con.deny_default strong{margin-top:214px}
+.cus_deny_con.deny_ok strong{margin-bottom:5px}
+.cus_deny_con strong .ls0{color:#f75a0a}
+.cus_deny_con .deny_btn{padding-bottom:29px}
+.cus_deny_con.deny_default .deny_btn{margin-top:29px}
+.cus_deny_con.deny_ok .deny_btn{margin-top:212px}
+.cus_deny_con.deny_no .deny_btn{margin-top:208px}
+.cus_deny_con.deny_default .deny_btn .bc_org{margin-right:4px}
+
+#faq_top{position:relative;height: 197px;padding-left: 227px}
+#faq_top img{position:absolute;left:37px;top:50px}
+#faq_top h3{padding: 55px 0 16px 2px;font-size: 16px;color: #202831;letter-spacing: -1px;border-bottom: 1px solid #e5e5e5}
+#faq_top li{height: 32px;padding-left: 33px;background: url(../img/altoolsRenewal/bul_faq_q.gif) no-repeat 2px 50%;line-height: 31px;border-bottom: 1px solid #e5e5e5;letter-spacing: -1px}
+#faq_top li span{display:inline-block;width:69px;*width:68px;color:#e35d07;text-overflow:ellipsis;vertical-align:top;*vertical-align:middle;overflow:hidden;white-space:nowrap;margin-right:4px;*margin-right:5px}
+#faq_top li a{_display:inline-block}
+#faq_top .go{position:absolute;left: 66px;top:195px;padding-right: 7px;font-size: 12px;background: url(../img/altoolsRenewal/bul_arrow02.gif) no-repeat right 50%;letter-spacing: -1px;text-decoration: underline}
+#faq_top #tabcons_all img{top: 33px}
+#faq_top #tabcons_all h3{padding-top: 37px}
+
+.board_top{position:relative;height: 54px;}
+.board_top.topline{border-top: 1px solid #888;}
+.board_top .soft{margin: 18px 0 0 14px}
+.board_top .soft a{font-size: 16px;color: #3d3d3d;letter-spacing: -1px}
+.board_top .soft a.on,
+.board_top .soft a:hover{color: #e35d07}
+.board_top .soft .line{color: #d4d4d4;margin:0 7px}
+.board_top .sch{position:absolute;right:0;top:15px}
+.board_top .sch select{width:123px;height:28px;*height:auto;border:1px solid #CFCFCF;*border:0 none;padding:4px;letter-spacing:-1px;margin-right:3px} 
+.board_top .sch .inp_text{width:146px;height:26px;line-height:24px;background:#fff;border:1px solid #CFCFCF}
+:root .board_top .sch .inp_text{line-height:18px \0/IE9+10}
+.board_top .sch .btn_sch{height:28px;background:url("../img/altoolsRenewal/btn_faq_search_2.gif") 0 0 no-repeat}
+.board_top.result_sub{margin-top:57px}
+.board_top h3{color:#202831;font-weight:bold;font-size:16px;letter-spacing:-1px;padding-top:20px}
+
+.board .basic{width: 100%;margin-bottom:20px;border-collapse: collapse;border:0;border-top:2px solid #979797;border-bottom:1px solid #979797;letter-spacing: -1px}
+.board .noline{border-bottom: 0;}
+.board .basic thead th{background: #f7f7f7;height: 31px}
+.board .basic tbody td{height: 36px;border-top: 1px solid #e4e4e4;text-align: center;}
+.board .basic tbody td.survey_box{border:0 none;text-align:left;padding:17px 198px 67px 50px}
+.board .basic tbody td.survey_box .faq_survey{width:620px;background:#f7f7f7;border:1px solid #d1d1d1;padding:24px 30px}
+.board .basic tbody td.survey_box .faq_survey h3{font-weight:bold;margin-bottom:12px}
+.board .basic tbody td.survey_box .faq_survey .input_wrap input{vertical-align:-2px;margin-right:7px}
+:root  .basic tbody td.survey_box .faq_survey .input_wrap input{vertical-align:middle \0/IE9+10}
+.board .basic tbody td.survey_box .faq_survey .input_wrap label{margin-right:40px}
+.board .basic tbody td.survey_box .faq_survey textarea{width:602px;height:58px;margin-top:23px;*margin-top:18px;letter-spacing:-1px;overflow-y:scroll;resize:none;line-height:20px;color:#a6a6a6;*font-family:'맑은 고딕',malgun gothic,'돋움',dotum,AppleGothic,sans-serif;border:1px solid #abadb3;margin-bottom:10px;padding:5px 8px}
+.board .basic tbody td.survey_box .faq_survey .btn_wrap{text-align:center}
+.board .basic tbody td.survey_box .faq_survey .btn_wrap .bc, .board .basic tbody td.survey_box .faq_survey .bc input{font-size:13px}
+.board .basic tbody td.survey_box .faq_survey .btn_wrap .bc_org_32{background-position:100% -1860px}
+.board .basic tbody td.survey_box .faq_survey .btn_wrap .bc.bc_org_32 span{background-position:0 -1821px}
+.board .basic tbody td.survey_box .faq_survey .btn_wrap .bc input{*width:94px;*height:33px;padding:7px 23px 9px 23px;*padding:0}
+:root .basic tbody td.survey_box .faq_survey .btn_wrap .bc input{padding:6px 23px 9px 23px \0/IE9+10}
+.board .basic .th_divi{text-align: left;text-indent: 15px}
+.board .basic .th_subject{text-align: left;text-indent: 180px}
+.board .basic .td_num,
+.board .basic .td_hit,
+.board .basic .td_date{letter-spacing: 0;color: #848485;}
+.board .basic .td_divi{text-indent:10px;color: #e35d07;text-align: left;}
+.board .basic .td_subject{text-align:left;text-indent: 20px}
+.board .basic .highlight {padding:1px 2px;color: #242424 ;background: #f5dca9; font-weight:bold}
+:root .highlight {padding:0 2px 3px \0/IE9+10}
+.board .basic .td_download a{margin: 15px;text-decoration: underline}
+.board .basic .td_writer{color: #8a6c4e;}
+.board .basic .td_as{color: #848485;}
+.board .basic .noline{border:0;}
+.board .basic .n_result_box td{width:100%;height:444px}
+.board .basic .n_result_box td .no_result_wrap{height:199px;padding-top:245px;background:url("../img/altoolsRenewal/bg_faq_noresult.gif") 50% 121px no-repeat;line-height:20px}
+.board .basic .n_result_box td .no_result_wrap .orange{font-weight:bold}
+.board .view{margin-bottom: 7px;border-bottom-color:#d1d1d1;}
+.board .view thead th{height: 57px;font-weight: normal;letter-spacing: 0;color: #848485}
+.board .view thead .th_title{text-indent:30px;font-size: 16px;text-align:left;color: #48494b;}
+.board .view tbody .content_box{text-align:left;line-height: 19px;padding:30px 50px;word-break:break-all}
+.board .view tbody .nopd{padding:30px 0}
+.board .view tbody .answer_box{border:1px solid #d1d1d1;border-bottom:0;background: #f7f7f7;text-align:left;line-height: 19px;padding:21px 29px;word-break:break-all}
+.board .view tbody .answer_box .tit{padding-bottom: 13px;margin-bottom: 11px;font-size: 15px;color: #202831;font-weight: bold;border-bottom: 1px solid #d1d1d1;}
+.board .view tbody .att_file{margin-top: 11px;font-size: 11px;letter-spacing: 0}
+.board .view tbody .att_file img{margin-right: 3px;vertical-align: middle}
+.board .view .content_box, .board .view .answer_box{letter-spacing:0 !important}
+
+.board .page{margin-top: 40px;border-top-width: 1px;background: #fafafa}
+.board .page tbody th{color: #8a6c4e;font-weight: normal;border-top: 1px solid #e4e4e4}
+.board .page tbody td{text-indent:25px;text-align: left;}
+
+.board .page{margin-top: 40px;border-top-width: 1px;background: #fafafa}
+.board .page tbody th{color: #8a6c4e;font-weight: normal;border-top: 1px solid #e4e4e4}
+.board .page tbody td{text-indent:25px;text-align: left;}
+
+.board .answer{margin-top: 40px;border-top-width: 1px;}
+.board .answer .td_subject{text-indent:35px}
+.board .answer .td_ing{color: #3598dc;}
+
+.board .basic .first_line th,
+.board .basic .first_line td{border-top: 0 !important;}
+
+.board_nav{overflow:hidden;_height:1%;}
+.board_nav span{vertical-align: middle;_vertical-align: top}
+.board_nav .left{float: left}
+.board_nav .right{float: right}
+.board_nav .right .quick_link{margin:2px 5px 0}
+.board_nav .right .quick_link, .board_nav .right .bc.bc_gry.g_vsml{float:left}
+
+/* TAB MENU */
+.tab_menu{position:relative;z-index:10;height: 42px;background: url(../img/altoolsRenewal/bg_tabmenu.gif) repeat-x 0 100%;margin-bottom:26px}
+.tab_menu ul:after{content:"";display:block;clear:both}
+.tab_menu li{float:left;width: 191px;height: 40px;margin-right: -1px;line-height:38px;border:1px solid #b7b7b7;border-bottom: 0;background: #ececec;text-align: center;font-size: 16px;letter-spacing: -1px}
+.tab_menu li.last{width:190px;margin-right: 0}
+.tab_menu li a{display:inline-block;width: 100%;color: #3d3d3d;height:40px}
+.tab_menu li a:hover{text-decoration: none}
+.tab_menu li.on{position:relative;background: #fff;border-color:#888;height: 41px;}
+.tab_menu ul ul{display:none;position:absolute;left:0;_left:0;top:46px;width:960px;border-bottom: 1px solid #e5e5e5;overflow:hidden;}
+.tab_menu ul ul li{width: auto;height: auto;margin: 0;padding:0 10px;line-height: auto;border:none;background:url(../img/altoolsRenewal/line_tabmenu.gif) no-repeat right 50% !important;font-size: 14px}
+.tab_menu ul ul li a{width: auto;color: #656667;}
+.tab_menu ul ul li a:hover,
+.tab_menu ul ul li.on a{color: #f75a0a}
+.tab_menu ul ul li .yac_new{background:url("../img/altoolsRenewal/spr_bullet.gif") 100% -624px no-repeat;_background-position:100% -625px;padding-right:15px}
+@media screen and (-webkit-min-device-pixel-ratio:0){.tab_menu ul ul li .yac_new{background-position:100% -625px}}
+.tab_menu ul ul li.last{width: auto;background: none !important}
+.tab_menu .sub_2{left:-193px}
+.tab_menu .sub_3{left:-385px}
+.tab_menu .sub_4{left:-577px}
+.tab_menu .sub_5{left:-769px}
+.tab_menu .sub_6{left:-831px}
+
+.cus_quick_menu{position:absolute;right:0px;top:142px;z-index:15; display:none;}
+.cus_quick_menu li{width:73px;height:73px;margin-bottom:11px;*margin-bottom:7px;_margin-bottom:9px}
+.cus_quick_menu a{display:block;width:73px;height:73px}
+.cus_quick_menu a.ico_1{background:url("../img/altoolsRenewal/btn_cus_quick_1.png") no-repeat}
+.cus_quick_menu a.ico_2{background:url("../img/altoolsRenewal/btn_cus_quick_2.png") no-repeat}
+.cus_quick_menu a.ico_3{background:url("../img/altoolsRenewal/btn_cus_quick_3.png") no-repeat}
+.cus_quick_menu a.ico_4{background:url("../img/altoolsRenewal/btn_cus_quick_4.png") no-repeat}
+.cus_quick_menu a.ico_5{background:url("../img/altoolsRenewal/btn_cus_quick_5.png") no-repeat}
+.cus_quick_menu a.ico_6{background:url("../img/altoolsRenewal/btn_cus_quick_6.png") no-repeat}
+
+.inquire_box{position:relative;height: 368px;background: url(../img/altoolsRenewal/bg_inquire_box.gif) no-repeat}
+.inquire_box dl{float:left;width:480px;margin-top:194px;letter-spacing:-1px;text-align:center}
+.inquire_box dd{color:#848485;font-size:12px;line-height:15px}
+.inquire_box dd .bc{margin-top:19px}
+
+.inquire_w .field_wrap table{margin:43px 0 0 140px}
+.inquire_v{width: 682px;margin:50px auto 0;}
+.inquire_v_nr .no_result{height:307px;background:url(../img/altoolsRenewal/bg_question_no_result.gif) 232px 172px no-repeat;padding:198px 0 0 396px}
+.inquire_v_nr .no_result .no_r_txt{width:342px}
+.inquire_v_nr .no_result .no_r_txt h3{font-size:18px;_line-height:21px;font-weight:bold;letter-spacing:-2px} 
+.inquire_v_nr .no_result .no_r_txt p{line-height:20px;margin-top:18px;letter-spacing:-1px}
+.help_txt{margin-top: 10px;font-size: 12px;color: #656667;letter-spacing: -1px;line-height: 18px}
+
+.service_end{border-top: 2px solid #979797;}
+.service_end li{position:relative;height: 123px;padding:15px 0;border-bottom: 1px solid #e4e4e4;}
+.service_end li .img{float:left;margin-right: 11px}
+.service_end dl{float: left}
+.service_end dt{padding-top: 19px;font-size: 18px;font-weight: bold;color: #111113;}
+.service_end dt span{display:block;margin:11px 0 3px 2px;font-size: 13px;font-weight: normal;letter-spacing: -1px}
+.service_end dd{margin-left: 2px;font-size: 12px;color: #656667;line-height: 17px;letter-spacing: -1px}
+.service_end .bc{position:absolute;right:31px;top:55px;}
+
+.tbl_stl{width: 100%;border-collapse:collapse;border-spacing:0;border:0;letter-spacing: -1px;text-align:left;} 
+.tbl_stl thead th{height: 33px;background: #f1f1f2;border-top: 1px solid #979797;border-bottom: 1px solid #eaeaea;color: #917559;text-indent: 10px;text-align: left}
+.tbl_stl tbody th{height:64px;border-bottom:1px solid #e1e1e1;padding-left:30px;text-align:left;line-height:18px;}
+.tbl_stl tbody td{border-bottom: 1px solid #e1e1e1;line-height: 17px}
+.tbl_stl .td_tel{letter-spacing: 0;color: #ec4300;font-size: 16px;font-weight: bold}
+.tbl_stl .td_tel .added_txt{font-size:12px;color:#848485;font-weight:normal;letter-spacing:-1px}
+.tbl_stl .first th{vertical-align:top;height:143px;padding-top:21px}
+.tbl_stl .td_tel .number{display:inline-block;letter-spacing: 0;color: #ec4300;font-size: 16px;font-weight: bold;padding-bottom:4px;*padding-bottom:3px}
+.tbl_stl .td_tel a{color: #ec4300;font-size: 12px;text-decoration: underline}
+.tbl_stl .td_sup{color: #848485}
+.tbl_stl .last th,.tbl_stl .last td{border-bottom:0;}
+.tbl_stl .lastline th,.tbl_stl .lastline td{border-bottom-color:#b6b6b6;}
+
+#content .tbl_stl_org{width: 100%;border-collapse:collapse;border:0;letter-spacing: -1px;font-size: 12px} 
+#content .tbl_stl_org thead th{height: 29px;background: #fd994c;border-top: 1px solid #f38c3d;border-bottom: 1px solid #f38c3d;color: #fff;text-align: center}
+#content .tbl_stl_org thead th.first{border-left: 1px solid #f38c3d}
+#content .tbl_stl_org thead th.last{border-right: 1px solid #f38c3d}
+#content .tbl_stl_org tbody th,
+#content .tbl_stl_org tbody td{padding:5px 0;height:25px;border:1px solid #e8e8e8;text-align: center;line-height: 17px}
+#content .tbl_stl_org tbody .bg th,
+#content .tbl_stl_org tbody .bg td{background: #f4f4f4}
+#content .tbl_stl_org tbody .td_benefit{text-align:left;padding-left: 12px;}
+#content .tbl_stl_org.left_th tbody th{background: #f7f7f7}
+
+/*고객센터 메인*/
+.cus_main_wrap{margin-bottom:25px !important}
+.cus_main_top{height:391px;letter-spacing:-1px;padding-left:14px;margin-bottom:32px}
+.cus_main_top div, .cus_main_btm div{float:left}
+.cus_main_top .faq_con{position:relative;width:550px;padding:0 !important;margin-right:56px}
+.cus_main_top .faq_con h3{margin-bottom:21px}
+.cus_main_top .faq_con ul{border-top:1px solid #e5e5e5}
+.cus_main_top .faq_con li{background:url("../img/altoolsRenewal/spr_icon_cus_number.gif") 0 0 no-repeat;padding:6px 0 6px 32px}
+.cus_main_top .faq_con li.lev_1{background-position:1px 6px}
+.cus_main_top .faq_con li.lev_2{background-position:1px -30px}
+.cus_main_top .faq_con li.lev_3{background-position:1px -65px}
+.cus_main_top .faq_con li.lev_4{background-position:1px -100px}
+.cus_main_top .faq_con li.lev_5{background-position:1px -135px}
+.cus_main_top .faq_con li.lev_6{background-position:1px -170px}
+.cus_main_top .faq_con li.lev_7{background-position:1px -205px}
+.cus_main_top .faq_con li.lev_8{background-position:1px -240px}
+.cus_main_top .faq_con li.lev_9{background-position:1px -275px}
+.cus_main_top .faq_con li.lev_10{background-position:1px -310px}
+.cus_main_top .ques_info ul{width:336px;height:214px;overflow:hidden;margin-top:20px}
+.cus_main_top .ques_info li{float:left;width:79px;margin:0 31px 9px 0}
+.cus_main_top .ques_info li a{display:block;color:#727477;font-weight:bold;text-align:center;background:url("../img/altoolsRenewal/spr_icon_cus_main.gif") 0 0 no-repeat;height:15px;line-height:15px;padding-top:83px}
+.cus_main_top .ques_info li a:hover{text-decoration:none}
+.cus_main_top .ques_info li.ques_2 a{background-position:-109px 0}
+.cus_main_top .ques_info li.ques_3 a{background-position:-222px 0}
+.cus_main_top .ques_info li.ques_4 a{background-position:0 -107px}
+.cus_main_top .ques_info li.ques_5 a{background-position:-109px -107px}
+.cus_main_top .ques_info li.ques_6 a{background-position:-222px -107px}
+.cus_main_top .main_notice{position:relative;width:301px;margin-top:41px}
+:root .cus_main_top .main_notice{margin-top:42px \0/IE9+10} 
+.cus_main_top .main_notice ul{width:303px;margin-top:16px}
+:root .cus_main_top .main_notice ul{margin-top:14px \0/IE9+10}
+.cus_main_top .main_notice .more.list, .cus_main_btm .cus_news .more.list{top:3px}
+.cus_main_top .main_notice li{position:relative;height:24px;line-height:24px}
+.cus_main_top .main_notice li span{position:absolute;top:0;right:0;letter-spacing:0}
+
+.cus_main_btm{height:352px;letter-spacing:-1px}
+.cus_banner{width:554px;padding-left:12px;margin-right:54px}
+.cus_banner ul{width:554px;overflow:hidden}
+.cus_banner .top_b{height:220px;margin-bottom:2px}
+.cus_banner .top_b li{float:left;width:275px;height:220px;color:#979797;font-size:12px;margin-right:2px}
+.cus_banner .top_b li a{position:relative;display:block;width:254px;height:138px;line-height:17px;color:#979797;padding:82px 0 0 21px}
+.cus_banner .top_b li a:hover{text-decoration:none}
+.cus_banner .top_b li.ban_1{background:url("../img/altoolsRenewal/bg_cus_main_5_1.gif") no-repeat}
+.cus_banner .top_b li.ban_2{background:url("../img/altoolsRenewal/bg_cus_main_5_2.gif") no-repeat}
+.cus_banner .btm_b_area{position:relative;height:130px;overflow:hidden}
+.cus_banner .btm_b_area .info_bann_img{width:552px;height:130px}
+.cus_banner .btm_b_area .pager{position:absolute;top:16px;right:18px;width:24px;z-index:3}
+.cus_banner .btm_b_area .pager li{float:left;margin-right:2px}
+.cus_banner .btm_b_area .pager li a{display:block;width:10px;height:10px;background:url("../img/altoolsRenewal/spr_btn_cus_nav.png") 0 0 no-repeat;_background:url("../img/altoolsRenewal/spr_btn_cus_nav.gif") 0 0 no-repeat}
+.cus_banner .btm_b_area .pager li.on a{background-position:-12px 0}
+.cus_banner .btm_b_area .info_bann_img li{width:100%;position:absolute;top:0;left:0}
+.cus_main_btm .cus_news{position:relative;margin-top:13px}
+.cus_main_btm .cus_news ul{width:301px;margin:19px 0 55px 0}
+.cus_main_btm .cus_news li{height:22px;line-height:22px;border-bottom:1px solid #e5e5e5;background:url("../img/altoolsRenewal/spr_bullet.gif") 45px -580px no-repeat;padding:5px 0}
+.cus_main_btm .cus_news li .cate{color:#48494b;padding-right:8px}
+.cus_main_btm .cus_tel p{background:url("../img/altoolsRenewal/icon_cus_main_phone.gif") 0 0 no-repeat;height:57px;color:#656667;padding-left:54px;line-height:15px;margin-top:16px}
+.cus_main_btm .cus_tel p .arial{display:inline-block;*display:inline;*zoom:1;font-family:arial;font-size:26px;letter-spacing:0;color:#48494b;line-height:27px;margin:6px 0 4px -4px}
+
+/* 자주묻는 질문 메인 */
+.faq_thumb{width:100%;height:167px;margin:51px 0 -22px}
+.faq_thumb li{float:left}
+.faq_thumb li a{position:relative;display:block;width:237px;height:160px;background:url("../img/altoolsRenewal/spr_faq_all1.gif") no-repeat;margin-right:3px}
+.faq_thumb li a:hover{*text-decoration:none}
+.faq_thumb li a dl dd{position:absolute;top:62px;*top:61px;left:26px;font-size:12px;letter-spacing:-1px;line-height:18px;color:#656667;*cursor:pointer}
+:root .faq_thumb li a dl dd{top:61px \0/IE9+10} 
+.faq_thumb .thumb1 a{background-position:0 0}
+.faq_thumb .thumb2 a{background-position:-240px 0}
+.faq_thumb .thumb3 a{background-position:-480px 0}
+.faq_thumb .thumb4 a{background-position:-720px 0;margin-right:0}
+.faq_con{padding:16px 10px 0 10px;zoom:1}
+.faq_con:after{content:"";display:block;clear:both}
+.faq_con div{position:relative;width:450px;letter-spacing:-1px}
+.faq_altools,.faq_buy{float:left}
+.faq_moblie,.faq_site{float:right}
+.faq_altools,.faq_moblie{margin-bottom:44px}
+.faq_con div h3{padding-bottom:17px;border-bottom:1px solid #e5e5e5}
+.faq_con li{height:22px;line-height:22px;padding:6px 0;*padding:5px 0 7px;border-bottom:1px solid #e5e5e5}
+:root .faq_con li{line-height:19px \0/IE9+10} 
+.faq_con li p{position:relative;background:url("../img/altoolsRenewal/spr_faq_all2.gif") no-repeat;height:22px;padding-left:33px}
+.faq_con .lev1 p{background-position:1px 0}
+.faq_con .lev2 p{background-position:1px -23px}
+.faq_con .lev3 p {background-position:1px -46px}
+.faq_con span{display:inline-block;width:69px;*width:68px;color:#e35d07;text-overflow:ellipsis;vertical-align:top;*vertical-align:-1px;overflow:hidden;white-space:nowrap;margin-right:4px;*margin-right:5px}
+.faq_con a{_display:inline-block}
+.faq_con .more, .cus_main_wrap .more.list{position:absolute;right:0;top:6px;background:url("../img/altoolsRenewal/spr_bullet.gif") 100% -432px no-repeat;_background-position:100% -433px;padding-right:7px;font-size:11px;_line-height:13px;color:#848485}
+:root .faq_con .more, :root .more.list{line-height:9px \0/IE9+10;height:12px \0/IE9+10} 
+
+/* 알백 설치 팝업 */
+.ly_alback_setup{display:none;position:absolute;left:50%;top:171px;margin-left:-386px;width: 773px;min-height:701px;_height:701px;border:1px solid #24303e;background: #fff;z-index:1000;letter-spacing: -1px}
+.ly_head{position:relative;height: 56px;background: #24303e}
+.ly_alback_setup .ly_head h2{padding:19px 0 0 36px;font-size: 12px;color: #919191}
+.ly_alback_setup .ly_head h2 img{margin-right: 9px;vertical-align: -2px}
+.ly_head .close{position:absolute;right:0;top:0;}
+
+.ly_alback_setup .setup_main{position:relative;}
+.ly_alback_setup .btn_alback_setup{position:absolute;left:267px;top:468px;}
+.ly_alback_setup .btn_alback_pay{position:absolute;top:20px;right:105px}
+.ly_alback_setup .caution{background: #f9f9f9;border-top: 1px solid #e9e9e9;padding:29px 44px 27px}
+.ly_alback_setup .caution h3{margin-bottom: 18px;font-size: 14px;color: #111113;}
+.ly_alback_setup .caution h4{margin-bottom: 6px;font-size: 12px;color: #f75a0a;}
+.ly_alback_setup .caution p{margin-bottom: 18px;font-size: 12px;color: #656667;line-height: 18px}
+
+.setup_path{height: 88px;background: url(../img/altoolsRenewal/spr_setup_path.gif) no-repeat}
+.setup_path.on_1{background-position: 0 0;}
+.setup_path.on_2{background-position: 0 -88px;}
+.setup_path.on_3{background-position: 0 -176px;}
+.setup_path.on_4{background-position: 0 -264px;}
+.setup_path.on_5{background-position: 0 -352px;}
+
+.content_in{margin:54px 54px 49px;text-align: center}
+.content_in .txt{margin:13px 0 31px 0;font-size: 12px;color: #656667;line-height: 17px}
+.content_in .ex_box{margin-top: 55px;padding-top: 24px;border-top: 2px solid #797979;text-align:left;}
+.content_in .ex_box h3{padding-left: 25px;margin-bottom: 14px;font-size: 14px;color: #111113;background: url(../img/altoolsRenewal/bul_exc_green.gif) no-repeat 0 1px;line-height:18px;}
+.content_in .ex_box .img{float:left;margin-right: 23px}
+.content_in .ex_box dt{margin-bottom: 4px;color: #111113;font-weight: bold;font-size: 12px}
+.content_in .ex_box dd,.content_in .ex_box p{color: #656667;line-height: 17px;margin-bottom: 17px;font-size: 12px}
+.content_in .ex_box .setup a{font-weight:bold}
+
+.setup_step4 h3{display:inline-block;padding-left: 25px;margin-bottom: 22px;font-size: 14px;color: #111113;background: url(../img/altoolsRenewal/bul_exc_org.gif) no-repeat 0 1px;line-height:18px;}
+.setup_step4 .img{margin-bottom: 44px}
+
+.setup_step5 .content_in{margin-top: 81px}
+
+.setup_con{display:none;}
+.popbg{display:none;position:absolute;margin:auto;top:0;left:0;z-index:100;width:100%;height:100%;background-color:#000;filter:alpha(opacity=35);opacity:0.35}
+
+.license{letter-spacing:-1px;padding:0 80px 0 50px}
+.license .tc{text-align:center}
+.license h3,.license h4,.license h5{margin-bottom: 8px}
+.license h3{font-size: 14px}
+.license h5{font-size: 12px;text-decoration: underline}
+.license .indent{margin-left: 13px}
+.license a{color:#3a6cdb}
+.license .reissue{color:green;font-weight:bold}
+.buy_box{margin-top: 30px;text-align: center;}
+.buy_box p{margin-top: 30px;padding:8px 0 13px;color: #777d85;font-size: 12px;line-height: 17px;letter-spacing: -1px;background: #f7f9f9;border: 1px solid #f2f4f4}
+
+/* POP */
+#pop{padding:25px;border: 1px solid #24303e}
+#pop .tc{text-align:center}
+#pop.address h1{margin-bottom: 30px;font-size: 14px;padding-bottom: 12px;border-bottom:1px solid #fd994c;color: #111113;letter-spacing: -1px}
+#pop.address .keyword{margin-bottom: 20px;text-align: center;}
+#pop.address label{margin-right: 3px;color: #111113;font-weight: bold;letter-spacing: -1px;font-size: 13px;vertical-align: middle}
+#pop.address .inp_text{margin-right:-2px;width: 238px;height:29px;line-height: 29px}
+#pop.address .bc{vertical-align: middle}
+#pop.address .list{height: 149px;border: 1px solid #d9d9d9;overflow-y:scroll;}
+#pop.address .list ul{margin:5px 10px;}
+#pop.address .list li{line-height: 20px;letter-spacing: -1px;font-size: 12px;}
+#pop.address .list li span{display:inline-block;width: 52px;letter-spacing: 0}
+#pop.address .list li a{color: #656667;}
+
+#pop.order h1{margin-bottom: 20px;font-size: 14px;color: #111113;letter-spacing: -1px}
+#pop.order .orbtn{width: 365px;margin-bottom: 18px;_padding-top:3px}
+#pop.order .orbtn img{vertical-align: top}
+#pop.order .orbtn input{_width:365px;_height:72px;margin-bottom:-2px;_margin-top:-3px} 
+
+/*에러페이지*/
+.error_wrap{background:none}
+.error_div{position:absolute;top:50%;left:50%;width:442px;height:130px;background:url("/img/altoolsRenewal/bg_404error.gif") 0 0 no-repeat;letter-spacing:-1px;margin:-65px 0 0 -221px;padding:15px 0 0 159px}
+.error_div h1{font-size:21.33px;color:#F75A0A;font-weight:normal;letter-spacing:-2px;margin-left:-1px}
+.error_div p{margin:15px 0 12px 0;margin-top:16px \0/IE8;_margin-bottom:11px}
+:root .error_div p{margin-top:14px \0/IE9+10;margin-bottom:13px \0/IE9+10}
+.error_div a{display:block;width:148px;height:15px;background:url("/img/altoolsRenewal/spr_bullet.gif") -248px -377px no-repeat;*background-position:-248px -376px;color:#3a6cdb;text-decoration:underline;*line-height:15px;padding-left:7px;margin-bottom:6px;_margin-bottom:7px}
+:root .error_div a{line-height:10px \0/IE9+10}
+
+/*온라인 도움말*/
+.page_member h1 img.title_help{margin-left:4px}
+.content_wrap.help{padding-top:33px}
+.content_wrap.help h2{margin-bottom:19px}
+.content_wrap.help h2 span{vertical-align:-27px;font-size:12px;font-weight:normal;color:#848485;letter-spacing:-1px;padding-left:10px}
+.content_wrap.help .help_icon{width:100%;overflow:hidden;border-left:1px solid #D4D4D4;border:1px solid #D4D4D4;background-color:#fafafa}
+.content_wrap.help .help_icon li{float:left;font-size:14px;color:#111113;font-weight:bold;letter-spacing:-1px;text-align:center;width:191px;padding:28px 0 34px;height:120px}
+.content_wrap.help .help_icon .bd_r{border-right:1px solid #e0e0e0}
+.content_wrap.help .help_icon .bd_b{border-bottom:1px solid #e0e0e0}
+.content_wrap.help .help_icon li a{display:block}
+.content_wrap.help .help_icon li a span{display:block;}
+.content_wrap.help .help_icon li a img{margin-bottom:6px}
+.content_wrap.help .help_icon2{overflow:hidden;background-color:#fafafa;border-top:none;width:385px}
+.content_wrap.help .help_icon2 li{float:left;font-size:14px;color:#111113;font-weight:bold;letter-spacing:-1px;text-align:center;width:191px;padding:28px 0 34px;height:120px}
+.content_wrap.help .help_icon2 .bd_t_no{border-top:none}
+.content_wrap.help .help_icon2 .bd_r{border-right:1px solid #e0e0e0}
+.content_wrap.help .help_icon2 .bd_b{border-bottom:1px solid #e0e0e0}
+.content_wrap.help .help_icon2 .bd_l{border-left:1px solid #e0e0e0}
+.content_wrap.help .help_icon2 li a{display:block}
+.content_wrap.help .help_icon2 li a span{display:block;}
+.content_wrap.help .help_icon2 li a img{margin-bottom:6px}
+
+.help_footer{width:960px;overflow:hidden;margin-top:44px}
+.help_footer li{float:left;background:url("../img/altoolsRenewal/spr_cus_footer.gif") no-repeat;letter-spacing:-1px;padding:4px 0 0 64px;margin-right:83px}
+.help_footer li dt{font-size:16px;font-weight:bold;color:#111113;line-height:20px}
+.help_footer li dd{font-size:12px;color:#656667;line-height:18px;margin-top:8px}
+.help_footer li dd.ques{margin-top:5px}
+.help_footer li dd.ques a{background:url("../img/altoolsRenewal/spr_bullet.gif") 100% -375px;color:#3a6cdb;padding-right:6px}
+.help_footer li.h_ft_1{background-position:0 6px;width:200px}
+.help_footer li.h_ft_2{background-position:0 -493px;width:227px}
+.help_footer li.h_ft_3{background-position:0 -331px;margin-right:0;padding-left:45px}
+.help_footer li.h_ft_3 .tel{font-size:16px;font-weight:bold;color:#ec4300;margin-top:9px}
+.help_footer li.h_ft_3 .last{margin-top:0}
+
+/*원격지원*/
+.content_wrap.help .remote_con_wrap{width:100%;border-top:2px solid #8a8a8a;padding-top:48px}
+.remote_con{position:relative;width:831px;height:401px;background:url("../img/altoolsRenewal/bg_control.gif") 100% 17px no-repeat;padding-left:56px}
+.remote_con h3{font-size:16px;letter-spacing:-1px;margin-bottom:12px}
+.remote_con .service{margin-bottom:30px;line-height:20px;letter-spacing:-1px}
+.remote_con .use_method li{position:relative;width:532px;height:48px;letter-spacing:-1px;font-weight:bold;font-size:14px;line-height:48px;border:1px solid #f4f4f4;padding-left:38px;margin-bottom:20px}
+.remote_con .use_method .use1{background:#fafafc url("../img/altoolsRenewal/bul_control1.gif") 10px 13px no-repeat}
+.remote_con .use_method .use2{background:#fafafc url("../img/altoolsRenewal/bul_control2.gif") 10px 13px no-repeat}
+.remote_con .use_method .use3{background:#fafafc url("../img/altoolsRenewal/bul_control3.gif") 10px 13px no-repeat;margin-bottom:0}
+.remote_con .use_method .arrow{position:absolute;top:54px;left:255px;background:url("../img/altoolsRenewal/bul_control4.gif") no-repeat;display:block;width:23px;height:12px}
+.remote_con .use_method .use1 .ls0{color:#f75a0a}
+.remote_con .bc_org.o_mid{position:absolute;bottom:86px;_bottom:85px;right:8px}
+
+/* 구매 */
+.title_G_text strong{margin:0}
+.title_G_text .title_G_quick{margin-top:3px}
+.title_G_text .title_G_quick.btn_inquire{margin-top:6px}
+.upgrade_commonbox{color:#616161}
+.upgrade_commonbox.bd_t{padding-top:33px;border-top:1px solid #e8e8e8}
+.upgrade_commonbox .ex_info{list-style-type:none;margin:0}
+.upgrade_commonbox .ex_info li{margin-bottom:20px}
+.upgrade_commonbox .box_txt{margin:-11px 0 28px}
+.upgrade_commonbox .box_txt .use_extend{margin:16px 0;padding:14px 15px 12px;border:1px solid #f5f5f5;background-color:#f9f9f9}
+.upgrade_commonbox .box_txt .use_extend dt{margin-bottom:5px}
+.upgrade_commonbox .box_txt .use_extend dd{padding:0;line-height:19px}
+.upgrade_commonbox .box_txt .use_extend .orange{color:#ff3c00}
+.upgrade_commonbox .environment{width:100%;margin:-7px 0 33px}
+.upgrade_commonbox .environment tr th, .upgrade_commonbox .environment tr td{padding:5px 0 4px;text-align:center}
+.upgrade_commonbox .environment tr th{border-top:1px solid #e8e8e8;border-bottom:1px solid #e8e8e8;background-color:#f3f3f3;font-weight:bold}
+.upgrade_commonbox .environment tr td{border-bottom:1px solid #e8e8e8}
+
+/*팀업배너추가*/
+.buy_banner_tmup{padding-top:20px;height:738px;}
+.buy_banner_tmup #line{background:url(https://images.altools.co.kr/common/title_A_bg.gif) repeat-x;;width:100%;height:70px;}
+.buy_banner_tmup .banner_tmup_img a{background:url("https://images.altools.co.kr/altoolsRenewal/banner_tmup.jpg") no-repeat;display:block;width:699px;height:413px;}
+
+/* 구매페이지 알약 안심케어*/
+.care_tit{font-size:14px;font-weight:bold;color:#393943;background:url("../img/altoolsRenewal/spr_bullet.gif") 0 -95px no-repeat;letter-spacing:-1px;line-height:14px;padding-left:8px;margin:20px 0 11px}
+.license_ps{letter-spacing:-1px;font-size:11px;color:#8c8c8c}
+.license_ps li{margin:0}
+.license_ps.opt_ps{font-weight:bold;color:#666;margin-top:10px}
+.buy_org{font-weight:bold;color:#ff3c00}
+.icon_date{vertical-align:-3px;padding-left:7px}
+.alcare .title_G_img{width:124px}
+.alcare strong, .alcare_list strong{margin:0.2em 0}
+.alcare_list{margin:10px 0 !important}
+.alcare_list .alcare_icon{padding-left:22px}
+.alcare_list .alcare_info{line-height:19px;padding-left:29px}
+.alcare_list .alcare_info strong{line-height:24px}
+.alcare_list .alcare_info .buy_org{padding-left:10px}
+.alcare_tb{color:#48494b}
+.alcare_tb .care_tit.tit_once{margin-top:31px}
+.alcare_tb table{width:654px}
+.alcare_tb table .care_th{width:183px}
+.alcare_tb table .care_td{width:113px}
+.alcare_tb table th, .alcare_tb table td{font-weight:bold;color:#111113;text-align:center;height:35px;border:1px solid #E8E8E8}
+.alcare_tb table td{position:relative}
+.alcare_tb table td .buy_org{padding-left:15px}
+.alcare_tb table th{background:#F7F7F7}
+.alcare_tb p.care_info{margin:16px 0 8px}
+.alcare_tb ul, .alcare_tb li{margin:0}
+.alcare_tb li{line-height:19px}
+.alcare_tb .li_mbtm{margin-bottom:9px}
+.alcare_tb ul li ul li{text-indent:16px}
+.title_H_01.care_buy{margin:20px auto 0 !important}
+.title_H_01.care_buy h3, .care_buy_info h4{font-family:'돋움',dotum}
+.title_H_01.care_buy .care_tit{background-position:0 -94px;margin:0 0 17px}
+.title_H_01.care_buy .care_tit img{vertical-align:-3px;padding-left:8px}
+.care_buy_info{width:621px;overflow:hidden;margin:0 auto;padding:26px 0 0 33px;margin-bottom:26px}
+.care_buy_info.bg_year{height:262px;background:url("https://images.altools.co.kr/buy/bg_buy_care.gif") 0 0 no-repeat}
+.care_buy_info.bg_once{height:212px;background:url("https://images.altools.co.kr/buy/bg_buy_care_2.gif") 0 0 no-repeat}
+.care_buy_info .care_img{display:block;float:left;margin-right:22px}
+.care_buy_info .license_txt{float:left;width:452px;color:#000;margin-top:3px}
+.care_buy_info .license_txt .license_tit{position:relative;font-weight:bold;margin:13px 0 17px}
+.care_buy_info .license_txt .license_tit .icon_date{vertical-align:-4px;padding:0 16px 0 5px}
+.care_buy_info .license_txt .license_tit .discount, .alcare_tb .discount{position:absolute;display:block;width:55px;height:1px;background:#FF3C00}
+.care_buy_info .license_txt .license_tit .discount{top:9px;*top:7px;left:186px}
+.care_buy_info .license_txt .license_tit .discount.pc{left:153px !important}
+.alcare_tb .discount{top:16px;left:10px}
+.care_buy_info .license_txt .license_tit .buy_org{padding-left:8px}
+.care_buy_info .license_txt dl{width:100%;overflow:hidden}
+.care_buy_info .license_txt .dl_first{margin-bottom:2px}
+.care_buy_info .license_txt dt, .care_buy_info .license_txt dd{float:left}
+.care_buy_info .license_txt dt{color:#8c8c8c;height:20px;line-height:15px;*line-height:14px}
+:root .care_buy_info .license_txt dt{line-height:17px \0/IE9+10}
+.care_buy_info .license_txt dd{line-height:0;*line-height:13px;padding:0 0 0 16px}
+.care_buy_info .license_txt dd input{width:13px;height:13px;vertical-align:-2px;*vertical-align:1px;_vertical-align:middle;margin-right:5px}
+.care_buy_info .license_txt dd label{line-height:0;vertical-align:0;margin:0}
+.care_buy_info .license_txt .price_sum{width:432px;height:38px;font-weight:bold;background:#F6F6F6;border-top:1px solid #E5E5E5;border-bottom:1px solid #E5E5E5;text-align:right;padding-right:20px;margin:10px 0 9px 0}
+.care_buy_info .license_txt .verdana_price{font-family:vrinda;color:#ff3c00;font-size:24px;letter-spacing:-1px;font-weight:bold;vertical-align:-2px}
+:root .care_buy_info .license_txt .verdana_price{line-height:38px \0/IE9+10} 
+.care_buy_info .license_txt .license_ps li span.oran{color:#ff3c00}
+.care_pd_list{margin-right:2px}
+.care_service{width:654px;color:#48494b;margin:45px auto 0;padding-bottom:14px}
+.care_service h4, .layer_care_user .layer_info h4{margin-bottom:9px}
+.care_service p, .care_service ul, .layer_care_user .layer_info ul, .layer_care_user .layer_info p{margin-bottom:27px}
+.care_li_mgb{margin-bottom:20px}
+.care_agree{width:654px;margin:0 auto}
+.care_agree h3{font-family:'돋움',dotum;color:#303032;font-weight:bold;letter-spacing:-1px}
+.care_agree .agree_area{border-bottom:1px solid #E4E4E4;padding-top:22px}
+.care_agree .agree_area.last_box{border-bottom:0 none !important}
+.care_agree .agree_area .agree_box{width:652px;height:128px;border:1px solid #E5E7EB;background:#F5F5F7;overflow:hidden;overflow-y:scroll;margin:11px 0 14px}
+.care_agree .agree_area .agree_box pre{width:611px;word-wrap:break-word;overflow:hidden;;font-family:'돋움',dotum;font-size:12px;color:#6a6b6c;padding:16px 13px;margin:0}
+.care_agree label{color:#48494b;padding-left:6px;font-weight:bold;vertical-align:-1px}
+.care_agree .all_agree{text-align:center;background:#F3F8F8;border:1px solid #E3EFEF;padding:11px 0 9px;margin-bottom:20px}
+.care_agree .btn_next{text-align:center;margin-bottom:40px}
+.care_blevel_tb{margin:8px 0}
+.care_buy_td{text-align:left !important;padding:9px 0 12px 18px}
+.care_buy_td strong{margin:0.2em 0}
+.care_buy_td span{font-size:11px;color:#666}
+.care_blevel_tb .care_buy_td{width:241px;text-align:left}
+.care_blevel_tb .price_bold{color:#11113;font-weight:bold}
+.license_ps.buy_level{margin-bottom:31px}
+.upgrade_commonbox a, .Article, .upgrade_commonbox table{color:#48494b}
+.Article .td_space{padding:26px 0 22px}
+.Article .pay_way_td{height:63px;text-align:center}
+.Article label{vertical-align:-1px;margin:0 30px 0 2px}
+.Article .pay_way_td label.last_method{margin-right:0}
+.Article .method_info{height:243px;color:#48494b;padding-bottom:14px}
+.new_more{overflow:hidden}
+.care_user_info .input{height:24px;padding:0 5px;color:#000;line-height:24px;background:#F9F9F9}
+.care_user_info .td_red{color:#ff3c00;padding:27px 0}
+.buy_table .care_orderlist_tb{width:654px;margin-top:29px}
+.buy_table .care_orderlist_tb tbody td{border-bottom:1px solid #E8E8E8}
+.care_orderlist_tb thead th{height:44px;font-weight:bold;background:#FD994C;color:#fff}
+.care_orderlist_tb thead th.th_bg.th_last{width:163px;padding-top:5px;height:36px}
+.care_orderlist_tb thead th.care_th_n{width:40px}
+.care_orderlist_tb thead .th_date{display:block;font-size:11px}
+.care_orderlist_tb thead .th_date span{color:#FEBF83;padding:0 7px}
+.buy_table table{color:#48494B}
+.care_orderlist_tb td{color:#48494B;vertical-align:top;text-align:center;height:65px;padding-top:20px}
+.care_orderlist_tb .care_buy_td{width:220px}
+.care_orderlist_tb td a:hover strong, .care_orderlist_tb td a:hover span{*text-decoration:underline}
+.care_orderlist_tb .td_serial{font-size:11px;color:#666;line-height:16px;width:76px;padding:41px 10px 0}
+.care_orderlist_tb .date_start{padding-right:8px}
+.layer_care_user{position:absolute;left:40px;top:290px;display:none;width:614px;height:659px;background:#fff;border:1px solid #c7c7c7;z-index:10}
+.layer_care_user .layer_tit{margin:27px 0 16px 30px}
+.layer_care_user .Article{width:550px}
+.layer_care_user .ArticleBody{padding:35px 15px}
+.layer_care_user .ly_btn{text-align:center;margin-bottom:30px}
+.layer_care_user .ly_btn a{line-height:1;font-family:'맑은 고딕',malgun gothic;color:#fff;font-weight:bold}
+.layer_care_user .layer_info{color:#616161;margin:32px 30px 0 32px}
+
+/* 구매페이지 알툴즈통합팩*/
+.buy_inquire{margin-top:6px;height:135px;background-color:#fafafc;border-top:1px solid #eee;font-family:'맑은 고딕',malgun gothic,'돋움',dotum,sans-serif;font-size:12px;color:#48494b}
+.buy_inquire .inquire_wrap{width:748px;margin:0 auto;padding-left:212px}
+.buy_inquire .inquire_wrap div{display:inline-block;*display:inline;zoom:1;overflow:hidden;width:309px;padding-top:10px}
+.buy_inquire .inquire_wrap div h4{float:left;text-align:center;font-size:14px;letter-spacing:-1px;color:#323232;}
+.buy_inquire .inquire_wrap .inquire_left h4{padding-top:13px}
+.buy_inquire .inquire_wrap .inquire_right h4{padding-top:10px}
+.buy_inquire .inquire_wrap div h4 img{display:inline-block;*display:inline;zoom:1;padding-bottom:10px}
+.buy_inquire .inquire_wrap div p{float:right;width:197px;padding:6px 0 0 20px;font-size:13px;line-height:29px;color:#323232}
+.buy_inquire .inquire_wrap div p a{color:#323232}
+.buy_inquire .inquire_wrap div p strong{font-weight:normal;color:#8a8a8a;letter-spacing:-1px;padding-right:10px}
+.buy_inquire .inquire_wrap em{display:inline-block;*display:inline;zoom:1;width:1px;height:47px;vertical-align:top;background-color:#e3e3e3;margin:44px 35px 0}
+.buy_inquire .inquire_wrap div span{font-weight:bold;display:block}
+.buy_inquire .inquire_wrap .inquire_center{display:block !important;margin:0 auto}
+.buy_inquire .inquire_wrap .inquire_center h4{padding-top:13px}
+ 
+.w_192{width:192px!important}
+
+/* 구매페이지 공공 기관용, 교육 기관용 */
+.buy_table.public_table_1{margin-top:95px}
+.buy_table.public_table_1 tr td{border:1px solid #e8e8e8}
+.buy_table.public_table_2{margin-top:50px}
+.buy_table.public_table_2 tr td{height:52px;padding-top:3px;border:1px solid #e8e8e8;letter-spacing:-1px}
+.buy_sub_menu_noground.public_tit_1{margin-left:22px}
+.buy_common_text.public_txt_1{margin#E5E5E5:12px auto 22px}
+.buy_common_text.public_txt_2{margin:-8px auto 5px}
+.buy_table .btn_license{display:block;margin:-18px 0 36px;cursor:pointer}
+.edu_tit{margin:23px 0 9px 22px}
+.edu_purchase_ex{margin:12px 0 23px 22px}
+.edu_purchase_ex li{margin:0 0 -1px 0;}
+.edu_purchase_ex li strong{margin:0;color:#4f4f4f}
+.edu_purchase_ex li a{color:#3a6cdb;text-decoration:#underline;}
+.buy_table.edu_table_1 tr td{border:1px solid #e8e8e8}
+.buy_table.edu_table_2 tr td{height:52px;padding-top:3px;border:1px solid #e8e8e8;letter-spacing:-1px}
+
+/*구매페이지 빠른 견적요청*/
+.personal_agree{padding:0 25px;color:#48494b}
+.personal_agree .title{height:15px;margin-bottom:19px}
+.personal_agree .title p{float:left}
+.personal_agree .title span{float:left;margin:3px 0 0 7px}
+.personal_agree ul{clear:both;padding:18px 20px 10px;margin-bottom:16px;background:#f7f7f7;border:1px solid #eee;line-height:1;}
+.personal_agree ul li{margin:0 0 6px 0}
+.personal_agree .p_agree{margin-bottom:45px;line-height:0;}
+.personal_agree .p_agree input{margin:0 6px 0 0;line-height:1;vertical-align:-3px}
+.personal_agree .p_agree label{margin:0;line-height:1}
+
+/* 알툴즈 제휴 서비스 */
+.partner_wrap{margin-top:40px}
+.partner_wrap .partner_ship{width:960px;height:441px;background:url("../img/altoolsRenewal/img_partner_1.gif") no-repeat}
+
+/* pop address join */
+.pop_address_join{position:relative;width:538px;padding:0 25px;font-size:12px;letter-spacing:-1px}
+.pop_address_join .top{height:50px;border-bottom:1px solid #fd994c}
+.pop_address_join .top h1{position:absolute;left:25px;top:25px;font-size:14px;color:#111113}
+.pop_address_join .bottom{margin:15px 0 38px 0}
+.pop_address_join .search_ct{height:75px;padding:20px;margin-bottom:10px;background-color:#fafafa;border:1px solid #ededed}
+.pop_address_join .search_ct ul{margin-bottom:13px}
+.pop_address_join .search_ct .first{margin-bottom:9px}
+.pop_address_join .search_ct fieldset{position:relative}
+.pop_address_join .search_ct .input_wrap{position:relative;width:423px;height:28px;border:1px solid #c1c1c1;background-color:#fff}
+.pop_address_join .search_ct .input{position:absolute;left:5px;top:3px;width:403px;height:22px;padding:0 5px;line-height:22px;border:0 none;background:none}
+.pop_address_join .search_ct .search{position:absolute;right:3px;top:0}
+.pop_address_join .explain{margin:0 0 33px 20px}
+.pop_address_join .explain li{height:19px;padding-left:22px;line-height:18px;vertical-align:middle}
+.pop_address_join .explain .number{background:url("../img/altoolsRenewal/blt_number.gif") 0 1px no-repeat;margin-bottom:4px}
+.pop_address_join .explain .road{background:url("../img/altoolsRenewal/blt_road.gif") 0 1px no-repeat}
+.pop_address_join .bottom h2{margin-bottom:10px;font-size:13px;font-weight:normal;color:#111113}
+.pop_address_join .scroll{height:260px;overflow-y:scroll;overflow-x:hidden}
+.pop_address_join .scroll .box{width:520px;border-top:1px solid #d9d9d9}
+.pop_address_join .scroll table{width:100%}
+.pop_address_join .scroll table a{text-decoration:none}
+.pop_address_join .scroll table tr{cursor:pointer}
+.pop_address_join .scroll table tr td{vertical-align:top}
+.pop_address_join .scroll td{padding:8px;border-bottom:1px solid #ececec;line-height:16px}
+.pop_address_join .scroll td img{float:left;display:block;width:17px;vertical-align:middle;margin-right:5px}
+.pop_address_join .scroll td span{display:block;width:198px;*width:175px;_margin-top:2px;cursor:pointer}
+.pop_address_join .scroll .post{padding-right:12px;width:52px;text-align:center;letter-spacing:0}
+.pop_address_join .scroll .road{padding-right:12px;width:198px;text-align:left}
+.pop_address_join .scroll .number{text-align:left}
+.title_G_text .icon_buy_new{padding-left:5px}
+
+/*알약 프로모션*/
+.b_promotion_c{float:none !important;margin:0 auto !important}
+.b_promotion_c .pro_info{margin:19px 0 16px 23px}
+.b_promotion_c .pro_info li{background:url("../img/altoolsRenewal/spr_bullet.gif") 0 -666px no-repeat;color:#616161;margin-bottom:1px;padding-left:9px}
+.b_promotion_c .bg_promote_box{height:230px;background:url("https://images.altools.co.kr/buy/bg_alyac_promotion.gif") no-repeat;margin-bottom:15px !important}
+.b_promotion_c .bg_promote_box .care_img{margin-right:27px !important}
+.b_promotion_c .bg_promote_box .license_txt{width:466px;padding-top:5px}
+ @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){.b_promotion_c .bg_promote_box .license_txt{padding-top:7px}}
+.b_promotion_c .bg_promote_box .ul_radio li{color:#000;margin-bottom:4px;*margin-bottom:2px}
+.b_promotion_c .bg_promote_box .ul_radio li input{vertical-align:-4px;margin-right:7px}
+ @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){.b_promotion_c .bg_promote_box .ul_radio li input{width:12px;height:12px;vertical-align:-2px}}
+.b_promotion_c .bg_promote_box .ul_radio li a{color:#000;font-weight:bold}
+.b_promotion_c .bg_promote_box .promote_price{position:relative;width:454px;overflow:hidden;background:#F6F6F6;border-top:1px solid #E5E5E5;border-bottom:1px solid #E5E5E5;color:#858585;height:38px;line-height:41px;*line-height:39px;padding-left:12px;margin:20px 0 12px}
+.b_promotion_c .bg_promote_box .promote_price input{font-family:"돋움",dotum;color:#000;font-weight:bold;display:inline;vertical-align:0;*vertical-align:-5px;background:#fff;border-top:1px solid #BFBFBF;border-left:1px solid #BFBFBF;border-right:1px solid #DEDEDE;border-bottom:1px solid #DEDEDE;height:20px;line-height:20px;_margin-top:8px}
+ @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){.b_promotion_c .bg_promote_box .promote_price input{line-height:21px}}
+.b_promotion_c .bg_promote_box .promote_price .ipt_p_won{width:52px;text-align:center}
+.b_promotion_c .bg_promote_box .promote_price .ipt_p_sum{width:26px;text-align:right;padding:0 6px}
+.b_promotion_c .bg_promote_box .promote_price .multiple{padding:0 4px}
+.b_promotion_c .bg_promote_box .promote_price .final_sum{position:absolute;top:0;right:10px}
+.b_promotion_c .bg_promote_box .promote_price .unit_won{color:#000}
+.b_promotion_c .bg_promote_box .license_ps{margin-bottom:6px}
+.b_promotion_c .bg_promote_box .promote_ps{font-size:11px;color:#ff3c00;letter-spacing:-1px}
+.b_promotion_c .promote_ser{color:#616161 !important;padding-bottom:28px !important}
+.b_promotion_c .promote_ser .tint li{line-height:19px;text-indent:-10px;padding-left:10px;margin-bottom:0 !important}
+.b_promotion_c .promote_ser .tint_2 li{text-indent:-14px;padding-left:14px}
+.b_promotion_c .promote_ser .extension_info{width:589px;height:108px;border:1px solid #F5F5F5;background:#F9F9F9;padding:17px 0 0 15px;margin:-12px 0 38px 11px}
+.b_promotion_c .promote_ser .extension_info h5{margin-bottom:7px}
+.b_promotion_c .promote_ser .extension_info ul{margin-bottom:0}
+.b_promotion_c .promote_ser .extension_info li{line-height:19px;margin-bottom:0}
+.b_promotion_c .promote_ser .extension_info li.ex_red{color:#ff3c00}
+
+/*비밀번호 재설정*/
+.member_pw_chg{float:none!important}
+.pw_chg_h3{color:#111113;font-size:24px;font-weight:normal;line-height:30px;letter-spacing:-1px}
+.pw_chg_h3 span{color:#f75a0a}
+.pw_top_tit{line-height:18px;color:#656667;letter-spacing:-1px}
+.pw_top_tit span{color:#f75a0a;font-weight:bold}
+.pw_chg_talbe{margin:0 auto}
+
+
+.border_none td{border:none!important}
+.manual tr td{padding:10px 0px}
+.manual tr td b{font-weight:bold}
+.serial_number{color:#ff6600;font-weight:bold}
+
+.field_wrap.w_2.easy_inf{margin:48px 0px 83px 165px!important}
+.easy_inf{margin:48px 0 83px 175px!important;position:relative;width:790px!important}
+.easy_inf:after{content:"";display:block;clear:both}
+.easy_inf dl dt{clear:both;color:#111113;width:140px}
+.easy_inf dl dd{color:#48494b}
+.easy_inf dl dt,.easy_inf dl dd{float:left;font-size:14px;height:35px}
+.p_0 td,.p_0 th{padding-bottom:0px!important}
+h2 .allcheck{float:right}
+h2 .allcheck label{margin-right:10px}
+
+.buy_table .pager a{margin:0 10px}
+.buy_table .pager a.on{font-weight:bold}
+
+.top_content .al_info .title .subtitle{font-weight:bold;font-size:20px;margin-left:10px;}
+
+#header .situation{position:absolute;background-color:#38434f;top:20px;left:128px}
+#header .situation:hover{text-decoration:none}
+
+.page_member #header .situation{top:10px !important;left:110px !important}
+.page_main_products #header .situation{top:25px !important;left:110px !important}

@@ -1,0 +1,39 @@
+{
+   "checksum": "16745c1f1e7ead7a223c190dc059883c",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13198908307539139",
+            "id": "5",
+            "meta_info": {
+               "last_visited_desktop": "13198908307540031"
+            },
+            "name": "스포츠홈 : 네이버 스포츠",
+            "type": "url",
+            "url": "https://sports.news.naver.com/index.nhn"
+         } ],
+         "date_added": "13198908110995820",
+         "date_modified": "13198908307539139",
+         "id": "1",
+         "name": "북마크바",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13198908110995820",
+         "date_modified": "0",
+         "id": "2",
+         "name": "기타 북마크",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13198908110995820",
+         "date_modified": "0",
+         "id": "3",
+         "name": "모바일 북마크",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

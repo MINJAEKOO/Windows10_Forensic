@@ -1,0 +1,892 @@
+[Device Install Log]
+     OS Version = 10.0.17763
+     Service Pack = 0.0
+     Suite = 0x0300
+     ProductType = 1
+     Architecture = amd64
+
+[BeginLog]
+
+[Boot Session: 2019/03/08 19:03:48.504]
+
+>>>  [Setup Import Driver Package - C:\Windows\system32\spool\tools\Microsoft Print To PDF\prnms009.Inf]
+>>>  Section start 2019/03/08 19:06:44.966
+      cmd: C:\Windows\System32\spoolsv.exe
+     inf: Provider: Microsoft
+     inf: Class GUID: {4D36E979-E325-11CE-BFC1-08002BE10318}
+     inf: Driver Version: 06/21/2006,10.0.17763.1
+     inf: Catalog File: prnms009.cat
+     pol: {Driver package policy check} 19:06:45.106
+     pol: {Driver package policy check - exit(0x00000000)} 19:06:45.106
+     sto: {Stage Driver Package: C:\Windows\system32\spool\tools\Microsoft Print To PDF\prnms009.Inf} 19:06:45.106
+     inf:      {Query Configurability: C:\Windows\system32\spool\tools\Microsoft Print To PDF\prnms009.Inf} 19:06:45.137
+     inf:           Driver package 'prnms009.Inf' is configurable.
+     inf:      {Query Configurability: exit(0x00000000)} 19:06:45.137
+     flq:      Copying 'C:\Windows\system32\spool\tools\Microsoft Print To PDF\MPDW_devmode_map.xml' to 'C:\Windows\System32\DriverStore\Temp\{2e3991b4-ef93-6244-a9c6-dfba0609588a}\MPDW_devmode_map.xml'.
+     flq:      Copying 'C:\Windows\system32\spool\tools\Microsoft Print To PDF\prnms009.cat' to 'C:\Windows\System32\DriverStore\Temp\{2e3991b4-ef93-6244-a9c6-dfba0609588a}\prnms009.cat'.
+     flq:      Copying 'C:\Windows\system32\spool\tools\Microsoft Print To PDF\prnms009.Inf' to 'C:\Windows\System32\DriverStore\Temp\{2e3991b4-ef93-6244-a9c6-dfba0609588a}\prnms009.Inf'.
+     flq:      Copying 'C:\Windows\system32\spool\tools\Microsoft Print To PDF\MPDW-PDC.xml' to 'C:\Windows\System32\DriverStore\Temp\{2e3991b4-ef93-6244-a9c6-dfba0609588a}\MPDW-PDC.xml'.
+     flq:      Copying 'C:\Windows\system32\spool\tools\Microsoft Print To PDF\MPDW-manifest.ini' to 'C:\Windows\System32\DriverStore\Temp\{2e3991b4-ef93-6244-a9c6-dfba0609588a}\MPDW-manifest.ini'.
+     flq:      Copying 'C:\Windows\system32\spool\tools\Microsoft Print To PDF\MPDW-pipelineconfig.xml' to 'C:\Windows\System32\DriverStore\Temp\{2e3991b4-ef93-6244-a9c6-dfba0609588a}\MPDW-pipelineconfig.xml'.
+     flq:      Copying 'C:\Windows\system32\spool\tools\Microsoft Print To PDF\MPDW-constraints.js' to 'C:\Windows\System32\DriverStore\Temp\{2e3991b4-ef93-6244-a9c6-dfba0609588a}\MPDW-constraints.js'.
+     sto:      {DRIVERSTORE IMPORT VALIDATE} 19:06:45.200
+     sig:           {_VERIFY_FILE_SIGNATURE} 19:06:45.231
+     sig:                Key      = prnms009.Inf
+     sig:                FilePath = C:\Windows\System32\DriverStore\Temp\{2e3991b4-ef93-6244-a9c6-dfba0609588a}\prnms009.Inf
+     sig:                Catalog  = C:\Windows\System32\DriverStore\Temp\{2e3991b4-ef93-6244-a9c6-dfba0609588a}\prnms009.cat
+     sig:                Success: File is signed in catalog.
+     sig:           {_VERIFY_FILE_SIGNATURE exit(0x00000000)} 19:06:45.247
+     sto:      {DRIVERSTORE IMPORT VALIDATE: exit(0x00000000)} 19:06:45.262
+     sig:      Signer Score  = 0x0D000003 (Inbox)
+     sig:      Signer Name   = Microsoft Windows
+     sto:      {DRIVERSTORE IMPORT BEGIN} 19:06:45.262
+     sto:      {DRIVERSTORE IMPORT BEGIN: exit(0x00000000)} 19:06:45.262
+     cpy:      {Copy Directory: C:\Windows\System32\DriverStore\Temp\{2e3991b4-ef93-6244-a9c6-dfba0609588a}} 19:06:45.262
+     cpy:           Target Path = C:\Windows\System32\DriverStore\FileRepository\prnms009.inf_amd64_80184dcbef6775bc
+     cpy:      {Copy Directory: exit(0x00000000)} 19:06:45.262
+     idb:      {Register Driver Package: C:\Windows\System32\DriverStore\FileRepository\prnms009.inf_amd64_80184dcbef6775bc\prnms009.Inf} 19:06:45.294
+     idb:           Created driver package object 'prnms009.inf_amd64_80184dcbef6775bc' in DRIVERS database node.
+     idb:           Created driver INF file object 'oem0.inf' in DRIVERS database node.
+     idb:           Registered driver package 'prnms009.inf_amd64_80184dcbef6775bc' with 'oem0.inf'.
+     idb:      {Register Driver Package: exit(0x00000000)} 19:06:45.309
+     idb:      {Publish Driver Package: C:\Windows\System32\DriverStore\FileRepository\prnms009.inf_amd64_80184dcbef6775bc\prnms009.Inf} 19:06:45.309
+     idb:           Activating driver package 'prnms009.inf_amd64_80184dcbef6775bc'.
+     cpy:           Published 'prnms009.inf_amd64_80184dcbef6775bc\prnms009.inf' to 'oem0.inf'.
+     idb:           Indexed 2 device IDs for 'prnms009.inf_amd64_80184dcbef6775bc'.
+     sto:           Flushed driver database node 'DRIVERS'. Time = 0 ms
+     sto:           Flushed driver database node 'SYSTEM'. Time = 0 ms
+     idb:      {Publish Driver Package: exit(0x00000000)} 19:06:45.325
+     sto:      {DRIVERSTORE IMPORT END} 19:06:45.340
+     dvi:           Flushed all driver package files to disk. Time = 31 ms
+     sig:           Installed catalog 'prnms009.cat' as 'oem0.cat'.
+     sto:      {DRIVERSTORE IMPORT END: exit(0x00000000)} 19:06:45.372
+     sto: {Stage Driver Package: exit(0x00000000)} 19:06:45.372
+<<<  Section end 2019/03/08 19:06:45.419
+<<<  [Exit status: SUCCESS]
+
+
+>>>  [Setup Import Driver Package - C:\Windows\system32\spool\tools\Microsoft XPS Document Writer\prnms001.Inf]
+>>>  Section start 2019/03/08 19:06:50.153
+      cmd: C:\Windows\System32\spoolsv.exe
+     inf: Provider: Microsoft
+     inf: Class GUID: {4D36E979-E325-11CE-BFC1-08002BE10318}
+     inf: Driver Version: 06/21/2006,10.0.17763.1
+     inf: Catalog File: prnms001.cat
+     pol: {Driver package policy check} 19:06:50.200
+     pol: {Driver package policy check - exit(0x00000000)} 19:06:50.232
+     sto: {Stage Driver Package: C:\Windows\system32\spool\tools\Microsoft XPS Document Writer\prnms001.Inf} 19:06:50.232
+     inf:      {Query Configurability: C:\Windows\system32\spool\tools\Microsoft XPS Document Writer\prnms001.Inf} 19:06:50.232
+     inf:           Driver package 'prnms001.Inf' is configurable.
+     inf:      {Query Configurability: exit(0x00000000)} 19:06:50.247
+     flq:      Copying 'C:\Windows\system32\spool\tools\Microsoft XPS Document Writer\prnms001.cat' to 'C:\Windows\System32\DriverStore\Temp\{8424308e-9f62-3a43-ab15-b14c1d4fbfca}\prnms001.cat'.
+     flq:      Copying 'C:\Windows\system32\spool\tools\Microsoft XPS Document Writer\prnms001.Inf' to 'C:\Windows\System32\DriverStore\Temp\{8424308e-9f62-3a43-ab15-b14c1d4fbfca}\prnms001.Inf'.
+     flq:      Copying 'C:\Windows\system32\spool\tools\Microsoft XPS Document Writer\mxdwdui.dll' to 'C:\Windows\System32\DriverStore\Temp\{8424308e-9f62-3a43-ab15-b14c1d4fbfca}\mxdwdui.dll'.
+     flq:      Copying 'C:\Windows\system32\spool\tools\Microsoft XPS Document Writer\MXDW-manifest.ini' to 'C:\Windows\System32\DriverStore\Temp\{8424308e-9f62-3a43-ab15-b14c1d4fbfca}\MXDW-manifest.ini'.
+     flq:      Copying 'C:\Windows\system32\spool\tools\Microsoft XPS Document Writer\MXDW.gpd' to 'C:\Windows\System32\DriverStore\Temp\{8424308e-9f62-3a43-ab15-b14c1d4fbfca}\MXDW.gpd'.
+     flq:      Copying 'C:\Windows\system32\spool\tools\Microsoft XPS Document Writer\MXDW-pipelineconfig.xml' to 'C:\Windows\System32\DriverStore\Temp\{8424308e-9f62-3a43-ab15-b14c1d4fbfca}\MXDW-pipelineconfig.xml'.
+     sto:      {DRIVERSTORE IMPORT VALIDATE} 19:06:50.387
+     sig:           {_VERIFY_FILE_SIGNATURE} 19:06:50.434
+     sig:                Key      = prnms001.Inf
+     sig:                FilePath = C:\Windows\System32\DriverStore\Temp\{8424308e-9f62-3a43-ab15-b14c1d4fbfca}\prnms001.Inf
+     sig:                Catalog  = C:\Windows\System32\DriverStore\Temp\{8424308e-9f62-3a43-ab15-b14c1d4fbfca}\prnms001.cat
+     sig:                Success: File is signed in catalog.
+     sig:           {_VERIFY_FILE_SIGNATURE exit(0x00000000)} 19:06:50.465
+     sto:      {DRIVERSTORE IMPORT VALIDATE: exit(0x00000000)} 19:06:50.465
+     sig:      Signer Score  = 0x0D000003 (Inbox)
+     sig:      Signer Name   = Microsoft Windows
+     sto:      {DRIVERSTORE IMPORT BEGIN} 19:06:50.465
+     sto:      {DRIVERSTORE IMPORT BEGIN: exit(0x00000000)} 19:06:50.465
+     cpy:      {Copy Directory: C:\Windows\System32\DriverStore\Temp\{8424308e-9f62-3a43-ab15-b14c1d4fbfca}} 19:06:50.465
+     cpy:           Target Path = C:\Windows\System32\DriverStore\FileRepository\prnms001.inf_amd64_f340cb58fcd23202
+     cpy:      {Copy Directory: exit(0x00000000)} 19:06:50.497
+     idb:      {Register Driver Package: C:\Windows\System32\DriverStore\FileRepository\prnms001.inf_amd64_f340cb58fcd23202\prnms001.Inf} 19:06:50.497
+     idb:           Created driver package object 'prnms001.inf_amd64_f340cb58fcd23202' in DRIVERS database node.
+     idb:           Created driver INF file object 'oem1.inf' in DRIVERS database node.
+     idb:           Registered driver package 'prnms001.inf_amd64_f340cb58fcd23202' with 'oem1.inf'.
+     idb:      {Register Driver Package: exit(0x00000000)} 19:06:50.544
+     idb:      {Publish Driver Package: C:\Windows\System32\DriverStore\FileRepository\prnms001.inf_amd64_f340cb58fcd23202\prnms001.Inf} 19:06:50.544
+     idb:           Activating driver package 'prnms001.inf_amd64_f340cb58fcd23202'.
+     cpy:           Published 'prnms001.inf_amd64_f340cb58fcd23202\prnms001.inf' to 'oem1.inf'.
+     idb:           Indexed 2 device IDs for 'prnms001.inf_amd64_f340cb58fcd23202'.
+     sto:           Flushed driver database node 'DRIVERS'. Time = 0 ms
+     sto:           Flushed driver database node 'SYSTEM'. Time = 32 ms
+     idb:      {Publish Driver Package: exit(0x00000000)} 19:06:50.887
+     sto:      {DRIVERSTORE IMPORT END} 19:06:50.903
+     dvi:           Flushed all driver package files to disk. Time = 31 ms
+     sig:           Installed catalog 'prnms001.cat' as 'oem1.cat'.
+     sto:      {DRIVERSTORE IMPORT END: exit(0x00000000)} 19:06:50.997
+     sto: {Stage Driver Package: exit(0x00000000)} 19:06:50.997
+<<<  Section end 2019/03/08 19:06:51.044
+<<<  [Exit status: SUCCESS]
+
+
+[Boot Session: 2019/03/19 14:06:35.500]
+
+>>>  [Device Install (Hardware initiated) - SWD\WPDBUSENUM\_??_USBSTOR#Disk&Ven_Generic&Prod_Flash_Disk&Rev_8.07#0CF31762&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}]
+>>>  Section start 2019/03/19 14:21:16.054
+     dvi: {Build Driver List} 14:21:16.289
+     dvi:      Searching for compatible ID(s):
+     dvi:           wpdbusenum\fs
+     dvi:           swd\generic
+     dvi:      Created Driver Node:
+     dvi:           HardwareID   - wpdbusenum\fs
+     dvi:           InfName      - C:\Windows\System32\DriverStore\FileRepository\wpdfs.inf_amd64_10bfe1c48f153b03\wpdfs.inf
+     dvi:           DevDesc      - WPD FileSystem Volume Driver
+     dvi:           Section      - Basic_Install
+     dvi:           Rank         - 0x00ff2000
+     dvi:           Signer Score - INBOX
+     dvi:           DrvDate      - 06/21/2006
+     dvi:           Version      - 10.0.17763.1
+     dvi: {Build Driver List - exit(0x00000000)} 14:21:16.305
+     dvi: {DIF_SELECTBESTCOMPATDRV} 14:21:16.305
+     dvi:      Using exported function 'WpdClassInstaller' in module 'C:\Windows\system32\wpd_ci.dll'.
+     dvi:      Class installer == wpd_ci.dll,WpdClassInstaller
+     dvi:      Class installer: Enter 14:21:16.523
+     dvi:      Class installer: Exit
+     dvi:      Default installer: Enter 14:21:16.523
+     dvi:           {Select Best Driver}
+     dvi:                Class GUID of device changed to: {eec5ad98-8080-425f-922a-dabf3de3f69a}.
+     dvi:                {DIF_DESTROYPRIVATEDATA} 14:21:16.758
+     dvi:                     Class installer: Enter 14:21:16.762
+     dvi:                     Class installer: Exit
+     dvi:                     Default installer: Enter 14:21:16.789
+     dvi:                     Default installer: Exit
+     dvi:                {DIF_DESTROYPRIVATEDATA - exit(0xe000020e)} 14:21:16.808
+     dvi:                Selected Driver:
+     dvi:                     Description - WPD FileSystem Volume Driver
+     dvi:                     InfFile     - c:\windows\system32\driverstore\filerepository\wpdfs.inf_amd64_10bfe1c48f153b03\wpdfs.inf
+     dvi:                     Section     - Basic_Install
+     dvi:           {Select Best Driver - exit(0x00000000)}
+     dvi:      Default installer: Exit
+     dvi: {DIF_SELECTBESTCOMPATDRV - exit(0x00000000)} 14:21:16.849
+     dvi: {Core Device Install} 14:21:16.857
+     dvi:      {Install Device - SWD\WPDBUSENUM\_??_USBSTOR#DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07#0CF31762&0#{53F56307-B6BF-11D0-94F2-00A0C91EFB8B}} 14:21:16.859
+     dvi:           Device Status: 0x01802400, Problem: 0x1 (0xc0000493)
+     dvi:           Parent device: STORAGE\Volume\_??_USBSTOR#Disk&Ven_Generic&Prod_Flash_Disk&Rev_8.07#0CF31762&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+     dvi:           {Configure Device - SWD\WPDBUSENUM\_??_USBSTOR#DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07#0CF31762&0#{53F56307-B6BF-11D0-94F2-00A0C91EFB8B}} 14:21:16.900
+     dvi:                Device Status: 0x01802400, Problem: 0x1 (0xc0000493)
+     dvi:                Parent device: STORAGE\Volume\_??_USBSTOR#Disk&Ven_Generic&Prod_Flash_Disk&Rev_8.07#0CF31762&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+!    dvi:                Device class {eec5ad98-8080-425f-922a-dabf3de3f69a} is not configurable.
+     dvi:           {Configure Device - exit(0x00000032)} 14:21:16.911
+     dvi:           {DIF_ALLOW_INSTALL} 14:21:16.911
+     dvi:                Using exported function 'WpdClassInstaller' in module 'C:\Windows\system32\wpd_ci.dll'.
+     dvi:                Class installer == wpd_ci.dll,WpdClassInstaller
+     dvi:                Using exported function 'CoDeviceInstall' in module 'C:\Windows\system32\WUDFCoinstaller.dll'.
+     dvi:                CoInstaller 1 == WUDFCoinstaller.dll
+     dvi:                CoInstaller 1: Enter 14:21:16.932
+     dvi:                CoInstaller 1: Exit
+     dvi:                Class installer: Enter 14:21:16.940
+     dvi:                Class installer: Exit
+     dvi:                Default installer: Enter 14:21:16.943
+     dvi:                Default installer: Exit
+     dvi:           {DIF_ALLOW_INSTALL - exit(0xe000020e)} 14:21:16.943
+     dvi:           {DIF_INSTALLDEVICEFILES} 14:21:16.951
+     dvi:                CoInstaller 1: Enter 14:21:16.954
+     dvi:                CoInstaller 1: Exit
+     dvi:                Class installer: Enter 14:21:16.954
+     dvi:                Class installer: Exit
+     dvi:                Default installer: Enter 14:21:16.973
+     dvi:                Default installer: Exit
+     dvi:           {DIF_INSTALLDEVICEFILES - exit(0x00000000)} 14:21:16.983
+     flq:           Hardlinking 'C:\Windows\System32\DriverStore\FileRepository\wpdfs.inf_amd64_10bfe1c48f153b03\WpdFs.dll' to 'C:\Windows\system32\DRIVERS\UMDF\WpdFs.dll'.
+     dvi:           {DIF_REGISTER_COINSTALLERS} 14:21:17.090
+     dvi:                Reset Device: Resetting device configuration. 14:21:17.100
+     dvi:                Reset Device: Resetting device configuration completed. 14:21:17.104
+     dvi:                CoInstaller 1: Enter 14:21:17.109
+     dvi:                CoInstaller 1: Exit
+     dvi:                Class installer: Enter 14:21:17.119
+     dvi:                Class installer: Exit
+     dvi:                Default installer: Enter 14:21:17.122
+     inf:                     {Install from INF Section - Basic_Install.CoInstallers} 14:21:17.132
+     inf:                          Flags         - 0x001001ee
+     inf:                     {Install from INF Section - exit(0x00000000)} 14:21:17.141
+     dvi:                     {DIF_DESTROYPRIVATEDATA} 14:21:17.144
+     dvi:                          CoInstaller 1: Enter 14:21:17.149
+     dvi:                          CoInstaller 1: Exit
+     dvi:                          Class installer: Enter 14:21:17.173
+     dvi:                          Class installer: Exit
+     dvi:                          Default installer: Enter 14:21:17.272
+     dvi:                          Default installer: Exit
+     dvi:                     {DIF_DESTROYPRIVATEDATA - exit(0xe000020e)} 14:21:17.278
+     dvi:                Default installer: Exit
+     dvi:           {DIF_REGISTER_COINSTALLERS - exit(0x00000000)} 14:21:17.282
+     dvi:           {DIF_INSTALLINTERFACES} 14:21:17.282
+     dvi:                Using exported function 'CoDeviceInstall' in module 'C:\Windows\system32\WUDFCoInstaller.dll'.
+     dvi:                CoInstaller 1 == WUDFCoInstaller.dll
+     dvi:                CoInstaller 1: Enter 14:21:17.282
+     dvi:                CoInstaller 1: Exit
+     dvi:                Class installer: Enter 14:21:17.288
+     dvi:                Class installer: Exit
+     dvi:                Default installer: Enter 14:21:17.290
+     dvi:                Default installer: Exit
+     dvi:           {DIF_INSTALLINTERFACES - exit(0x00000000)} 14:21:17.292
+     dvi:           {DIF_INSTALLDEVICE} 14:21:17.292
+     dvi:                CoInstaller 1: Enter 14:21:17.292
+     inf:                     {Install from INF Section - WpdFs_Install} 14:21:17.372
+     inf:                          Flags         - 0x00000004
+     inf:                     {Install from INF Section - exit(0x00000000)} 14:21:17.378
+     dvi:                CoInstaller 1: Exit
+     dvi:                Class installer: Enter 14:21:17.400
+     dvi:                     {Install DEVICE}
+     inf:                          {Install from INF Section - Basic_Install} 14:21:17.404
+     inf:                               Flags         - 0x001005ee
+     inf:                          {Install from INF Section - exit(0x00000000)} 14:21:17.414
+     inf:                          {Install from INF Section - Basic_Install.Hw} 14:21:17.420
+     inf:                               Flags         - 0x00100004
+     inf:                          {Install from INF Section - exit(0x00000000)} 14:21:17.425
+     dvi:                          {Writing Device Properties}
+     dvi:                               Strong Name=wpdfs.inf:0c0663c081fd6f5b:Basic_Install:10.0.17763.1:wpdbusenum\fs
+     dvi:                          {Writing Device Properties - Complete}
+     inf:                          AddService=WUDFWpdFs,0x000001fa,WUDFWpdFs_ServiceInstall  (wpdfs.inf line 38)
+     dvi:                          Add Service: Created service 'WUDFWpdFs'.
+     inf:                          {Install from INF Section - WUDFWpdFs_ServiceInstall} 14:21:17.484
+     inf:                               Flags         - 0x00100004
+     inf:                          {Install from INF Section - exit(0x00000000)} 14:21:17.484
+     dvi:                     {Install DEVICE exit (0x00000000)}
+     dvi:                     Install Device: Configuring device class. 14:21:17.500
+     dvi:                     Install Device: Configuring device class completed. 14:21:17.501
+     dvi:                     Device Status: 0x01802400, Problem: 0x1 (0xc0000493)
+     dvi:                     Install Device: Starting device 'SWD\WPDBUSENUM\_??_USBSTOR#DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07#0CF31762&0#{53F56307-B6BF-11D0-94F2-00A0C91EFB8B}'. 14:21:17.510
+     dvi:                     Install Device: Starting device completed. 14:21:17.685
+     dvi:                Class installer: Exit
+     dvi:                CoInstaller 1: Enter (Post Processing) 14:21:17.704
+     dvi:                CoInstaller 1: Exit (Post Processing)
+     dvi:           {DIF_INSTALLDEVICE - exit(0x00000000)} 14:21:17.734
+     dvi:           {DIF_NEWDEVICEWIZARD_FINISHINSTALL} 14:21:17.736
+     dvi:                CoInstaller 1: Enter 14:21:17.737
+     dvi:                CoInstaller 1: Exit
+     dvi:                Class installer: Enter 14:21:17.745
+     dvi:                Class installer: Exit
+     dvi:           {DIF_NEWDEVICEWIZARD_FINISHINSTALL - exit(0x00000000)} 14:21:17.826
+     dvi:      {Install Device - exit(0x00000000)} 14:21:17.835
+     dvi: {Core Device Install - exit(0x00000000)} 14:21:17.835
+     dvi: {DIF_DESTROYPRIVATEDATA} 14:21:17.836
+     dvi:      CoInstaller 1: Enter 14:21:17.836
+     dvi:      CoInstaller 1: Exit
+     dvi:      Class installer: Enter 14:21:17.836
+     dvi:      Class installer: Exit
+     dvi:      Default installer: Enter 14:21:17.836
+     dvi:      Default installer: Exit
+     dvi: {DIF_DESTROYPRIVATEDATA - exit(0xe000020e)} 14:21:17.836
+<<<  Section end 2019/03/19 14:21:17.856
+<<<  [Exit status: SUCCESS]
+
+
+>>>  [Device Install (Hardware initiated) - SWD\WPDBUSENUM\{c4e24e15-4a04-11e9-9c13-f8633f8a50c9}#00000000EDB00000]
+>>>  Section start 2019/03/19 14:21:16.070
+     dvi: {Build Driver List} 14:21:16.148
+     dvi:      Searching for compatible ID(s):
+     dvi:           wpdbusenum\fs
+     dvi:           swd\generic
+     dvi:      Created Driver Node:
+     dvi:           HardwareID   - wpdbusenum\fs
+     dvi:           InfName      - C:\Windows\System32\DriverStore\FileRepository\wpdfs.inf_amd64_10bfe1c48f153b03\wpdfs.inf
+     dvi:           DevDesc      - WPD FileSystem Volume Driver
+     dvi:           Section      - Basic_Install
+     dvi:           Rank         - 0x00ff2000
+     dvi:           Signer Score - INBOX
+     dvi:           DrvDate      - 06/21/2006
+     dvi:           Version      - 10.0.17763.1
+     dvi: {Build Driver List - exit(0x00000000)} 14:21:16.242
+     dvi: {DIF_SELECTBESTCOMPATDRV} 14:21:16.242
+     dvi:      Using exported function 'WpdClassInstaller' in module 'C:\Windows\system32\wpd_ci.dll'.
+     dvi:      Class installer == wpd_ci.dll,WpdClassInstaller
+     dvi:      Class installer: Enter 14:21:16.985
+     dvi:      Class installer: Exit
+     dvi:      Default installer: Enter 14:21:16.985
+     dvi:           {Select Best Driver}
+     dvi:                Class GUID of device changed to: {eec5ad98-8080-425f-922a-dabf3de3f69a}.
+     dvi:                {DIF_DESTROYPRIVATEDATA} 14:21:16.985
+     dvi:                     Class installer: Enter 14:21:16.985
+     dvi:                     Class installer: Exit
+     dvi:                     Default installer: Enter 14:21:16.985
+     dvi:                     Default installer: Exit
+     dvi:                {DIF_DESTROYPRIVATEDATA - exit(0xe000020e)} 14:21:16.994
+     dvi:                Selected Driver:
+     dvi:                     Description - WPD FileSystem Volume Driver
+     dvi:                     InfFile     - c:\windows\system32\driverstore\filerepository\wpdfs.inf_amd64_10bfe1c48f153b03\wpdfs.inf
+     dvi:                     Section     - Basic_Install
+     dvi:           {Select Best Driver - exit(0x00000000)}
+     dvi:      Default installer: Exit
+     dvi: {DIF_SELECTBESTCOMPATDRV - exit(0x00000000)} 14:21:16.996
+     dvi: Waiting for previous device install to complete. 14:21:16.996
+     dvi: {Core Device Install} 14:21:17.904
+     dvi:      {Install Device - SWD\WPDBUSENUM\{C4E24E15-4A04-11E9-9C13-F8633F8A50C9}#00000000EDB00000} 14:21:17.906
+     dvi:           Device Status: 0x01802400, Problem: 0x1 (0xc0000493)
+     dvi:           Parent device: STORAGE\Volume\{c4e24e15-4a04-11e9-9c13-f8633f8a50c9}#00000000EDB00000
+     dvi:           {Configure Device - SWD\WPDBUSENUM\{C4E24E15-4A04-11E9-9C13-F8633F8A50C9}#00000000EDB00000} 14:21:17.914
+     dvi:                Device Status: 0x01802400, Problem: 0x1 (0xc0000493)
+     dvi:                Parent device: STORAGE\Volume\{c4e24e15-4a04-11e9-9c13-f8633f8a50c9}#00000000EDB00000
+!    dvi:                Device class {eec5ad98-8080-425f-922a-dabf3de3f69a} is not configurable.
+     dvi:           {Configure Device - exit(0x00000032)} 14:21:17.916
+     dvi:           {DIF_ALLOW_INSTALL} 14:21:17.916
+     dvi:                Using exported function 'WpdClassInstaller' in module 'C:\Windows\system32\wpd_ci.dll'.
+     dvi:                Class installer == wpd_ci.dll,WpdClassInstaller
+     dvi:                Using exported function 'CoDeviceInstall' in module 'C:\Windows\system32\WUDFCoinstaller.dll'.
+     dvi:                CoInstaller 1 == WUDFCoinstaller.dll
+     dvi:                CoInstaller 1: Enter 14:21:17.926
+     dvi:                CoInstaller 1: Exit
+     dvi:                Class installer: Enter 14:21:17.926
+     dvi:                Class installer: Exit
+     dvi:                Default installer: Enter 14:21:17.931
+     dvi:                Default installer: Exit
+     dvi:           {DIF_ALLOW_INSTALL - exit(0xe000020e)} 14:21:17.933
+     dvi:           {DIF_INSTALLDEVICEFILES} 14:21:17.934
+     dvi:                CoInstaller 1: Enter 14:21:17.934
+     dvi:                CoInstaller 1: Exit
+     dvi:                Class installer: Enter 14:21:17.934
+     dvi:                Class installer: Exit
+     dvi:                Default installer: Enter 14:21:17.934
+     dvi:                Default installer: Exit
+     dvi:           {DIF_INSTALLDEVICEFILES - exit(0x00000000)} 14:21:17.937
+     flq:           File 'C:\Windows\system32\DRIVERS\UMDF\WpdFs.dll' pruned from copy.
+     dvi:           {DIF_REGISTER_COINSTALLERS} 14:21:17.973
+     dvi:                Reset Device: Resetting device configuration. 14:21:17.973
+     dvi:                Reset Device: Resetting device configuration completed. 14:21:17.973
+     dvi:                CoInstaller 1: Enter 14:21:17.973
+     dvi:                CoInstaller 1: Exit
+     dvi:                Class installer: Enter 14:21:17.978
+     dvi:                Class installer: Exit
+     dvi:                Default installer: Enter 14:21:17.978
+     inf:                     {Install from INF Section - Basic_Install.CoInstallers} 14:21:17.980
+     inf:                          Flags         - 0x001001ee
+     inf:                     {Install from INF Section - exit(0x00000000)} 14:21:17.982
+     dvi:                     {DIF_DESTROYPRIVATEDATA} 14:21:17.982
+     dvi:                          CoInstaller 1: Enter 14:21:17.982
+     dvi:                          CoInstaller 1: Exit
+     dvi:                          Class installer: Enter 14:21:17.982
+     dvi:                          Class installer: Exit
+     dvi:                          Default installer: Enter 14:21:17.985
+     dvi:                          Default installer: Exit
+     dvi:                     {DIF_DESTROYPRIVATEDATA - exit(0xe000020e)} 14:21:17.985
+     dvi:                Default installer: Exit
+     dvi:           {DIF_REGISTER_COINSTALLERS - exit(0x00000000)} 14:21:17.985
+     dvi:           {DIF_INSTALLINTERFACES} 14:21:17.988
+     dvi:                Using exported function 'CoDeviceInstall' in module 'C:\Windows\system32\WUDFCoInstaller.dll'.
+     dvi:                CoInstaller 1 == WUDFCoInstaller.dll
+     dvi:                CoInstaller 1: Enter 14:21:17.990
+     dvi:                CoInstaller 1: Exit
+     dvi:                Class installer: Enter 14:21:17.990
+     dvi:                Class installer: Exit
+     dvi:                Default installer: Enter 14:21:17.990
+     dvi:                Default installer: Exit
+     dvi:           {DIF_INSTALLINTERFACES - exit(0x00000000)} 14:21:17.993
+     dvi:           {DIF_INSTALLDEVICE} 14:21:17.993
+     dvi:                CoInstaller 1: Enter 14:21:17.993
+     inf:                     {Install from INF Section - WpdFs_Install} 14:21:18.020
+     inf:                          Flags         - 0x00000004
+     inf:                     {Install from INF Section - exit(0x00000000)} 14:21:18.020
+     dvi:                CoInstaller 1: Exit
+     dvi:                Class installer: Enter 14:21:18.031
+     dvi:                     {Install DEVICE}
+     inf:                          {Install from INF Section - Basic_Install} 14:21:18.035
+     inf:                               Flags         - 0x001005ee
+     inf:                          {Install from INF Section - exit(0x00000000)} 14:21:18.035
+     inf:                          {Install from INF Section - Basic_Install.Hw} 14:21:18.035
+     inf:                               Flags         - 0x00100004
+     inf:                          {Install from INF Section - exit(0x00000000)} 14:21:18.035
+     dvi:                          {Writing Device Properties}
+     dvi:                               Strong Name=wpdfs.inf:0c0663c081fd6f5b:Basic_Install:10.0.17763.1:wpdbusenum\fs
+     dvi:                          {Writing Device Properties - Complete}
+     inf:                          AddService=WUDFWpdFs,0x000001fa,WUDFWpdFs_ServiceInstall  (wpdfs.inf line 38)
+     dvi:                          Add Service: Modified existing service 'WUDFWpdFs'.
+     inf:                          {Install from INF Section - WUDFWpdFs_ServiceInstall} 14:21:18.086
+     inf:                               Flags         - 0x00100004
+     inf:                          {Install from INF Section - exit(0x00000000)} 14:21:18.086
+     dvi:                     {Install DEVICE exit (0x00000000)}
+     dvi:                     Install Device: Configuring device class. 14:21:18.091
+     dvi:                     Install Device: Configuring device class completed. 14:21:18.094
+     dvi:                     Device Status: 0x01802400, Problem: 0x1 (0xc0000493)
+     dvi:                     Install Device: Starting device 'SWD\WPDBUSENUM\{C4E24E15-4A04-11E9-9C13-F8633F8A50C9}#00000000EDB00000'. 14:21:18.096
+     dvi:                     Install Device: Starting device completed. 14:21:18.127
+     dvi:                Class installer: Exit
+     dvi:                CoInstaller 1: Enter (Post Processing) 14:21:18.132
+     dvi:                CoInstaller 1: Exit (Post Processing)
+     dvi:           {DIF_INSTALLDEVICE - exit(0x00000000)} 14:21:18.138
+     dvi:           {DIF_NEWDEVICEWIZARD_FINISHINSTALL} 14:21:18.138
+     dvi:                CoInstaller 1: Enter 14:21:18.141
+     dvi:                CoInstaller 1: Exit
+     dvi:                Class installer: Enter 14:21:18.141
+     dvi:                Class installer: Exit
+     dvi:           {DIF_NEWDEVICEWIZARD_FINISHINSTALL - exit(0x00000000)} 14:21:18.202
+     dvi:      {Install Device - exit(0x00000000)} 14:21:18.202
+     dvi: {Core Device Install - exit(0x00000000)} 14:21:18.202
+     dvi: {DIF_DESTROYPRIVATEDATA} 14:21:18.202
+     dvi:      CoInstaller 1: Enter 14:21:18.202
+     dvi:      CoInstaller 1: Exit
+     dvi:      Class installer: Enter 14:21:18.218
+     dvi:      Class installer: Exit
+     dvi:      Default installer: Enter 14:21:18.218
+     dvi:      Default installer: Exit
+     dvi: {DIF_DESTROYPRIVATEDATA - exit(0xe000020e)} 14:21:18.218
+<<<  Section end 2019/03/19 14:21:18.218
+<<<  [Exit status: SUCCESS]
+
+
+[Boot Session: 2019/04/04 18:37:55.500]
+
+>>>  [Sysprep Respecialize - {64b34d56-ef90-0be1-4c40-ceb90a57c60e}]
+>>>  Section start 2019/04/04 18:38:19.103
+     set: BIOS Release Date: 07/02/2015
+     set: BIOS Vendor: VMware, Inc.
+     set: BIOS Version: VMW71.00V.0.B64.1507021939
+     set: System Manufacturer: VMware, Inc.
+     set: System Product Name: VMware7,1
+     set: System Version: None
+<<<  Section end 2019/04/04 18:38:21.197
+<<<  [Exit status: SUCCESS]
+
+
+[Boot Session: 2019/04/05 12:02:23.504]
+
+>>>  [Device Install (Hardware initiated) - SWD\WPDBUSENUM\{3c2b27e9-574f-11e9-9c15-000c2957c60e}#0000000076400000]
+>>>  Section start 2019/04/05 15:26:42.133
+     dvi: {Build Driver List} 15:26:42.214
+     dvi:      Searching for compatible ID(s):
+     dvi:           wpdbusenum\fs
+     dvi:           swd\generic
+     dvi:      Created Driver Node:
+     dvi:           HardwareID   - wpdbusenum\fs
+     dvi:           InfName      - C:\Windows\System32\DriverStore\FileRepository\wpdfs.inf_amd64_10bfe1c48f153b03\wpdfs.inf
+     dvi:           DevDesc      - WPD FileSystem Volume Driver
+     dvi:           Section      - Basic_Install
+     dvi:           Rank         - 0x00ff2000
+     dvi:           Signer Score - INBOX
+     dvi:           DrvDate      - 06/21/2006
+     dvi:           Version      - 10.0.17763.1
+     dvi: {Build Driver List - exit(0x00000000)} 15:26:42.236
+     dvi: {DIF_SELECTBESTCOMPATDRV} 15:26:42.240
+     dvi:      Using exported function 'WpdClassInstaller' in module 'C:\Windows\system32\wpd_ci.dll'.
+     dvi:      Class installer == wpd_ci.dll,WpdClassInstaller
+     dvi:      Class installer: Enter 15:26:42.340
+     dvi:      Class installer: Exit
+     dvi:      Default installer: Enter 15:26:42.347
+     dvi:           {Select Best Driver}
+     dvi:                Class GUID of device changed to: {eec5ad98-8080-425f-922a-dabf3de3f69a}.
+     dvi:                {DIF_DESTROYPRIVATEDATA} 15:26:42.347
+     dvi:                     Class installer: Enter 15:26:42.349
+     dvi:                     Class installer: Exit
+     dvi:                     Default installer: Enter 15:26:42.349
+     dvi:                     Default installer: Exit
+     dvi:                {DIF_DESTROYPRIVATEDATA - exit(0xe000020e)} 15:26:42.351
+     dvi:                Selected Driver:
+     dvi:                     Description - WPD FileSystem Volume Driver
+     dvi:                     InfFile     - c:\windows\system32\driverstore\filerepository\wpdfs.inf_amd64_10bfe1c48f153b03\wpdfs.inf
+     dvi:                     Section     - Basic_Install
+     dvi:           {Select Best Driver - exit(0x00000000)}
+     dvi:      Default installer: Exit
+     dvi: {DIF_SELECTBESTCOMPATDRV - exit(0x00000000)} 15:26:42.351
+     dvi: Waiting for previous device install to complete. 15:26:42.351
+     dvi: {Core Device Install} 15:26:44.702
+     dvi:      {Install Device - SWD\WPDBUSENUM\{3C2B27E9-574F-11E9-9C15-000C2957C60E}#0000000076400000} 15:26:44.702
+     dvi:           Device Status: 0x01802400, Problem: 0x1 (0xc0000493)
+     dvi:           Parent device: STORAGE\Volume\{3c2b27e9-574f-11e9-9c15-000c2957c60e}#0000000076400000
+     dvi:           {Configure Device - SWD\WPDBUSENUM\{3C2B27E9-574F-11E9-9C15-000C2957C60E}#0000000076400000} 15:26:44.718
+     dvi:                Device Status: 0x01802400, Problem: 0x1 (0xc0000493)
+     dvi:                Parent device: STORAGE\Volume\{3c2b27e9-574f-11e9-9c15-000c2957c60e}#0000000076400000
+!    dvi:                Device class {eec5ad98-8080-425f-922a-dabf3de3f69a} is not configurable.
+     dvi:           {Configure Device - exit(0x00000032)} 15:26:44.718
+     dvi:           {DIF_ALLOW_INSTALL} 15:26:44.718
+     dvi:                Using exported function 'WpdClassInstaller' in module 'C:\Windows\system32\wpd_ci.dll'.
+     dvi:                Class installer == wpd_ci.dll,WpdClassInstaller
+     dvi:                Using exported function 'CoDeviceInstall' in module 'C:\Windows\system32\WUDFCoinstaller.dll'.
+     dvi:                CoInstaller 1 == WUDFCoinstaller.dll
+     dvi:                CoInstaller 1: Enter 15:26:44.718
+     dvi:                CoInstaller 1: Exit
+     dvi:                Class installer: Enter 15:26:44.718
+     dvi:                Class installer: Exit
+     dvi:                Default installer: Enter 15:26:44.733
+     dvi:                Default installer: Exit
+     dvi:           {DIF_ALLOW_INSTALL - exit(0xe000020e)} 15:26:44.733
+     dvi:           {DIF_INSTALLDEVICEFILES} 15:26:44.733
+     dvi:                CoInstaller 1: Enter 15:26:44.733
+     dvi:                CoInstaller 1: Exit
+     dvi:                Class installer: Enter 15:26:44.733
+     dvi:                Class installer: Exit
+     dvi:                Default installer: Enter 15:26:44.733
+     dvi:                Default installer: Exit
+     dvi:           {DIF_INSTALLDEVICEFILES - exit(0x00000000)} 15:26:44.733
+     flq:           File 'C:\Windows\system32\DRIVERS\UMDF\WpdFs.dll' pruned from copy.
+     dvi:           {DIF_REGISTER_COINSTALLERS} 15:26:44.780
+     dvi:                Reset Device: Resetting device configuration. 15:26:44.780
+     dvi:                Reset Device: Resetting device configuration completed. 15:26:44.780
+     dvi:                CoInstaller 1: Enter 15:26:44.780
+     dvi:                CoInstaller 1: Exit
+     dvi:                Class installer: Enter 15:26:44.780
+     dvi:                Class installer: Exit
+     dvi:                Default installer: Enter 15:26:44.796
+     inf:                     {Install from INF Section - Basic_Install.CoInstallers} 15:26:44.796
+     inf:                          Flags         - 0x001001ee
+     inf:                     {Install from INF Section - exit(0x00000000)} 15:26:44.796
+     dvi:                     {DIF_DESTROYPRIVATEDATA} 15:26:44.796
+     dvi:                          CoInstaller 1: Enter 15:26:44.796
+     dvi:                          CoInstaller 1: Exit
+     dvi:                          Class installer: Enter 15:26:44.796
+     dvi:                          Class installer: Exit
+     dvi:                          Default installer: Enter 15:26:44.796
+     dvi:                          Default installer: Exit
+     dvi:                     {DIF_DESTROYPRIVATEDATA - exit(0xe000020e)} 15:26:44.796
+     dvi:                Default installer: Exit
+     dvi:           {DIF_REGISTER_COINSTALLERS - exit(0x00000000)} 15:26:44.796
+     dvi:           {DIF_INSTALLINTERFACES} 15:26:44.796
+     dvi:                Using exported function 'CoDeviceInstall' in module 'C:\Windows\system32\WUDFCoInstaller.dll'.
+     dvi:                CoInstaller 1 == WUDFCoInstaller.dll
+     dvi:                CoInstaller 1: Enter 15:26:44.796
+     dvi:                CoInstaller 1: Exit
+     dvi:                Class installer: Enter 15:26:44.796
+     dvi:                Class installer: Exit
+     dvi:                Default installer: Enter 15:26:44.796
+     dvi:                Default installer: Exit
+     dvi:           {DIF_INSTALLINTERFACES - exit(0x00000000)} 15:26:44.796
+     dvi:           {DIF_INSTALLDEVICE} 15:26:44.796
+     dvi:                CoInstaller 1: Enter 15:26:44.796
+     inf:                     {Install from INF Section - WpdFs_Install} 15:26:44.827
+     inf:                          Flags         - 0x00000004
+     inf:                     {Install from INF Section - exit(0x00000000)} 15:26:44.827
+     dvi:                CoInstaller 1: Exit
+     dvi:                Class installer: Enter 15:26:44.827
+     dvi:                     {Install DEVICE}
+     inf:                          {Install from INF Section - Basic_Install} 15:26:44.843
+     inf:                               Flags         - 0x001005ee
+     inf:                          {Install from INF Section - exit(0x00000000)} 15:26:44.843
+     inf:                          {Install from INF Section - Basic_Install.Hw} 15:26:44.843
+     inf:                               Flags         - 0x00100004
+     inf:                          {Install from INF Section - exit(0x00000000)} 15:26:44.843
+     dvi:                          {Writing Device Properties}
+     dvi:                               Strong Name=wpdfs.inf:0c0663c081fd6f5b:Basic_Install:10.0.17763.1:wpdbusenum\fs
+     dvi:                          {Writing Device Properties - Complete}
+     inf:                          AddService=WUDFWpdFs,0x000001fa,WUDFWpdFs_ServiceInstall  (wpdfs.inf line 38)
+     dvi:                          Add Service: Modified existing service 'WUDFWpdFs'.
+     inf:                          {Install from INF Section - WUDFWpdFs_ServiceInstall} 15:26:44.858
+     inf:                               Flags         - 0x00100004
+     inf:                          {Install from INF Section - exit(0x00000000)} 15:26:44.858
+     dvi:                     {Install DEVICE exit (0x00000000)}
+     dvi:                     Install Device: Configuring device class. 15:26:44.858
+     dvi:                     Install Device: Configuring device class completed. 15:26:44.858
+     dvi:                     Device Status: 0x01802400, Problem: 0x1 (0xc0000493)
+     dvi:                     Install Device: Starting device 'SWD\WPDBUSENUM\{3C2B27E9-574F-11E9-9C15-000C2957C60E}#0000000076400000'. 15:26:44.858
+     dvi:                     Install Device: Starting device completed. 15:26:44.968
+     dvi:                Class installer: Exit
+     dvi:                CoInstaller 1: Enter (Post Processing) 15:26:44.968
+     dvi:                CoInstaller 1: Exit (Post Processing)
+     dvi:           {DIF_INSTALLDEVICE - exit(0x00000000)} 15:26:44.968
+     dvi:           {DIF_NEWDEVICEWIZARD_FINISHINSTALL} 15:26:44.968
+     dvi:                CoInstaller 1: Enter 15:26:44.968
+     dvi:                CoInstaller 1: Exit
+     dvi:                Class installer: Enter 15:26:44.968
+     dvi:                Class installer: Exit
+     dvi:           {DIF_NEWDEVICEWIZARD_FINISHINSTALL - exit(0x00000000)} 15:26:45.139
+     dvi:      {Install Device - exit(0x00000000)} 15:26:45.139
+     dvi: {Core Device Install - exit(0x00000000)} 15:26:45.139
+     dvi: {DIF_DESTROYPRIVATEDATA} 15:26:45.296
+     dvi:      CoInstaller 1: Enter 15:26:45.296
+     dvi:      CoInstaller 1: Exit
+     dvi:      Class installer: Enter 15:26:45.296
+     dvi:      Class installer: Exit
+     dvi:      Default installer: Enter 15:26:45.296
+     dvi:      Default installer: Exit
+     dvi: {DIF_DESTROYPRIVATEDATA - exit(0xe000020e)} 15:26:45.296
+<<<  Section end 2019/04/05 15:26:45.405
+<<<  [Exit status: SUCCESS]
+
+
+>>>  [Device Install (Hardware initiated) - SWD\WPDBUSENUM\_??_USBSTOR#Disk&Ven_VendorCo&Prod_ProductCode&Rev_2.00#9207063182728214228&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}]
+>>>  Section start 2019/04/05 15:26:42.169
+     dvi: {Build Driver List} 15:26:42.279
+     dvi:      Searching for compatible ID(s):
+     dvi:           wpdbusenum\fs
+     dvi:           swd\generic
+     dvi:      Created Driver Node:
+     dvi:           HardwareID   - wpdbusenum\fs
+     dvi:           InfName      - C:\Windows\System32\DriverStore\FileRepository\wpdfs.inf_amd64_10bfe1c48f153b03\wpdfs.inf
+     dvi:           DevDesc      - WPD FileSystem Volume Driver
+     dvi:           Section      - Basic_Install
+     dvi:           Rank         - 0x00ff2000
+     dvi:           Signer Score - INBOX
+     dvi:           DrvDate      - 06/21/2006
+     dvi:           Version      - 10.0.17763.1
+     dvi: {Build Driver List - exit(0x00000000)} 15:26:42.290
+     dvi: {DIF_SELECTBESTCOMPATDRV} 15:26:42.290
+     dvi:      Using exported function 'WpdClassInstaller' in module 'C:\Windows\system32\wpd_ci.dll'.
+     dvi:      Class installer == wpd_ci.dll,WpdClassInstaller
+     dvi:      Class installer: Enter 15:26:42.302
+     dvi:      Class installer: Exit
+     dvi:      Default installer: Enter 15:26:42.302
+     dvi:           {Select Best Driver}
+     dvi:                Class GUID of device changed to: {eec5ad98-8080-425f-922a-dabf3de3f69a}.
+     dvi:                {DIF_DESTROYPRIVATEDATA} 15:26:42.302
+     dvi:                     Class installer: Enter 15:26:42.304
+     dvi:                     Class installer: Exit
+     dvi:                     Default installer: Enter 15:26:42.305
+     dvi:                     Default installer: Exit
+     dvi:                {DIF_DESTROYPRIVATEDATA - exit(0xe000020e)} 15:26:42.305
+     dvi:                Selected Driver:
+     dvi:                     Description - WPD FileSystem Volume Driver
+     dvi:                     InfFile     - c:\windows\system32\driverstore\filerepository\wpdfs.inf_amd64_10bfe1c48f153b03\wpdfs.inf
+     dvi:                     Section     - Basic_Install
+     dvi:           {Select Best Driver - exit(0x00000000)}
+     dvi:      Default installer: Exit
+     dvi: {DIF_SELECTBESTCOMPATDRV - exit(0x00000000)} 15:26:42.307
+     dvi: {Core Device Install} 15:26:42.307
+     dvi:      {Install Device - SWD\WPDBUSENUM\_??_USBSTOR#DISK&VEN_VENDORCO&PROD_PRODUCTCODE&REV_2.00#9207063182728214228&0#{53F56307-B6BF-11D0-94F2-00A0C91EFB8B}} 15:26:42.307
+     dvi:           Device Status: 0x01802400, Problem: 0x1 (0xc0000493)
+     dvi:           Parent device: STORAGE\Volume\_??_USBSTOR#Disk&Ven_VendorCo&Prod_ProductCode&Rev_2.00#9207063182728214228&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+     dvi:           {Configure Device - SWD\WPDBUSENUM\_??_USBSTOR#DISK&VEN_VENDORCO&PROD_PRODUCTCODE&REV_2.00#9207063182728214228&0#{53F56307-B6BF-11D0-94F2-00A0C91EFB8B}} 15:26:42.317
+     dvi:                Device Status: 0x01802400, Problem: 0x1 (0xc0000493)
+     dvi:                Parent device: STORAGE\Volume\_??_USBSTOR#Disk&Ven_VendorCo&Prod_ProductCode&Rev_2.00#9207063182728214228&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+!    dvi:                Device class {eec5ad98-8080-425f-922a-dabf3de3f69a} is not configurable.
+     dvi:           {Configure Device - exit(0x00000032)} 15:26:42.324
+     dvi:           {DIF_ALLOW_INSTALL} 15:26:42.324
+     dvi:                Using exported function 'WpdClassInstaller' in module 'C:\Windows\system32\wpd_ci.dll'.
+     dvi:                Class installer == wpd_ci.dll,WpdClassInstaller
+     dvi:                Using exported function 'CoDeviceInstall' in module 'C:\Windows\system32\WUDFCoinstaller.dll'.
+     dvi:                CoInstaller 1 == WUDFCoinstaller.dll
+     dvi:                CoInstaller 1: Enter 15:26:42.327
+     dvi:                CoInstaller 1: Exit
+     dvi:                Class installer: Enter 15:26:42.330
+     dvi:                Class installer: Exit
+     dvi:                Default installer: Enter 15:26:42.331
+     dvi:                Default installer: Exit
+     dvi:           {DIF_ALLOW_INSTALL - exit(0xe000020e)} 15:26:42.331
+     dvi:           {DIF_INSTALLDEVICEFILES} 15:26:42.336
+     dvi:                CoInstaller 1: Enter 15:26:42.336
+     dvi:                CoInstaller 1: Exit
+     dvi:                Class installer: Enter 15:26:42.338
+     dvi:                Class installer: Exit
+     dvi:                Default installer: Enter 15:26:42.339
+     dvi:                Default installer: Exit
+     dvi:           {DIF_INSTALLDEVICEFILES - exit(0x00000000)} 15:26:42.340
+     flq:           File 'C:\Windows\system32\DRIVERS\UMDF\WpdFs.dll' pruned from copy.
+     dvi:           {DIF_REGISTER_COINSTALLERS} 15:26:42.841
+     dvi:                Reset Device: Resetting device configuration. 15:26:42.841
+     dvi:                Reset Device: Resetting device configuration completed. 15:26:42.841
+     dvi:                CoInstaller 1: Enter 15:26:42.841
+     dvi:                CoInstaller 1: Exit
+     dvi:                Class installer: Enter 15:26:42.844
+     dvi:                Class installer: Exit
+     dvi:                Default installer: Enter 15:26:42.844
+     inf:                     {Install from INF Section - Basic_Install.CoInstallers} 15:26:42.848
+     inf:                          Flags         - 0x001001ee
+     inf:                     {Install from INF Section - exit(0x00000000)} 15:26:42.853
+     dvi:                     {DIF_DESTROYPRIVATEDATA} 15:26:42.853
+     dvi:                          CoInstaller 1: Enter 15:26:42.853
+     dvi:                          CoInstaller 1: Exit
+     dvi:                          Class installer: Enter 15:26:42.855
+     dvi:                          Class installer: Exit
+     dvi:                          Default installer: Enter 15:26:42.855
+     dvi:                          Default installer: Exit
+     dvi:                     {DIF_DESTROYPRIVATEDATA - exit(0xe000020e)} 15:26:42.856
+     dvi:                Default installer: Exit
+     dvi:           {DIF_REGISTER_COINSTALLERS - exit(0x00000000)} 15:26:42.858
+     dvi:           {DIF_INSTALLINTERFACES} 15:26:42.858
+     dvi:                Using exported function 'CoDeviceInstall' in module 'C:\Windows\system32\WUDFCoInstaller.dll'.
+     dvi:                CoInstaller 1 == WUDFCoInstaller.dll
+     dvi:                CoInstaller 1: Enter 15:26:42.858
+     dvi:                CoInstaller 1: Exit
+     dvi:                Class installer: Enter 15:26:42.858
+     dvi:                Class installer: Exit
+     dvi:                Default installer: Enter 15:26:42.858
+     dvi:                Default installer: Exit
+     dvi:           {DIF_INSTALLINTERFACES - exit(0x00000000)} 15:26:42.858
+     dvi:           {DIF_INSTALLDEVICE} 15:26:42.858
+     dvi:                CoInstaller 1: Enter 15:26:42.858
+     inf:                     {Install from INF Section - WpdFs_Install} 15:26:42.879
+     inf:                          Flags         - 0x00000004
+     inf:                     {Install from INF Section - exit(0x00000000)} 15:26:42.879
+     dvi:                CoInstaller 1: Exit
+     dvi:                Class installer: Enter 15:26:42.886
+     dvi:                     {Install DEVICE}
+     inf:                          {Install from INF Section - Basic_Install} 15:26:42.936
+     inf:                               Flags         - 0x001005ee
+     inf:                          {Install from INF Section - exit(0x00000000)} 15:26:42.936
+     inf:                          {Install from INF Section - Basic_Install.Hw} 15:26:42.936
+     inf:                               Flags         - 0x00100004
+     inf:                          {Install from INF Section - exit(0x00000000)} 15:26:42.936
+     dvi:                          {Writing Device Properties}
+     dvi:                               Strong Name=wpdfs.inf:0c0663c081fd6f5b:Basic_Install:10.0.17763.1:wpdbusenum\fs
+     dvi:                          {Writing Device Properties - Complete}
+     inf:                          AddService=WUDFWpdFs,0x000001fa,WUDFWpdFs_ServiceInstall  (wpdfs.inf line 38)
+     dvi:                          Add Service: Modified existing service 'WUDFWpdFs'.
+     inf:                          {Install from INF Section - WUDFWpdFs_ServiceInstall} 15:26:43.036
+     inf:                               Flags         - 0x00100004
+     inf:                          {Install from INF Section - exit(0x00000000)} 15:26:43.036
+     dvi:                     {Install DEVICE exit (0x00000000)}
+     dvi:                     Install Device: Configuring device class. 15:26:43.046
+     dvi:                     Install Device: Configuring device class completed. 15:26:43.047
+     dvi:                     Device Status: 0x01802400, Problem: 0x1 (0xc0000493)
+     dvi:                     Install Device: Starting device 'SWD\WPDBUSENUM\_??_USBSTOR#DISK&VEN_VENDORCO&PROD_PRODUCTCODE&REV_2.00#9207063182728214228&0#{53F56307-B6BF-11D0-94F2-00A0C91EFB8B}'. 15:26:43.047
+     dvi:                     Install Device: Starting device completed. 15:26:44.327
+     dvi:                Class installer: Exit
+     dvi:                CoInstaller 1: Enter (Post Processing) 15:26:44.436
+     dvi:                CoInstaller 1: Exit (Post Processing)
+     dvi:           {DIF_INSTALLDEVICE - exit(0x00000000)} 15:26:44.436
+     dvi:           {DIF_NEWDEVICEWIZARD_FINISHINSTALL} 15:26:44.436
+     dvi:                CoInstaller 1: Enter 15:26:44.436
+     dvi:                CoInstaller 1: Exit
+     dvi:                Class installer: Enter 15:26:44.436
+     dvi:                Class installer: Exit
+     dvi:           {DIF_NEWDEVICEWIZARD_FINISHINSTALL - exit(0x00000000)} 15:26:44.702
+     dvi:      {Install Device - exit(0x00000000)} 15:26:44.702
+     dvi: {Core Device Install - exit(0x00000000)} 15:26:44.702
+     dvi: {DIF_DESTROYPRIVATEDATA} 15:26:44.702
+     dvi:      CoInstaller 1: Enter 15:26:44.702
+     dvi:      CoInstaller 1: Exit
+     dvi:      Class installer: Enter 15:26:44.702
+     dvi:      Class installer: Exit
+     dvi:      Default installer: Enter 15:26:44.702
+     dvi:      Default installer: Exit
+     dvi: {DIF_DESTROYPRIVATEDATA - exit(0xe000020e)} 15:26:44.702
+<<<  Section end 2019/04/05 15:26:44.811
+<<<  [Exit status: SUCCESS]
+
+
+>>>  [Device Install (Hardware initiated) - SWD\WPDBUSENUM\{1a0e98de-4189-11e9-9c11-806e6f6e6963}#000000045BB00000]
+>>>  Section start 2019/04/05 15:26:42.205
+     dvi: {Build Driver List} 15:26:42.251
+     dvi:      Searching for compatible ID(s):
+     dvi:           wpdbusenum\fs
+     dvi:           swd\generic
+     dvi:      Created Driver Node:
+     dvi:           HardwareID   - wpdbusenum\fs
+     dvi:           InfName      - C:\Windows\System32\DriverStore\FileRepository\wpdfs.inf_amd64_10bfe1c48f153b03\wpdfs.inf
+     dvi:           DevDesc      - WPD FileSystem Volume Driver
+     dvi:           Section      - Basic_Install
+     dvi:           Rank         - 0x00ff2000
+     dvi:           Signer Score - INBOX
+     dvi:           DrvDate      - 06/21/2006
+     dvi:           Version      - 10.0.17763.1
+     dvi: {Build Driver List - exit(0x00000000)} 15:26:42.261
+     dvi: {DIF_SELECTBESTCOMPATDRV} 15:26:42.261
+     dvi:      Using exported function 'WpdClassInstaller' in module 'C:\Windows\system32\wpd_ci.dll'.
+     dvi:      Class installer == wpd_ci.dll,WpdClassInstaller
+     dvi:      Class installer: Enter 15:26:42.272
+     dvi:      Class installer: Exit
+     dvi:      Default installer: Enter 15:26:42.272
+     dvi:           {Select Best Driver}
+     dvi:                Class GUID of device changed to: {eec5ad98-8080-425f-922a-dabf3de3f69a}.
+     dvi:                {DIF_DESTROYPRIVATEDATA} 15:26:42.365
+     dvi:                     Class installer: Enter 15:26:42.369
+     dvi:                     Class installer: Exit
+     dvi:                     Default installer: Enter 15:26:42.369
+     dvi:                     Default installer: Exit
+     dvi:                {DIF_DESTROYPRIVATEDATA - exit(0xe000020e)} 15:26:42.369
+     dvi:                Selected Driver:
+     dvi:                     Description - WPD FileSystem Volume Driver
+     dvi:                     InfFile     - c:\windows\system32\driverstore\filerepository\wpdfs.inf_amd64_10bfe1c48f153b03\wpdfs.inf
+     dvi:                     Section     - Basic_Install
+     dvi:           {Select Best Driver - exit(0x00000000)}
+     dvi:      Default installer: Exit
+     dvi: {DIF_SELECTBESTCOMPATDRV - exit(0x00000000)} 15:26:42.374
+     dvi: Waiting for previous device install to complete. 15:26:42.374
+     dvi: {Core Device Install} 15:26:45.139
+     dvi:      {Install Device - SWD\WPDBUSENUM\{1A0E98DE-4189-11E9-9C11-806E6F6E6963}#000000045BB00000} 15:26:45.139
+     dvi:           Device Status: 0x01802400, Problem: 0x1 (0xc0000493)
+     dvi:           Parent device: STORAGE\Volume\{1a0e98de-4189-11e9-9c11-806e6f6e6963}#000000045BB00000
+     dvi:           {Configure Device - SWD\WPDBUSENUM\{1A0E98DE-4189-11E9-9C11-806E6F6E6963}#000000045BB00000} 15:26:45.155
+     dvi:                Device Status: 0x01802400, Problem: 0x1 (0xc0000493)
+     dvi:                Parent device: STORAGE\Volume\{1a0e98de-4189-11e9-9c11-806e6f6e6963}#000000045BB00000
+!    dvi:                Device class {eec5ad98-8080-425f-922a-dabf3de3f69a} is not configurable.
+     dvi:           {Configure Device - exit(0x00000032)} 15:26:45.155
+     dvi:           {DIF_ALLOW_INSTALL} 15:26:45.155
+     dvi:                Using exported function 'WpdClassInstaller' in module 'C:\Windows\system32\wpd_ci.dll'.
+     dvi:                Class installer == wpd_ci.dll,WpdClassInstaller
+     dvi:                Using exported function 'CoDeviceInstall' in module 'C:\Windows\system32\WUDFCoinstaller.dll'.
+     dvi:                CoInstaller 1 == WUDFCoinstaller.dll
+     dvi:                CoInstaller 1: Enter 15:26:45.155
+     dvi:                CoInstaller 1: Exit
+     dvi:                Class installer: Enter 15:26:45.155
+     dvi:                Class installer: Exit
+     dvi:                Default installer: Enter 15:26:45.249
+     dvi:                Default installer: Exit
+     dvi:           {DIF_ALLOW_INSTALL - exit(0xe000020e)} 15:26:45.249
+     dvi:           {DIF_INSTALLDEVICEFILES} 15:26:45.249
+     dvi:                CoInstaller 1: Enter 15:26:45.249
+     dvi:                CoInstaller 1: Exit
+     dvi:                Class installer: Enter 15:26:45.249
+     dvi:                Class installer: Exit
+     dvi:                Default installer: Enter 15:26:45.249
+     dvi:                Default installer: Exit
+     dvi:           {DIF_INSTALLDEVICEFILES - exit(0x00000000)} 15:26:45.264
+     flq:           File 'C:\Windows\system32\DRIVERS\UMDF\WpdFs.dll' pruned from copy.
+     dvi:           {DIF_REGISTER_COINSTALLERS} 15:26:45.343
+     dvi:                Reset Device: Resetting device configuration. 15:26:45.343
+     dvi:                Reset Device: Resetting device configuration completed. 15:26:45.343
+     dvi:                CoInstaller 1: Enter 15:26:45.343
+     dvi:                CoInstaller 1: Exit
+     dvi:                Class installer: Enter 15:26:45.343
+     dvi:                Class installer: Exit
+     dvi:                Default installer: Enter 15:26:45.374
+     inf:                     {Install from INF Section - Basic_Install.CoInstallers} 15:26:45.374
+     inf:                          Flags         - 0x001001ee
+     inf:                     {Install from INF Section - exit(0x00000000)} 15:26:45.374
+     dvi:                     {DIF_DESTROYPRIVATEDATA} 15:26:45.374
+     dvi:                          CoInstaller 1: Enter 15:26:45.389
+     dvi:                          CoInstaller 1: Exit
+     dvi:                          Class installer: Enter 15:26:45.389
+     dvi:                          Class installer: Exit
+     dvi:                          Default installer: Enter 15:26:45.389
+     dvi:                          Default installer: Exit
+     dvi:                     {DIF_DESTROYPRIVATEDATA - exit(0xe000020e)} 15:26:45.389
+     dvi:                Default installer: Exit
+     dvi:           {DIF_REGISTER_COINSTALLERS - exit(0x00000000)} 15:26:45.389
+     dvi:           {DIF_INSTALLINTERFACES} 15:26:45.389
+     dvi:                Using exported function 'CoDeviceInstall' in module 'C:\Windows\system32\WUDFCoInstaller.dll'.
+     dvi:                CoInstaller 1 == WUDFCoInstaller.dll
+     dvi:                CoInstaller 1: Enter 15:26:45.389
+     dvi:                CoInstaller 1: Exit
+     dvi:                Class installer: Enter 15:26:45.389
+     dvi:                Class installer: Exit
+     dvi:                Default installer: Enter 15:26:45.389
+     dvi:                Default installer: Exit
+     dvi:           {DIF_INSTALLINTERFACES - exit(0x00000000)} 15:26:45.389
+     dvi:           {DIF_INSTALLDEVICE} 15:26:45.389
+     dvi:                CoInstaller 1: Enter 15:26:45.389
+     inf:                     {Install from INF Section - WpdFs_Install} 15:26:45.405
+     inf:                          Flags         - 0x00000004
+     inf:                     {Install from INF Section - exit(0x00000000)} 15:26:45.405
+     dvi:                CoInstaller 1: Exit
+     dvi:                Class installer: Enter 15:26:45.421
+     dvi:                     {Install DEVICE}
+     inf:                          {Install from INF Section - Basic_Install} 15:26:45.421
+     inf:                               Flags         - 0x001005ee
+     inf:                          {Install from INF Section - exit(0x00000000)} 15:26:45.421
+     inf:                          {Install from INF Section - Basic_Install.Hw} 15:26:45.421
+     inf:                               Flags         - 0x00100004
+     inf:                          {Install from INF Section - exit(0x00000000)} 15:26:45.421
+     dvi:                          {Writing Device Properties}
+     dvi:                               Strong Name=wpdfs.inf:0c0663c081fd6f5b:Basic_Install:10.0.17763.1:wpdbusenum\fs
+     dvi:                          {Writing Device Properties - Complete}
+     inf:                          AddService=WUDFWpdFs,0x000001fa,WUDFWpdFs_ServiceInstall  (wpdfs.inf line 38)
+     dvi:                          Add Service: Modified existing service 'WUDFWpdFs'.
+     inf:                          {Install from INF Section - WUDFWpdFs_ServiceInstall} 15:26:45.436
+     inf:                               Flags         - 0x00100004
+     inf:                          {Install from INF Section - exit(0x00000000)} 15:26:45.436
+     dvi:                     {Install DEVICE exit (0x00000000)}
+     dvi:                     Install Device: Configuring device class. 15:26:45.436
+     dvi:                     Install Device: Configuring device class completed. 15:26:45.436
+     dvi:                     Device Status: 0x01802400, Problem: 0x1 (0xc0000493)
+     dvi:                     Install Device: Starting device 'SWD\WPDBUSENUM\{1A0E98DE-4189-11E9-9C11-806E6F6E6963}#000000045BB00000'. 15:26:45.436
+     dvi:                     Install Device: Starting device completed. 15:26:45.530
+     dvi:                Class installer: Exit
+     dvi:                CoInstaller 1: Enter (Post Processing) 15:26:45.530
+     dvi:                CoInstaller 1: Exit (Post Processing)
+     dvi:           {DIF_INSTALLDEVICE - exit(0x00000000)} 15:26:45.530
+     dvi:           {DIF_NEWDEVICEWIZARD_FINISHINSTALL} 15:26:45.530
+     dvi:                CoInstaller 1: Enter 15:26:45.530
+     dvi:                CoInstaller 1: Exit
+     dvi:                Class installer: Enter 15:26:45.546
+     dvi:                Class installer: Exit
+     dvi:           {DIF_NEWDEVICEWIZARD_FINISHINSTALL - exit(0x00000000)} 15:26:45.678
+     dvi:      {Install Device - exit(0x00000000)} 15:26:45.687
+     dvi: {Core Device Install - exit(0x00000000)} 15:26:45.690
+     dvi: {DIF_DESTROYPRIVATEDATA} 15:26:45.690
+     dvi:      CoInstaller 1: Enter 15:26:45.690
+     dvi:      CoInstaller 1: Exit
+     dvi:      Class installer: Enter 15:26:45.690
+     dvi:      Class installer: Exit
+     dvi:      Default installer: Enter 15:26:45.690
+     dvi:      Default installer: Exit
+     dvi: {DIF_DESTROYPRIVATEDATA - exit(0xe000020e)} 15:26:45.690
+<<<  Section end 2019/04/05 15:26:45.724
+<<<  [Exit status: SUCCESS]
+
